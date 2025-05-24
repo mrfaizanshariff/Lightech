@@ -33,6 +33,8 @@ export default function RootLayout({
           {children}
           <Footer />
         </ThemeProvider>
+        <script src="https://cdn.botpress.cloud/webchat/v2.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/05/23/08/20250523085548-UHYDO8QW.js"></script>
       </body>
     </html>
   );

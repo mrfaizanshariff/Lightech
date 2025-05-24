@@ -2,10 +2,12 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, SunMoon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./ThemeToggle";
+import logo from '../../public/assets/lightech_logo.jpg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,11 +45,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link
           href="/"
-          className="text-2xl font-bold text-primary flex items-center gap-2"
+          className=""
           onClick={closeMenu}
         >
-          <SunMoon className="h-8 w-8" />
-          <span>LIGHTECH</span>
+          <Image src={logo.src} alt="Lightech Logo" width={124} height={48} className="w-[124px] h-[48px]">
+
+          </Image>
         </Link>
 
         {/* Desktop Navigation */}
