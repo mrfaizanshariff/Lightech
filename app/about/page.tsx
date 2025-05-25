@@ -1,3 +1,4 @@
+import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,15 +9,10 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="pt-20">
-      <section className="py-20 bg-primary text-white">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Lightech</h1>
-          <p className="text-xl max-w-3xl">
-            A dynamic lighting company with a wide array of activities and services,
-            powered by professional experience since 2005.
-          </p>
-        </div>
-      </section>
+        <IndividualPageHeader backgroundImage={"url('https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"}
+        title={"About Lightech"}
+        description={" A dynamic lighting company with a wide array of activities and services,powered by professional experience since 2005."}
+      />
 
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -66,6 +62,107 @@ export default function AboutPage() {
                   alt="Team meeting" 
                   className="w-full h-full object-cover"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-8 rounded-xl">
+              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+              <p className="text-muted-foreground">
+                To transform spaces through innovative lighting solutions that enhance the beauty, 
+                functionality, and sustainability of architectural environments while exceeding our 
+                clients' expectations through excellence in design, technology, and service.
+              </p>
+            </div>
+            
+            <div className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-8 rounded-xl">
+              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+              <p className="text-muted-foreground">
+                To be the leading lighting solutions provider in Saudi Arabia and beyond, 
+                recognized for our innovation, sustainability, and commitment to creating 
+                exceptional lighting experiences that inspire and transform spaces.
+              </p>
+            </div>
+            
+            <div className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-8 rounded-xl">
+              <h3 className="text-2xl font-bold mb-4">Our Values</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span>Innovation in Design</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span>Sustainability Focus</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span>Customer Excellence</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span>Professional Expertise</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Strategic Objectives</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="group hover:scale-105 transition-transform duration-300">
+              <div className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-6 rounded-xl h-full border border-gray-200 dark:border-gray-800">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <span className="text-xl">🎯</span>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">Market Leadership</h4>
+                <p className="text-muted-foreground text-sm">
+                  Maintain and expand our position as a leading lighting solutions provider in Saudi Arabia.
+                </p>
+              </div>
+            </div>
+
+            <div className="group hover:scale-105 transition-transform duration-300">
+              <div className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-6 rounded-xl h-full border border-gray-200 dark:border-gray-800">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <span className="text-xl">💡</span>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">Innovation</h4>
+                <p className="text-muted-foreground text-sm">
+                  Continuously develop and implement innovative lighting solutions and technologies.
+                </p>
+              </div>
+            </div>
+
+            <div className="group hover:scale-105 transition-transform duration-300">
+              <div className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-6 rounded-xl h-full border border-gray-200 dark:border-gray-800">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <span className="text-xl">🌱</span>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">Sustainability</h4>
+                <p className="text-muted-foreground text-sm">
+                  Promote energy-efficient and environmentally sustainable lighting solutions.
+                </p>
+              </div>
+            </div>
+
+            <div className="group hover:scale-105 transition-transform duration-300">
+              <div className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-6 rounded-xl h-full border border-gray-200 dark:border-gray-800">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <span className="text-xl">🤝</span>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">Client Success</h4>
+                <p className="text-muted-foreground text-sm">
+                  Ensure client satisfaction through exceptional service and support.
+                </p>
               </div>
             </div>
           </div>

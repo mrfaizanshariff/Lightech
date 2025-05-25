@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Contact from "@/components/home/Contact";
+import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
 
 export const metadata: Metadata = {
   title: "Contact Us | Lightech",
@@ -9,15 +10,13 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="pt-20">
-      <section className="py-20 bg-primary text-white">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl max-w-3xl">
-            Get in touch with our team for lighting consultations, quotes, or inquiries.
-          </p>
-        </div>
-      </section>
+    
+   
 
+      <IndividualPageHeader backgroundImage={"url('https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"}
+        title={"Contact Us"}
+        description={" Get in touch with our team for lighting consultations, quotes, or inquiries."}
+      />
       <Contact />
       
       <section className="py-12">

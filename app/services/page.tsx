@@ -1,3 +1,4 @@
+import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,14 +9,11 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <main className="pt-20">
-      <section className="py-20 bg-primary text-white">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl max-w-3xl">
-            Comprehensive lighting solutions for architectural, interior, landscape, and commercial projects.
-          </p>
-        </div>
-      </section>
+
+      <IndividualPageHeader backgroundImage={"url('https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"}
+        title={"Our Services"}
+        description={"Comprehensive lighting solutions for architectural, interior, landscape, and commercial projects."}
+      />
 
       <section id="architectural" className="py-20">
         <div className="container mx-auto px-4">

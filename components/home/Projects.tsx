@@ -73,9 +73,9 @@ const Projects = () => {
             {categories.map((category) => (
               <Button
                 key={category}
+                onClick={() => setActiveCategory(category)}
                 variant={activeCategory === category ? "default" : "outline"}
                 size="sm"
-                onClick={() => setActiveCategory(category)}
                 className={activeCategory === category ? "" : "opacity-70"}
               >
                 {category}

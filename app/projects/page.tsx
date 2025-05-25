@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
 
 interface Project {
   id: string;
@@ -77,14 +78,11 @@ export default function ProjectsPage() {
 
   return (
     <main className="pt-20">
-      <section className="py-20 bg-primary text-white">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Projects</h1>
-          <p className="text-xl max-w-3xl">
-            Explore our portfolio of lighting projects that showcase our expertise and innovation.
-          </p>
-        </div>
-      </section>
+   
+      <IndividualPageHeader backgroundImage={"url('https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"}
+        title={"Our Projects"}
+        description={"Explore our portfolio of lighting projects that showcase our expertise and innovation."}
+      />
 
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -94,7 +92,9 @@ export default function ProjectsPage() {
                 key={category}
                 onClick={() => setSelectedCategory(category)}
                 variant={selectedCategory === category ? "default" : "outline"}
-                className="backdrop-blur-sm bg-white/50 dark:bg-white/10 hover:bg-white/80 dark:hover:bg-white/20 transition-all duration-300"
+                size="sm"
+                className={selectedCategory === category ? "" : "opacity-70"}
+              
               >
                 {category}
               </Button>
