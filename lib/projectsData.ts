@@ -1,4 +1,4 @@
-interface Project {
+export interface Project {
     id: string;
     title: string;
     category: string;
@@ -7,49 +7,81 @@ interface Project {
     client:string;
     year?: number;
     service?:string;
+    featured?:boolean;
   }
-
+import C001 from '../public/assets/C001.jpg'
+import CO001 from '../public/assets/CO001.jpg'
+import P001 from '../public/assets/P001.jpg'
+import P002 from '../public/assets/P002.jpg'
+import P003 from '../public/assets/P003.jpg'
+import P007 from '../public/assets/P007.jpg'
+import PR001 from '../public/assets/PR001.jpg'
+import R001 from '../public/assets/R001.jpg'
+import RT001 from '../public/assets/RT001.jpg'
+import T001 from '../public/assets/T001.jpg'
+import T002 from '../public/assets/T002.jpg'
+import H001 from '../public/assets/H001.jpg'
+import H002 from '../public/assets/H002.jpg'
+import H003 from '../public/assets/H003.jpg'
+import H004 from '../public/assets/H004.jpg'
+import H005 from '../public/assets/H005.jpg'
+import E001 from '../public/assets/E001.jpg'
+import E002 from '../public/assets/E002.jpg'
+import E003 from '../public/assets/E003.jpg'
+import E004 from '../public/assets/E004.jpg'
+import G001 from '../public/assets/G001.jpg'
+import G002 from '../public/assets/G002.jpg'
+import G003 from '../public/assets/G003.jpg'
+import G004 from '../public/assets/G004.jpg'
+import G005 from '../public/assets/G005.jpg'
+import G006 from '../public/assets/G006.jpg'
+import G007 from '../public/assets/G007.jpg'
+import G012 from '../public/assets/G012.jpg'
 export const projects:Project[]=[
     {
       "category": "Governmental Projects",
       "id": "G001",
-      "image": "",
+      "image": G001.src,
       "title": "Nujuma Ritz-Carlton Hotel The St. Regis",
       "client": "Red Sea Global",
       "service": "Supply of Internal & External Lighting Fixtures",
-      "location": "Ummahat Islands, Red Sea"
+      "location": "Ummahat Islands, Red Sea",
+      featured:true
     },
     {
       "category": "Governmental Projects",
       "id": "G002",
-      "image": "",
+      "image": G002.src,
       "title": "NEOM Sindalah Island",
       "client": "NEOM",
       "service": "Supply of Internal Lighting Fittings",
-      "location": "Neom"
+      "location": "Neom",
+      featured:true
     },
     {
       "category": "Governmental Projects",
       "id": "G003",
-      "image": "",
+      "image": G003.src,
       "title": "Desert Rock",
       "client": "Red Sea Global",
       "service": "Supply of Indoor Lighting Fittings",
-      "location": "Red Sea"
+      "location": "Red Sea",
+      featured:true
     },
     {
       "category": "Governmental Projects",
       "id": "G004",
-      "image": "",
+      "image": G004.src,
       "title": "Riyadh Metro Project",
       "client": "Riyadh Development Authority",
       "service": "Supply of Stations Lighting",
-      "location": "Riyadh"
+      "location": "Riyadh",
+      featured:true
     },
     {
       "category": "Governmental Projects",
       "id": "G005",
-      "image": "",
+      "image": G005.src,
       "title": "Saudi Arabia Railways - SAR",
       "client": "Saudi Arabia Railways",
       "service": "Supply of Standard & Custom Made Lighting Fixtures For Main Stations",
@@ -58,7 +90,7 @@ export const projects:Project[]=[
     {
       "category": "Governmental Projects",
       "id": "G006",
-      "image": "",
+      "image": G006.src,
       "title": "Alinma Stadium King Abdullah Sports City",
       "client": "ARAMCO",
       "service": "Supply of Façade & Sports Lighting Fittings",
@@ -67,7 +99,7 @@ export const projects:Project[]=[
     {
       "category": "Governmental Projects",
       "id": "G007",
-      "image": "",
+      "image": G007.src,
       "title": "Quba Mosque",
       "client": "Amana Almadinah",
       "service": "Supply of Façade Lighting Fittings",
@@ -112,7 +144,7 @@ export const projects:Project[]=[
     {
       "category": "Governmental Projects",
       "id": "G012",
-      "image": "",
+      "image": G012.src,
       "title": "The St. Regis",
       "client": " Red Sea Golbal",
       "service": "Supply of Internal & External Lighting Fixtures",
@@ -121,16 +153,17 @@ export const projects:Project[]=[
     {
       "category": "Educational Projects",
       "id": "E001",
-      "image": "",
+      "image": E001.src,
       "title": "Princess Nourah University - PNU",
       "client": "Princess Nourah Bint Abdulrahman University",
       "service": "Supply of Internal & External Lighting Fittings",
-      "location": "Riyadh"
+      "location": "Riyadh",
+      featured:true
     },
     {
       "category": "Educational Projects",
       "id": "E002",
-      "image": "",
+      "image": E002.src,
       "title": "King Abdullah Petroleum Studies & Research Center - KAPSARC ICONIC",
       "client": "King Abdullah Petroleum Studies and Research Center (KAPSARC)",
       "service": "Design & Supply of High End Custom Made Internal & External Lighting Fittings",
@@ -139,7 +172,7 @@ export const projects:Project[]=[
     {
       "category": "Educational Projects",
       "id": "E003",
-      "image": "",
+      "image": E003.src,
       "title": "King Abdullah Foundation - Convention Center",
       "client": "King Abdullah Foundation",
       "service": "Supply of Internal & External Lighting Fittings",
@@ -148,7 +181,7 @@ export const projects:Project[]=[
     {
       "category": "Educational Projects",
       "id": "E004",
-      "image": "",
+      "image": E004.src,
       "title": "King Abdulaziz Center for World Culture",
       "client": "ARAMCO",
       "service": "Supply of Internal Lighting Fittings",
@@ -157,16 +190,17 @@ export const projects:Project[]=[
     {
       "category": "Towers Projects",
       "id": "T001",
-      "image": "",
+      "image": T001.src,
       "title": "Golden Tower",
       "client": "Golden Tower",
       "service": "Supply of Façade Lighting Fittings",
-      "location": "Jeddah"
+      "location": "Jeddah",
+      featured:true
     },
     {
       "category": "Towers Projects",
       "id": "T002",
-      "image": "",
+      "image": T002.src,
       "title": "The Public Investment Fund Tower - PIF",
       "client": "PIF",
       "service": "Supply of Indoor & Façade Lighting Fittings",
@@ -175,7 +209,7 @@ export const projects:Project[]=[
     {
       "category": "Hotels Projects",
       "id": "H001",
-      "image": "",
+      "image": H001.src,
       "title": "Mandarin Oriental Al Faisaliah",
       "client": "Mandarin Oriental Al Faisaliah",
       "service": "Supply of Indoor Lighting & Lighting Control System",
@@ -184,7 +218,7 @@ export const projects:Project[]=[
     {
       "category": "Hotels Projects",
       "id": "H002",
-      "image": "",
+      "image":H002.src,
       "title": "Aqua Raffles",
       "client": "Aqua Raffles Hotel",
       "service": "Supply of Indoor & Outdoor Lighting Fittings",
@@ -193,16 +227,17 @@ export const projects:Project[]=[
     {
       "category": "Hotels Projects",
       "id": "H003",
-      "image": "",
+      "image": H003.src,
       "title": "Marriott Hotel",
       "client": "DUR",
       "service": "Supply of Indoor & Outdoor lighting Fittings",
-      "location": "Riyadh"
+      "location": "Riyadh",
+      featured:true
     },
     {
       "category": "Hotels Projects",
       "id": "H004",
-      "image": "",
+      "image": H004.src,
       "title": "Hilton Hotel",
       "client": "Hilton",
       "service": "Supply of Indoor & Outdoor lighting Fittings",
@@ -211,7 +246,7 @@ export const projects:Project[]=[
     {
       "category": "Hotels Projects",
       "id": "H005",
-      "image": "",
+      "image":H005.src,
       "title": "JODP Phase 2",
       "client": "Jabal Omar Development Co",
       "service": "Supply of Internal & External Light Fittings",
@@ -355,25 +390,27 @@ export const projects:Project[]=[
     {
       "category": "Projects",
       "id": "P001",
-      "image": "",
+      "image": P001.src,
       "title": "King Salman Social Center - KSSC",
       "client": "King Salman Social Center",
       "service": "Supply of Internal Lighting Fittings",
-      "location": "Riyadh"
+      "location": "Riyadh",
+      featured:true
     },
     {
       "category": "Projects",
       "id": "P002",
-      "image": "",
+      "image": P002.src,
       "title": "Andalusia Hospital",
       "client": "Andalusia Health",
       "service": "Supply of Architectural, Decorative & Facade Lighting Fixtures",
-      "location": "Jeddah"
+      "location": "Jeddah",
+      featured:true
     },
     {
       "category": "Projects",
       "id": "P003",
-      "image": "",
+      "image": P003.src,
       "title": "Riyadh Bank",
       "client": "Riyadh Bank",
       "service": "Supply of Indoor Lighting Fixtures",
@@ -409,7 +446,7 @@ export const projects:Project[]=[
     {
       "category": "Projects",
       "id": "P007",
-      "image": "",
+      "image": P007.src,
       "title": "Bentley Showroom",
       "client": "Bentley Co",
       "service": "Supply of Indoor Lighting Fittings",
@@ -427,11 +464,12 @@ export const projects:Project[]=[
     {
       "category": "Restaurants",
       "id": "R001",
-      "image": "",
+      "image": R001.src,
       "title": "La Duree Riyadh",
       "client": "Le Duree",
       "service": "Supply of Decorative Lighting Fittings",
-      "location": "Riyadh"
+      "location": "Riyadh",
+      featured:true
     },
     {
       "category": "Restaurants",
@@ -508,7 +546,7 @@ export const projects:Project[]=[
     {
       "category": "Car Showrooms",
       "id": "C001",
-      "image": "",
+      "image": C001.src,
       "title": "Al Naghi",
       "client": "NAGHI Motors LLC",
       "service": "Supply of Indoor Lighting Fittings",
@@ -580,7 +618,7 @@ export const projects:Project[]=[
     {
       "category": "Retail Outlets",
       "id": "RT001",
-      "image": "",
+      "image": RT001.src,
       "title": "Riyadh International Exhibition Center",
       "client": "RICEC",
       "service": "Supply of Indoor & Outdoor Lighting Fittings",
@@ -661,7 +699,7 @@ export const projects:Project[]=[
     {
       "category": "Corporate",
       "id": "CO001",
-      "image": "",
+      "image": CO001.src,
       "title": "El Seif Head Office",
       "client": "El-Seif Engineering Contracting",
       "service": "Supply of Internal & External Lighting Fittings",
@@ -751,7 +789,7 @@ export const projects:Project[]=[
     {
       "category": "Private Residence",
       "id": "PR001",
-      "image": "",
+      "image": PR001.src,
       "title": "Al Rajhi Palace",
       "client": "Dr. Abdulrahman Al Rajhi",
       "service": "Supply of Internal & External Lighting Fittings",

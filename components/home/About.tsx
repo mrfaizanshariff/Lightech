@@ -2,7 +2,11 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-
+import G004 from '../../public/assets/G004.jpg'
+import G005 from '../../public/assets/G005.jpg'
+import G006 from '../../public/assets/G006.jpg'
+import G007 from '../../public/assets/G007.jpg'
+import G012 from '../../public/assets/G012.jpg'
 const About = () => {
   return (
     <section className="py-20 bg-white dark:bg-black">
@@ -14,7 +18,7 @@ const About = () => {
               <div className="space-y-4">
                 <div className="overflow-hidden rounded-lg h-48">
                   <img 
-                    src="https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    src={G004.src} 
                     alt="Architectural lighting" 
                     className="w-full h-full object-cover"
                   />
@@ -28,14 +32,14 @@ const About = () => {
               <div className="space-y-4 mt-8">
                 <div className="overflow-hidden rounded-lg h-64">
                   <img 
-                    src="https://images.pexels.com/photos/6444367/pexels-photo-6444367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    src={G007.src} 
                     alt="Interior lighting" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="overflow-hidden rounded-lg h-48">
                   <img 
-                    src="https://images.pexels.com/photos/7031408/pexels-photo-7031408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    src={G006.src} 
                     alt="Landscape lighting" 
                     className="w-full h-full object-cover"
                   />

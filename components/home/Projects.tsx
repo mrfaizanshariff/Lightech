@@ -6,59 +6,23 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { Project, projects } from "@/lib/projectsData";
 
-interface Project {
-  id: string;
-  title: string;
-  category: string;
-  image: string;
-  location: string;
-  year: number;
-}
 
-const projects: Project[] = [
-  {
-    id: "project1",
-    title: "Riyadh Cultural Center",
-    category: "Architectural",
-    image: "https://images.pexels.com/photos/1708601/pexels-photo-1708601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    location: "Riyadh, Saudi Arabia",
-    year: 2022
-  },
-  {
-    id: "project2",
-    title: "Al Faisaliah Residence",
-    category: "Interior",
-    image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    location: "Jeddah, Saudi Arabia",
-    year: 2023
-  },
-  {
-    id: "project3",
-    title: "King Abdullah Park",
-    category: "Landscape",
-    image: "https://images.pexels.com/photos/461901/pexels-photo-461901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    location: "Dammam, Saudi Arabia",
-    year: 2021
-  },
-  {
-    id: "project4",
-    title: "Saudi Business Tower",
-    category: "Commercial",
-    image: "https://images.pexels.com/photos/937483/pexels-photo-937483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    location: "Riyadh, Saudi Arabia",
-    year: 2023
-  }
-];
 
-const categories = ["All", "Architectural", "Interior", "Landscape", "Commercial"];
+const featuredProjects: Project[] = projects.filter(e=>e.featured)
+
+const categories = ["All", "Governmental Projects", 
+                    "Educational Projects", "Towers Projects", 
+                    "Hotels Projects","Projects","Restaurants",
+                   ];
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState<string>("All");
 
   const filteredProjects = activeCategory === "All"
-    ? projects
-    : projects.filter(project => project.category === activeCategory);
+    ? featuredProjects
+    : featuredProjects.filter(project => project.category === activeCategory);
 
   return (
     <section className="py-20">

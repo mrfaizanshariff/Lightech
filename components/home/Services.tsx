@@ -6,7 +6,11 @@ import { ArrowRight } from "lucide-react";
 import { motion }  from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-
+import G004 from '../../public/assets/G004.jpg'
+import G005 from '../../public/assets/G005.jpg'
+import G006 from '../../public/assets/G006.jpg'
+import G007 from '../../public/assets/G007.jpg'
+import G012 from '../../public/assets/G012.jpg'
 interface Service {
   id: string;
   title: string;
@@ -21,28 +25,28 @@ const services: Service[] = [
     title: "Architectural Lighting",
     description: "Enhance the aesthetic appeal and functionality of buildings with our architectural lighting solutions that highlight structural elements and create memorable visual experiences.",
     icon: "🏛️",
-    image: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: G004.src
   },
   {
     id: "interior",
     title: "Interior Lighting",
     description: "Create the perfect ambiance for any indoor space with our interior lighting designs that combine functionality, energy efficiency, and beautiful aesthetics.",
     icon: "🏠",
-    image: "https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: G007.src
   },
   {
     id: "landscape",
     title: "Landscape Lighting",
     description: "Transform outdoor areas into enchanting environments with our landscape lighting solutions that highlight natural features and extend the usability of outdoor spaces.",
     icon: "🌳",
-    image: "https://images.pexels.com/photos/1125212/pexels-photo-1125212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: G006.src
   },
   {
     id: "commercial",
     title: "Commercial Lighting",
     description: "Optimize productivity and create inviting atmospheres in commercial spaces with our efficient, high-quality lighting systems designed for various business environments.",
     icon: "🏢",
-    image: "https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: G012.src
   }
 ];
 

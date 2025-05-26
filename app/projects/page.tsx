@@ -5,76 +5,24 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
+import { Project, projects } from "@/lib/projectsData";
 
-interface Project {
-  id: string;
-  title: string;
-  category: string;
-  location: string;
-  year: number;
-  image: string;
-}
 
-const projects: Project[] = [
-  {
-    id: "1",
-    title: "Riyadh Cultural Center",
-    category: "Architectural",
-    location: "Riyadh, Saudi Arabia",
-    year: 2022,
-    image: "https://images.pexels.com/photos/1708601/pexels-photo-1708601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  },
-  {
-    id: "2",
-    title: "Al Faisaliah Residence",
-    category: "Interior",
-    location: "Jeddah, Saudi Arabia",
-    year: 2023,
-    image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  },
-  {
-    id: "3",
-    title: "King Abdullah Park",
-    category: "Landscape",
-    location: "Dammam, Saudi Arabia",
-    year: 2021,
-    image: "https://images.pexels.com/photos/461901/pexels-photo-461901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  },
-  {
-    id: "4",
-    title: "Modern Office Complex",
-    category: "Commercial",
-    location: "Riyadh, Saudi Arabia",
-    year: 2023,
-    image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  },
-  {
-    id: "5",
-    title: "Luxury Villa Lighting",
-    category: "Interior",
-    location: "Jeddah, Saudi Arabia",
-    year: 2022,
-    image: "https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  },
-  {
-    id: "6",
-    title: "City Center Plaza",
-    category: "Landscape",
-    location: "Riyadh, Saudi Arabia",
-    year: 2023,
-    image: "https://images.pexels.com/photos/1125212/pexels-photo-1125212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  }
-];
 
-const categories = ["All", "Architectural", "Interior", "Landscape", "Commercial"];
+const allProjects: Project[] = projects.filter(e=>e.image.length>1)
+
+const categories = ["All", "Governmental Projects", 
+  "Educational Projects", "Towers Projects", 
+  "Hotels Projects","Projects","Restaurants",
+  "Car Showrooms","Retail Outlets","Corporate", "Private Residence"];
 
 export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [hoveredProject, setHoveredProject] = useState<string | null>(null);
 
   const filteredProjects = selectedCategory === "All"
-    ? projects
-    : projects.filter(project => project.category === selectedCategory);
+    ? allProjects
+    : allProjects.filter(project => project.category === selectedCategory);
 
   return (
     <main className="pt-20">

@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
-
+import E004 from "../../public/assets/E004.jpg"
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const lightsRef = useRef<HTMLDivElement>(null);
@@ -98,7 +98,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-primary/10 rounded-full animate-pulse [animation-duration:5s]"></div>
             <div className="relative h-full rounded-2xl overflow-hidden border-8 border-white dark:border-black shadow-2xl transform lg:translate-y-12">
               <img 
-                src="https://images.pexels.com/photos/3637739/pexels-photo-3637739.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                src={E004.src} 
                 alt="Modern interior lighting" 
                 className="w-full h-full object-cover"
               />
