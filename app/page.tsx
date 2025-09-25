@@ -6,6 +6,7 @@ import Projects from "@/components/home/Projects";
 import Testimonials from "@/components/home/Testimonials";
 import Partners from "@/components/home/Partners";
 import Contact from "@/components/home/Contact";
+import LightRays from "@/components/shared-ui/light-rays";
 
 export const metadata: Metadata = {
   title: "Lightech - Professional Lighting Solutions in Saudi Arabia",

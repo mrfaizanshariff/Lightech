@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -7,7 +8,12 @@ import G005 from '../../public/assets/G005.jpg'
 import G006 from '../../public/assets/G006.jpg'
 import G007 from '../../public/assets/G007.jpg'
 import G012 from '../../public/assets/G012.jpg'
+import content from "../../public/assets/content.json"
+import { useLanguage } from "@/context/LanguageContext";
 const About = () => {
+
+  const {language} = useLanguage()
+  const aboutContent = JSON.parse(JSON.stringify(content))[language === 'en'?"english":"ar"].aboutSection;
   return (
     <section className="py-20 bg-white dark:bg-black">
       <div className="container mx-auto px-4">
@@ -24,8 +30,10 @@ const About = () => {
                   />
                 </div>
                 <div className="overflow-hidden rounded-lg h-64 bg-primary">
-                  <div className="h-full flex items-center justify-center p-6 text-white">
-                    <p className="font-medium text-lg">Founded in 2005</p>
+                  <div className="h-full flex items-center justify-center p-6 text-primary-foreground">
+                    <p className="font-medium text-lg">
+                      Founded in 2005
+                    </p>
                   </div>
                 </div>
               </div>
@@ -50,38 +58,35 @@ const About = () => {
           
           <div className="space-y-6">
             <div>
-              <h2 className="text-sm text-primary font-medium tracking-wider mb-2">ABOUT LIGHTECH</h2>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">Lighting Experts Since 2005</h3>
+              <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{aboutContent.title}</h2>
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">{aboutContent.subtitle}</h3>
               <div className="w-20 h-1.5 bg-primary rounded-full"></div>
             </div>
             
             <p className="text-muted-foreground">
-              Lightech is a dynamic lighting company with a wide array of activities and services. 
-              Powered by professional experience in lighting projects, and an additional multi-discipline 
-              background in architecture, interior, and landscape lighting, we can provide simple 
-              and seamless solutions to meet and exceed even the toughest project needs.
+             {aboutContent.desc_one}
             </p>
             
             <p className="text-muted-foreground">
-              At Lightech, one of our main strengths is a permanent variety of products and 
-              experienced professionals in the field. This combination has developed a host 
-              of capabilities designed to generate sophisticated turnkey lighting solutions.
+             {aboutContent.desc_two}
             </p>
             
             <div className="grid grid-cols-2 gap-4 py-4">
-              <div className="flex flex-col gap-1">
-                <span className="text-3xl font-bold text-primary">18+</span>
-                <span className="text-sm text-muted-foreground">Years of Experience</span>
-              </div>
-              <div className="flex flex-col gap-1">
-                <span className="text-3xl font-bold text-primary">200+</span>
-                <span className="text-sm text-muted-foreground">Projects Completed</span>
-              </div>
+              {
+                aboutContent.statsCard.map((stat:any,index:number)=>{
+                  return (
+                  <div className="flex flex-col gap-1">
+                    <span className="text-3xl font-bold text-primary">{stat.value}</span>
+                    <span className="text-sm text-muted-foreground">{stat.label}</span>
+                  </div>
+                  )
+                })
+              }
             </div>
             
-            <Link href="/about">
+            <Link href={aboutContent.cta.href}>
               <Button className="group">
-                Learn More About Us
+                {aboutContent.cta.label}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>

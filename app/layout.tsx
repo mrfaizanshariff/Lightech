@@ -1,10 +1,19 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Noto_Kufi_Arabic } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import LightRays from '@/components/shared-ui/light-rays';
+import { LanguageProvider } from '@/context/LanguageContext';
+ import localFont from 'next/font/local';
 
+  const Bahnschrift = localFont({
+    src: '../public/fonts/Bahnschrift.ttf',
+    display: 'swap',
+  });
+  const noto_kufi = Noto_Kufi_Arabic({subsets:['arabic']})
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -22,19 +31,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
+          <LanguageProvider>
           <Navbar />
           {children}
           <Footer />
+          </LanguageProvider>
         </ThemeProvider>
-        <script src="https://cdn.botpress.cloud/webchat/v2.5/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/05/23/08/20250523085548-UHYDO8QW.js"></script>
       </body>
     </html>
   );

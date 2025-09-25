@@ -15,8 +15,9 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
-
+import { Mail, Phone, MapPin, Send, FileInput } from "lucide-react";
+import content from '../../public/assets/content.json';
+import { useLanguage } from "@/context/LanguageContext";
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please enter a valid email address." }),
@@ -27,6 +28,8 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 const Contact = () => {
+  const {language} = useLanguage()
+  const contactContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].contactSection;
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -48,18 +51,16 @@ const Contact = () => {
     <section className="py-20 bg-white dark:bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">CONTACT US</h2>
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h3>
-          <p className="text-muted-foreground">
-            Have a project in mind or need lighting consultation? Reach out to us and our team 
-            will get back to you as soon as possible.
+          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{contactContent.title}</h2>
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">{contactContent.subtitle}</h3>
+          <p className="text-muted-foreground">{contactContent.desciption}
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl h-full">
-              <h4 className="text-xl font-bold mb-6">Contact Information</h4>
+              <h4 className="text-xl font-bold mb-6">{contactContent.contactInfoSection.title}</h4>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -67,8 +68,10 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium">Our Location</p>
-                    <p className="text-muted-foreground mt-1">King Fahd Road, Riyadh, Saudi Arabia</p>
+                    <p className="font-medium">{contactContent.contactInfoSection.locationTitle}</p>
+                    <p className="text-muted-foreground mt-1">
+                      {contactContent.contactInfoSection.address}
+                    </p>
                   </div>
                 </div>
                 
@@ -77,9 +80,8 @@ const Contact = () => {
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium">Email Us</p>
-                    <p className="text-muted-foreground mt-1">info@lightech.sa</p>
-                    <p className="text-muted-foreground">support@lightech.sa</p>
+                    <p className="font-medium">{contactContent.contactInfoSection.emailTitle}</p>
+                    <p className="text-muted-foreground mt-1">{contactContent.contactInfoSection.email_1}</p>
                   </div>
                 </div>
                 
@@ -88,14 +90,22 @@ const Contact = () => {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium">Call Us</p>
-                    <p className="text-muted-foreground mt-1">+966 11 123 4567</p>
-                    <p className="text-muted-foreground">+966 11 765 4321</p>
+                    <p className="font-medium">{contactContent.contactInfoSection.phoneTitle}</p>
+                    <p className="text-muted-foreground mt-1 ltr">{contactContent.contactInfoSection.phone_1}</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-full">
+                    <FileInput className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium">{contactContent.contactInfoSection.faxTitle}</p>
+                    <p className="text-muted-foreground mt-1 ltr">{contactContent.contactInfoSection.fax_1}</p>
                   </div>
                 </div>
               </div>
               
-              <div className="mt-12">
+              {/* <div className="mt-12">
                 <h4 className="text-xl font-bold mb-4">Working Hours</h4>
                 <div className="grid grid-cols-2 gap-2 text-sm">
                   <div>
@@ -115,7 +125,7 @@ const Contact = () => {
                     <p className="text-muted-foreground">9:00 AM - 4:00 PM</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           
@@ -185,7 +195,7 @@ const Contact = () => {
                 />
                 
                 <Button type="submit" size="lg" className="w-full group">
-                  Send Message
+                  {contactContent.submitBtn.label}
                   <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </form>

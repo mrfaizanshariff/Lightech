@@ -1,30 +1,54 @@
+"use client"
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
-
+import logo1 from '../../public/assets/partner_logos/logo1.png'
+import logo2 from '../../public/assets/partner_logos/logo2.png'
+import logo3 from '../../public/assets/partner_logos/logo3.png'
+import logo4 from '../../public/assets/partner_logos/logo4.png'
+import logo5 from '../../public/assets/partner_logos/logo5.png'
+import logo6 from '../../public/assets/partner_logos/logo6.png'
+import logo7 from '../../public/assets/partner_logos/logo7.png'
+import logo8 from '../../public/assets/partner_logos/logo8.png'
+import logo9 from '../../public/assets/partner_logos/logo9.png'
+import logo10 from '../../public/assets/partner_logos/logo10.png'
+import logo11 from '../../public/assets/partner_logos/logo11.png'
+import logo12 from '../../public/assets/partner_logos/logo12.png'
+import logo13 from '../../public/assets/partner_logos/logo13.png'
+import logo14 from '../../public/assets/partner_logos/logo14.png'
+import logo15 from '../../public/assets/partner_logos/logo15.png'
+import logo16 from '../../public/assets/partner_logos/logo16.png'
+import logo17 from '../../public/assets/partner_logos/logo17.png'
+import logo18 from '../../public/assets/partner_logos/logo18.png'
+import logo19 from '../../public/assets/partner_logos/logo19.png'
+import logo20 from '../../public/assets/partner_logos/logo20.png'
+import content from '../../public/assets/content.json';
+import { useLanguage } from "@/context/LanguageContext";
 const Partners = () => {
+  const {language}=useLanguage()
+  const partnersContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].partnersSection
   const partnerLogos = [
-    { name: "Partner 1", logo: "https://via.placeholder.com/150x60/e6e7e9/1f4082?text=PARTNER" },
-    { name: "Partner 2", logo: "https://via.placeholder.com/150x60/e6e7e9/1f4082?text=PARTNER" },
-    { name: "Partner 3", logo: "https://via.placeholder.com/150x60/e6e7e9/1f4082?text=PARTNER" },
-    { name: "Partner 4", logo: "https://via.placeholder.com/150x60/e6e7e9/1f4082?text=PARTNER" },
-    { name: "Partner 5", logo: "https://via.placeholder.com/150x60/e6e7e9/1f4082?text=PARTNER" },
-    { name: "Partner 6", logo: "https://via.placeholder.com/150x60/e6e7e9/1f4082?text=PARTNER" },
+    { name: "Partner 1", logo: logo1.src },
+    { name: "Partner 2", logo: logo2.src },
+    { name: "Partner 3", logo: logo3.src },
+    { name: "Partner 4", logo: logo4.src },
+    { name: "Partner 5", logo: logo5.src },
+    { name: "Partner 6", logo: logo6.src },
     // Duplicate logos for continuous scroll effect
-    { name: "Partner 1", logo: "https://via.placeholder.com/150x60/e6e7e9/1f4082?text=PARTNER" },
-    { name: "Partner 2", logo: "https://via.placeholder.com/150x60/e6e7e9/1f4082?text=PARTNER" },
-    { name: "Partner 3", logo: "https://via.placeholder.com/150x60/e6e7e9/1f4082?text=PARTNER" },
+    { name: "Partner 1", logo: logo1.src },
+    { name: "Partner 2", logo: logo2.src },
+    { name: "Partner 3", logo: logo3.src },
   ];
+  const features = partnersContent.features;
 
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">OUR PARTNERS</h2>
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">Trusted By Industry Leaders</h3>
+          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{partnersContent.title}</h2>
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">{partnersContent.subtitle}</h3>
           <p className="text-muted-foreground">
-            We collaborate with leading brands and companies to deliver exceptional lighting solutions
-            for projects of all sizes.
+            {partnersContent.description}
           </p>
         </div>
         
@@ -33,7 +57,7 @@ const Partners = () => {
             {partnerLogos.map((partner, index) => (
               <div 
                 key={index}
-                className="flex-shrink-0 mx-8 backdrop-blur-sm bg-white/30 dark:bg-white/10 rounded-lg p-6 hover:shadow-lg transition-all duration-300"
+                className="flex-shrink-0 mx-8 backdrop-blur-sm bg-white/30 dark:bg-white/10 rounded-lg  hover:shadow-lg transition-all duration-300"
                 style={{ width: '200px' }}
               >
                 <img 
@@ -47,44 +71,25 @@ const Partners = () => {
         </div>
         
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="backdrop-blur-md bg-white/50 dark:bg-white/10 border-none shadow-lg">
-            <CardContent className="p-8">
-              <div className="bg-primary/10 w-14 h-14 flex items-center justify-center rounded-full mb-6">
-                <Check className="h-8 w-8 text-primary" />
-              </div>
-              <h4 className="text-xl font-bold mb-3">Quality Products</h4>
-              <p className="text-muted-foreground">
-                We work with the industry's leading manufacturers to ensure we provide our clients with 
-                high-quality, durable lighting products that meet international standards.
-              </p>
-            </CardContent>
-          </Card>
-          
-          <Card className="backdrop-blur-md bg-white/50 dark:bg-white/10 border-none shadow-lg">
-            <CardContent className="p-8">
-              <div className="bg-primary/10 w-14 h-14 flex items-center justify-center rounded-full mb-6">
-                <Check className="h-8 w-8 text-primary" />
-              </div>
-              <h4 className="text-xl font-bold mb-3">Expert Installation</h4>
-              <p className="text-muted-foreground">
-                Our team of certified technicians ensures professional installation of all lighting systems,
-                following best practices and safety standards for optimal performance.
-              </p>
-            </CardContent>
-          </Card>
-          
-          <Card className="backdrop-blur-md bg-white/50 dark:bg-white/10 border-none shadow-lg">
-            <CardContent className="p-8">
-              <div className="bg-primary/10 w-14 h-14 flex items-center justify-center rounded-full mb-6">
-                <Check className="h-8 w-8 text-primary" />
-              </div>
-              <h4 className="text-xl font-bold mb-3">Ongoing Support</h4>
-              <p className="text-muted-foreground">
-                We provide comprehensive maintenance services and technical support to ensure your
-                lighting systems continue to perform at their best for years to come.
-              </p>
-            </CardContent>
-          </Card>
+          {
+            features.map((feature:any,index:number)=>{
+              return (
+                <Card key={index} className="backdrop-blur-md bg-white/50 dark:bg-white/10 border-none shadow-lg">
+                  <CardContent className="p-8">
+                    <div className="bg-primary/10 w-14 h-14 flex items-center justify-center rounded-full mb-6">
+                      <Check className="h-8 w-8 text-primary" />
+                    </div>
+                    <h4 className="text-xl font-bold mb-3">{feature.title}</h4>
+                    <p className="text-muted-foreground">
+                      {
+                        feature.descriptions
+                      }
+                    </p>
+                  </CardContent>
+                </Card>
+              )
+            })
+          }
         </div>
       </div>
     </section>

@@ -11,6 +11,9 @@ import G005 from '../../public/assets/G005.jpg'
 import G006 from '../../public/assets/G006.jpg'
 import G007 from '../../public/assets/G007.jpg'
 import G012 from '../../public/assets/G012.jpg'
+import content from "../../public/assets/content.json";
+import { useTheme } from "next-themes";
+import { useLanguage } from "@/context/LanguageContext";
 interface Service {
   id: string;
   title: string;
@@ -19,63 +22,64 @@ interface Service {
   image: string;
 }
 
-const services: Service[] = [
-  {
-    id: "architectural",
-    title: "Architectural Lighting",
-    description: "Enhance the aesthetic appeal and functionality of buildings with our architectural lighting solutions that highlight structural elements and create memorable visual experiences.",
-    icon: "🏛️",
-    image: G004.src
-  },
-  {
-    id: "interior",
-    title: "Interior Lighting",
-    description: "Create the perfect ambiance for any indoor space with our interior lighting designs that combine functionality, energy efficiency, and beautiful aesthetics.",
-    icon: "🏠",
-    image: G007.src
-  },
-  {
-    id: "landscape",
-    title: "Landscape Lighting",
-    description: "Transform outdoor areas into enchanting environments with our landscape lighting solutions that highlight natural features and extend the usability of outdoor spaces.",
-    icon: "🌳",
-    image: G006.src
-  },
-  {
-    id: "commercial",
-    title: "Commercial Lighting",
-    description: "Optimize productivity and create inviting atmospheres in commercial spaces with our efficient, high-quality lighting systems designed for various business environments.",
-    icon: "🏢",
-    image: G012.src
-  }
-];
+// const services: Service[] = [
+//   {
+//     id: "architectural",
+//     title: "Architectural Lighting",
+//     description: "Enhance the aesthetic appeal and functionality of buildings with our architectural lighting solutions that highlight structural elements and create memorable visual experiences.",
+//     icon: "🏛️",
+//     image: G004.src
+//   },
+//   {
+//     id: "interior",
+//     title: "Interior Lighting",
+//     description: "Create the perfect ambiance for any indoor space with our interior lighting designs that combine functionality, energy efficiency, and beautiful aesthetics.",
+//     icon: "🏠",
+//     image: G007.src
+//   },
+//   {
+//     id: "landscape",
+//     title: "Landscape Lighting",
+//     description: "Transform outdoor areas into enchanting environments with our landscape lighting solutions that highlight natural features and extend the usability of outdoor spaces.",
+//     icon: "🌳",
+//     image: G006.src
+//   },
+//   {
+//     id: "commercial",
+//     title: "Commercial Lighting",
+//     description: "Optimize productivity and create inviting atmospheres in commercial spaces with our efficient, high-quality lighting systems designed for various business environments.",
+//     icon: "🏢",
+//     image: G012.src
+//   }
+// ];
 
 const Services = () => {
-  const [activeService, setActiveService] = useState<string>(services[0].id);
-  
-  const activeServiceData = services.find(service => service.id === activeService) || services[0];
+  const {language} = useLanguage();
+  const servicesContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].servicesSection;
+  const [activeService, setActiveService] = useState<string>(servicesContent?.services[0].id || null);
+  const { theme} = useTheme();
+  const activeServiceData = servicesContent.services.find((service:any) => service.id === activeService) || null;
 
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">OUR SERVICES</h2>
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">Comprehensive Lighting Solutions</h3>
+          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{servicesContent.title}</h2>
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">{servicesContent.subtitle}</h3>
           <p className="text-muted-foreground">
-            We provide end-to-end lighting solutions from concept and design to installation and maintenance,
-            ensuring optimal results for every project.
+           {servicesContent.desc_one}
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="space-y-4">
-            {services.map((service) => (
+            {servicesContent.services.map((service:any) => (
               <div
                 key={service.id}
                 className={cn(
                   "p-6 rounded-lg cursor-pointer transition-all duration-300",
                   activeService === service.id 
-                    ? "bg-primary text-white shadow-lg" 
+                    ? (theme === 'dark'?("bg-primary-foreground text-white shadow-lg") :("bg-primary text-white shadow-lg") )
                     : "bg-white dark:bg-gray-800 hover:shadow-md"
                 )}
                 onClick={() => setActiveService(service.id)}
@@ -86,7 +90,7 @@ const Services = () => {
                     <h4 className="text-lg font-semibold">{service.title}</h4>
                     <p className={cn(
                       "mt-2 text-sm line-clamp-2",
-                      activeService === service.id ? "text-white/80" : "text-muted-foreground"
+                      activeService === service.id ? "text-primary-grounds" : "text-muted-foreground"
                     )}>
                       {service.description}
                     </p>
@@ -96,9 +100,9 @@ const Services = () => {
             ))}
             
             <div className="pt-4">
-              <Link href="/services">
+              <Link href={servicesContent.cta.href}>
                 <Button variant="outline" className="w-full group">
-                  View All Services
+                  {servicesContent.cta.label}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
@@ -108,7 +112,7 @@ const Services = () => {
           <div className="lg:col-span-2 relative rounded-xl overflow-hidden h-[500px]">
             <motion.img
               key={activeServiceData.id}
-              src={activeServiceData.image}
+              src={`/assets/${activeServiceData.image}`}
               alt={activeServiceData.title}
               className="w-full h-full object-cover"
               initial={{ opacity: 0 }}

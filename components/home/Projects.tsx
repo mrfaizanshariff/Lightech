@@ -7,20 +7,20 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Project, projects } from "@/lib/projectsData";
+import content from '../../public/assets/content.json';
+import { useTheme } from "next-themes";
+import { useLanguage } from "@/context/LanguageContext";
 
 
-
-const featuredProjects: Project[] = projects.filter(e=>e.featured)
-
-const categories = ["All", "Governmental Projects", 
-                    "Educational Projects", "Towers Projects", 
-                    "Hotels Projects","Projects","Restaurants",
-                   ];
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState<string>("All");
-
-  const filteredProjects = activeCategory === "All"
+  const {language} = useLanguage();
+  const featuredProjects: Project[] = projects.filter(e=>e.featured)
+  const projectsContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].projectsSection;
+  const categories = projectsContent.categories;
+  const [activeCategory, setActiveCategory] = useState<string>("Featured");
+  const {theme} = useTheme();
+  const filteredProjects = activeCategory === "Featured"
     ? featuredProjects
     : featuredProjects.filter(project => project.category === activeCategory);
 
@@ -29,26 +29,26 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <h2 className="text-sm text-primary font-medium tracking-wider mb-2">OUR PROJECTS</h2>
-            <h3 className="text-3xl md:text-4xl font-bold">Featured Projects</h3>
+            <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{projectsContent.title}</h2>
+            <h3 className="text-3xl md:text-4xl font-bold">{projectsContent.subtitle}</h3>
           </div>
           
           <div className="flex flex-wrap gap-2">
-            {categories.map((category) => (
+            {categories.map((category:any) => (
               <Button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                variant={activeCategory === category ? "default" : "outline"}
+                key={category.value}
+                onClick={() => setActiveCategory(category.value)}
+                variant={activeCategory === category.value ? "default" : "outline"}
                 size="sm"
-                className={activeCategory === category ? "" : "opacity-70"}
+                className={activeCategory === category.value ? "" : "opacity-70"}
               >
-                {category}
+                {category.label}
               </Button>
             ))}
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <motion.div 
               key={project.id}
@@ -73,13 +73,15 @@ const Projects = () => {
                 </div>
                 <h4 className="text-xl font-bold text-white mb-1">{project.title}</h4>
                 <p className="text-white/70 text-sm mb-4">{project.location}</p>
-                <Link href={`/projects/${project.id}`}>
+                <Link href={`/projects`}>
                   <Button 
                     variant="outline" 
                     size="sm" 
-                    className="text-white border-white/30 hover:bg-white hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0"
+                    className={theme==='light'?
+                      "text-black border-white/30 hover:bg-primary-foreground hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0" :
+                      "text-white border-blue/30 hover:bg-primary-foreground hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0"}
                   >
-                    View Project
+                    {projectsContent.individual_cta.label}
                   </Button>
                 </Link>
               </div>
@@ -90,7 +92,7 @@ const Projects = () => {
         <div className="mt-12 text-center">
           <Link href="/projects">
             <Button size="lg" className="group">
-              View All Projects
+              {projectsContent.cta.label}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>

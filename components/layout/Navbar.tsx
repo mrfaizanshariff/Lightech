@@ -7,12 +7,14 @@ import { Menu, X, SunMoon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./ThemeToggle";
-import logo from '../../public/assets/lightech_logo.jpg'
+import logo from '../../public/assets/lightech_logo.jpg';
+import content from '../../public/assets/content.json'
+import { useLanguage } from "@/context/LanguageContext";
 
 const Navbar = () => {
+  const {language,setLanguage} = useLanguage()
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -24,29 +26,28 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
-
-  const links = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/services", label: "Services" },
-    { href: "/projects", label: "Projects" },
-    { href: "/contact", label: "Contact" },
-  ];
-
+  const changeLanguage = ()=>{
+    if(language === "en"){
+      setLanguage("ar")
+    }else{
+      setLanguage("en")
+    }
+  }
+  const links = JSON.parse(JSON.stringify(content))[language == 'en' ? "english":"ar"].navBar;
   return (
     <header
       className={cn(
-        "fixed w-full z-50 transition-all duration-300",
+        "fixed w-full z-50 transition-all duration-300 ",
         scrolled
           ? "bg-white/90 dark:bg-black/90 backdrop-blur-md py-3 shadow-md"
           : "bg-transparent py-5"
       )}
     >
+      
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link
           href="/"
           className=""
-          onClick={closeMenu}
         >
           <Image src={logo.src} alt="Lightech Logo" width={124} height={48} className="w-[124px] h-[48px]">
 
@@ -56,7 +57,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <ul className="flex gap-8">
-            {links.map((link) => (
+            {links.map((link:any) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
@@ -68,8 +69,8 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm">
-              AR
+            <Button variant="outline" size="sm" onClick={changeLanguage}>
+              {language}
             </Button>
             <ThemeToggle />
             <Button>Contact Us</Button>
@@ -84,6 +85,7 @@ const Navbar = () => {
             size="icon"
             aria-label="Toggle Menu"
             onClick={toggleMenu}
+            className="z-50"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
@@ -98,7 +100,7 @@ const Navbar = () => {
         )}
       >
         <ul className="flex flex-col gap-6 text-center">
-          {links.map((link) => (
+          {links.map((link:any) => (
             <li key={link.href}>
               <Link
                 href={link.href}

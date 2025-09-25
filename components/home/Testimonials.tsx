@@ -5,7 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import content from '../../public/assets/content.json'
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Testimonial {
   id: number;
@@ -16,34 +17,11 @@ interface Testimonial {
   image: string;
 }
 
-const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    name: "Mohammed Al-Farsi",
-    position: "Project Manager",
-    company: "Saudi Construction Co.",
-    text: "Working with Lightech was an exceptional experience. Their team's expertise in lighting design transformed our commercial building into a stunning visual landmark. Their attention to detail and understanding of our needs exceeded our expectations.",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  },
-  {
-    id: 2,
-    name: "Sara Al-Qahtani",
-    position: "Interior Designer",
-    company: "Modern Spaces",
-    text: "Lightech provided innovative lighting solutions for our luxury residential project. Their understanding of how lighting affects spaces helped create the perfect ambiance throughout the property. Highly professional and responsive team.",
-    image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  },
-  {
-    id: 3,
-    name: "Abdullah Rahman",
-    position: "Facility Director",
-    company: "Riyadh Mall",
-    text: "We've been working with Lightech for our mall's lighting needs for over 5 years. Their maintenance service is prompt and reliable, and their lighting solutions have helped us reduce energy costs while improving the shopping experience.",
-    image: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  }
-];
-
 const Testimonials = () => {
+  const {language} = useLanguage()
+  const testimonialsContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].testimonialSection
+  
+  const testimonials: Testimonial[] = testimonialsContent.testimonials
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const nextTestimonial = () => {
@@ -60,11 +38,9 @@ const Testimonials = () => {
     <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">TESTIMONIALS</h2>
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h3>
-          <p className="text-muted-foreground">
-            Don't just take our word for it. Here's what our clients have to say about their 
-            experience working with Lightech.
+          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{testimonialsContent.title}</h2>
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">{testimonialsContent.subtitle}</h3>
+          <p className="text-muted-foreground">{testimonialsContent.description}
           </p>
         </div>
         
