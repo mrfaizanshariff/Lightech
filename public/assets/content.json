@@ -199,7 +199,158 @@
                 "phone":"+966 114664696",
                 "email":"info@lightech.com.sa"
             }
+        },
+        "aboutPage":{
+                "header": {
+                    "title": "About Lightech",
+                    "description": "A dynamic lighting company with a wide array of activities and services, powered by professional experience since 2005."
+                },
+                "ourStory": {
+                    "heading": "Our Story",
+                    "paragraphs": [
+                    "Founded in 2005, Lightech has established itself as a leading lighting company in Saudi Arabia. Our journey began with a vision to transform spaces through innovative lighting solutions.",
+                    "Powered by professional experience in lighting projects, and an additional multi-discipline background in architecture, interior, and landscape lighting, we can provide simple and seamless solutions to meet and exceed even the toughest project needs.",
+                    "At Lightech, one of our main strengths is a permanent variety of products and experienced professionals in the field. This combination has developed a host of capabilities designed to generate sophisticated turnkey lighting solutions."
+                    ],
+                    "gallery": [
+                    {
+                        "src": "G005.jpg",
+                        "alt": "Lightech office"
+                    },
+                    {
+                        "src": "G006.jpg",
+                        "alt": "Lightech project"
+                    },
+                    {
+                        "src": "G007.jpg",
+                        "alt": "Lighting design"
+                    },
+                    {
+                        "src": "G012.jpg",
+                        "alt": "Lightech office"
+                    }
+                    ]
+                },
+                "missionVisionValues": {
+                    "cards": [
+                    {
+                        "heading": "Our Mission",
+                        "body": "To transform spaces through innovative lighting solutions that enhance the beauty, functionality, and sustainability of architectural environments while exceeding our clients' expectations through excellence in design, technology, and service."
+                    },
+                    {
+                        "heading": "Our Vision",
+                        "body": "To be the leading lighting solutions provider in Saudi Arabia and beyond, recognized for our innovation, sustainability, and commitment to creating exceptional lighting experiences that inspire and transform spaces."
+                    },
+                    {
+                        "heading": "Our Values",
+                        "values": [
+                        "Innovation in Design",
+                        "Sustainability Focus",
+                        "Customer Excellence",
+                        "Professional Expertise"
+                        ]
+                    }
+                    ]
+                },
+                "strategicObjectives": {
+                    "heading": "Strategic Objectives",
+                    "items": [
+                    {
+                        "icon": "🎯",
+                        "title": "Market Leadership",
+                        "description": "Maintain and expand our position as a leading lighting solutions provider in Saudi Arabia."
+                    },
+                    {
+                        "icon": "💡",
+                        "title": "Innovation",
+                        "description": "Continuously develop and implement innovative lighting solutions and technologies."
+                    },
+                    {
+                        "icon": "🌱",
+                        "title": "Sustainability",
+                        "description": "Promote energy-efficient and environmentally sustainable lighting solutions."
+                    },
+                    {
+                        "icon": "🤝",
+                        "title": "Client Success",
+                        "description": "Ensure client satisfaction through exceptional service and support."
+                    }
+                    ]
+                }
+        },
+         "servicesPage": {
+        "header": {
+        "title": "Our Services",
+        "subtitle":
+            "Our engineers and lighting specialists offer the unique ability to provide world-class lighting, controls and renewable energy concepts."
+        },
+        "categories": [
+        {
+            "key": "lighting",
+            "title": "LIGHTING",
+            "summary":
+            "End-to-end lighting design, supply, and turnkey delivery for architectural, interior, and landscape applications.",
+            "offerings": [
+            "Concept and schematic lighting design",
+            "Lux calculations, photometric studies, and dialux deliverables",
+            "Fixture selection, specification, and value engineering",
+            "Architectural, interior, facade, and landscape lighting",
+            "Hospitality, retail, office, and industrial lighting layouts",
+            "LED retrofits and energy-efficiency upgrades",
+            "Emergency and egress lighting compliance",
+            "Supply, installation, testing, and commissioning (SITC)"
+            ],
+            "imageSrc":"E002.jpg"
+        },
+        {
+            "key": "wiringDevices",
+            "title": "WIRING DEVICES",
+            "summary":
+            "Premium wiring devices and accessories for reliable power distribution and user-centric interfaces.",
+            "offerings": [
+            "Switches, sockets, dimmers, and outlet systems",
+            "USB/Type‑C charging modules and floor boxes",
+            "Hospitality and office accessory grids",
+            "Weatherproof and IK-rated enclosures",
+            "Modular plates and finishes to match interiors",
+            "Surge, RCD/RCBO, and AFCI protection integration"
+            ],
+            "imageSrc":"P007.jpg"
+        },
+        {
+            "key": "controlSystems",
+            "title": "CONTROL SYSTEMS",
+            "summary":
+            "Smart lighting controls for comfort, efficiency, and centralized management across single sites and portfolios.",
+            "offerings": [
+            "DALI/DALI-2, 0–10V, and DMX control architectures",
+            "Wireless controls: BLE, Zigbee, Thread/Matter",
+            "Occupancy, vacancy, and daylight harvesting sensors",
+            "Scene setting, scheduling, and timeclock logic",
+            "BMS integration via BACnet/Modbus/IP",
+            "Touch panels, keypads, and mobile app control",
+            "Analytics dashboards and remote monitoring"
+            ],
+            "imageSrc":"G006.jpg"
+        },
+        {
+            "key": "renewables",
+            "title": "RENEWABLE ENERGY SYSTEMS",
+            "summary":
+            "Solar-powered solutions and hybrid systems that complement efficient lighting for sustainable facilities.",
+            "offerings": [
+            "On-grid and hybrid solar PV design and installation",
+            "Solar street and area lighting systems",
+            "Battery storage sizing and selection",
+            "Inverter, MPPT, and protection coordination",
+            "Energy audits and ROI modeling",
+            "O&M plans and performance monitoring"
+            ],
+            "imageSrc":"E004.jpg"
         }
+        ]
+  }
+
     },
     "ar":{
   "navBar": [
@@ -378,7 +529,154 @@
       "phone": "+966 114664696",
       "email": "info@lightech.com.sa"
     }
-  }
+  },
+  "aboutPage":{
+"header": {
+"title": "عن لايتك",
+"description": "شركة إضاءة ديناميكية تقدم مجموعة واسعة من الأنشطة والخدمات، مدعومة بخبرة مهنية منذ عام 2005."
+},
+"ourStory": {
+"heading": "قصتنا",
+"paragraphs": [
+"تأسست لايتك عام 2005 وقد رسخت مكانتها كشركة رائدة في مجال الإضاءة في المملكة العربية السعودية. بدأت رحلتنا برؤية تهدف إلى تحويل المساحات من خلال حلول إضاءة مبتكرة.",
+"مدعومةً بخبرة مهنية في مشاريع الإضاءة، وبخلفية متعددة التخصصات في العمارة والتصميم الداخلي وإضاءة المناظر الطبيعية، نستطيع تقديم حلول بسيطة وسلسة لتلبية وتجاوز حتى أصعب متطلبات المشاريع.",
+"في لايتك، من أبرز نقاط قوتنا التنوع الدائم في المنتجات ووجود محترفين ذوي خبرة في المجال. وقد أسهم هذا المزيج في تطوير مجموعة من القدرات المصممة لتقديم حلول إضاءة متكاملة جاهزة للتسليم."
+],
+"gallery": [
+{
+"src": "G005.jpg",
+"alt": "مكتب لايتك"
+},
+{
+"src": "G006.jpg",
+"alt": "مشروع لايتك"
+},
+{
+"src": "G007.jpg",
+"alt": "تصميم إضاءة"
+},
+{
+"src": "G012.jpg",
+"alt": "مكتب لايتك"
+}
+]
+},
+"missionVisionValues": {
+"cards": [
+{
+"heading": "رسالتنا",
+"body": "تحويل المساحات من خلال حلول إضاءة مبتكرة تعزز جمال البيئات المعمارية ووظائفها واستدامتها، مع تجاوز توقعات عملائنا عبر التميز في التصميم والتقنية والخدمة."
+},
+{
+"heading": "رؤيتنا",
+"body": "أن نكون المزود الرائد لحلول الإضاءة في المملكة العربية السعودية وما بعدها، معترفاً بنا بابتكارنا واستدامتنا والتزامنا بخلق تجارب إضاءة استثنائية تُلهم وتحوّل المساحات."
+},
+{
+"heading": "قيمنا",
+"values": [
+"الابتكار في التصميم",
+"التركيز على الاستدامة",
+"تميز العميل",
+"الخبرة المهنية"
+]
+}
+]
+},
+"strategicObjectives": {
+"heading": "الأهداف الاستراتيجية",
+"items": [
+{
+"icon": "🎯",
+"title": "الريادة السوقية",
+"description": "المحافظة على مكانتنا وتوسيعها كمزود رائد لحلول الإضاءة في المملكة العربية السعودية."
+},
+{
+"icon": "💡",
+"title": "الابتكار",
+"description": "تطوير وتنفيذ حلول وتقنيات إضاءة مبتكرة بشكل مستمر."
+},
+{
+"icon": "🌱",
+"title": "الاستدامة",
+"description": "تعزيز حلول الإضاءة الموفرة للطاقة والصديقة للبيئة."
+},
+{
+"icon": "🤝",
+"title": "نجاح العملاء",
+"description": "ضمان رضا العملاء من خلال خدمة ودعم استثنائيين."
+}
+]
+}
+  },
+
+"servicesPage": {
+"header": {
+"title": "خدماتنا",
+"subtitle": "يقدم مهندسونا وأخصائيو الإضاءة قدرة فريدة على توفير مفاهيم عالمية المستوى في الإضاءة وأنظمة التحكم والطاقة المتجددة."
+},
+"categories": [
+{
+"key": "lighting",
+"title": "الإضاءة",
+"summary": "تصميم إضاءة متكامل من البداية إلى التسليم الجاهز، يشمل التوريد والتنفيذ للتطبيقات المعمارية والداخلية وإضاءة المناظر الطبيعية.",
+"offerings": [
+"تصميم المفهوم والمخططات الأولية للإضاءة",
+"حسابات الإنارة والدراسات الضوئية والتسليمات عبر Dialux",
+"اختيار وتجهيز المواصفات والهندسة القيمية للمصابيح",
+"إضاءة معمارية وداخلية وواجهات ومناظر طبيعية",
+"مخططات إضاءة للضيافة والتجزئة والمكاتب والصناعة",
+"تحديثات LED وترقيات كفاءة الطاقة",
+"الامتثال لإضاءة الطوارئ ومخارج الهروب",
+"التوريد والتركيب والاختبار والتشغيل (SITC)"
+],
+"imageSrc": "E002.jpg"
+},
+{
+"key": "wiringDevices",
+"title": "أجهزة التمديدات الكهربائية",
+"summary": "أجهزة تمديدات كهربائية وإكسسوارات عالية الجودة لتوزيع طاقة موثوق وواجهات تركّز على تجربة المستخدم.",
+"offerings": [
+"مفاتيح ومقابس وقواطع تعتيم وأنظمة مخارج",
+"وحدات شحن USB/Type‑C وصناديق أرضية",
+"شبكات إكسسوارات للضيافة والمكاتب",
+"حواضن مقاومة للعوامل الجوية ومصنفة IK",
+"ألواح وواجهات معيارية بمظهر يتماشى مع الديكور",
+"تكامل حماية زيادة الجهد وRCD/RCBO وAFCI"
+],
+"imageSrc": "P007.jpg"
+},
+{
+"key": "controlSystems",
+"title": "أنظمة التحكم",
+"summary": "أنظمة تحكم ذكية في الإضاءة لراحة وكفاءة أعلى مع إدارة مركزية للمواقع الفردية والمحافظ متعددة المواقع.",
+"offerings": [
+"هياكل تحكم DALI/DALI-2 و0–10V وDMX",
+"تحكم لاسلكي: BLE وZigbee وThread/Matter",
+"حساسات إشغال/إخلاء واستغلال الإضاءة الطبيعية",
+"ضبط المشاهد والجداول ومنطق الساعة الزمنية",
+"تكامل مع نظم إدارة المباني عبر BACnet/Modbus/IP",
+"لوحات لمس ولوحات مفاتيح وتحكم عبر تطبيقات الجوال",
+"لوحات تحليلات ومراقبة عن بُعد"
+],
+"imageSrc": "G006.jpg"
+},
+{
+"key": "renewables",
+"title": "أنظمة الطاقة المتجددة",
+"summary": "حلول تعمل بالطاقة الشمسية وأنظمة هجينة تكمل الإضاءة عالية الكفاءة لمنشآت مستدامة.",
+"offerings": [
+"تصميم وتركيب أنظمة الطاقة الشمسية الكهروضوئية على الشبكة والهجينة",
+"أنظمة إنارة شوارع ومساحات تعمل بالطاقة الشمسية",
+"تحجيم واختيار أنظمة تخزين البطاريات",
+"تنسيق العواكس وMPPT وأنظمة الحماية",
+"تدقيقات طاقة ونمذجة العائد على الاستثمار",
+"خطط التشغيل والصيانة ومراقبة الأداء"
+],
+"imageSrc": "E004.jpg"
+}
+]
+}
+
 }
 
 }

@@ -70,7 +70,7 @@ const Navbar = () => {
           </ul>
           <div className="flex items-center gap-4">
             <Button variant="outline" size="sm" onClick={changeLanguage}>
-              {language}
+              {language === "en"? "ar":"en"}
             </Button>
             <ThemeToggle />
             <Button>Contact Us</Button>

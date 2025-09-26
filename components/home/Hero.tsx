@@ -54,14 +54,14 @@ const Hero = () => {
       </div> */}
       <div className='absolute top-0 inset-0 h-full z-100 overflow-hidden w-full'>
                     <LightRays
-                      raysOrigin="top-center"
+                      raysOrigin="top-left"
                       // raysColor="#00das"
                       raysColor={theme ==='light'?"#03045e":"#ffffff"}
                       raysSpeed={1.5}
-                      lightSpread={0.5}
-                      fadeDistance={1}
-                      rayLength={3}
-                      saturation={2}
+                      lightSpread={1.5}
+                      fadeDistance={1.5}
+                      rayLength={4}
+                      saturation={1}
                       followMouse={true}
                       mouseInfluence={0.2}
                       noiseAmount={0.2}

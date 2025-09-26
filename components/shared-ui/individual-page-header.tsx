@@ -21,7 +21,7 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
        <DotGrid
     dotSize={7}
     gap={15}
-    baseColor="#5227FF"
+    baseColor="#1a3d84"
     activeColor="#FFFFFF"
     proximity={120}
     shockRadius={250}

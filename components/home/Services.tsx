@@ -6,11 +6,6 @@ import { ArrowRight } from "lucide-react";
 import { motion }  from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import G004 from '../../public/assets/G004.jpg'
-import G005 from '../../public/assets/G005.jpg'
-import G006 from '../../public/assets/G006.jpg'
-import G007 from '../../public/assets/G007.jpg'
-import G012 from '../../public/assets/G012.jpg'
 import content from "../../public/assets/content.json";
 import { useTheme } from "next-themes";
 import { useLanguage } from "@/context/LanguageContext";
@@ -21,37 +16,6 @@ interface Service {
   icon: string;
   image: string;
 }
-
-// const services: Service[] = [
-//   {
-//     id: "architectural",
-//     title: "Architectural Lighting",
-//     description: "Enhance the aesthetic appeal and functionality of buildings with our architectural lighting solutions that highlight structural elements and create memorable visual experiences.",
-//     icon: "🏛️",
-//     image: G004.src
-//   },
-//   {
-//     id: "interior",
-//     title: "Interior Lighting",
-//     description: "Create the perfect ambiance for any indoor space with our interior lighting designs that combine functionality, energy efficiency, and beautiful aesthetics.",
-//     icon: "🏠",
-//     image: G007.src
-//   },
-//   {
-//     id: "landscape",
-//     title: "Landscape Lighting",
-//     description: "Transform outdoor areas into enchanting environments with our landscape lighting solutions that highlight natural features and extend the usability of outdoor spaces.",
-//     icon: "🌳",
-//     image: G006.src
-//   },
-//   {
-//     id: "commercial",
-//     title: "Commercial Lighting",
-//     description: "Optimize productivity and create inviting atmospheres in commercial spaces with our efficient, high-quality lighting systems designed for various business environments.",
-//     icon: "🏢",
-//     image: G012.src
-//   }
-// ];
 
 const Services = () => {
   const {language} = useLanguage();
