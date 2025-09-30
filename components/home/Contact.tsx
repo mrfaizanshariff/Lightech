@@ -3,9 +3,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Image from "next/image";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import mapPin from "../../public/icons_svg/location_pin_15.svg"
+import mailIcon from "../../public/icons_svg/email_16.svg"
+import phoneIcon from "../../public/icons_svg/phone_14.svg"
 import { z } from "zod";
 import {
   Form,
@@ -64,8 +68,8 @@ const Contact = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <MapPin className="h-6 w-6 text-primary" />
+                  <div className="bg-primary/10 p-1 rounded-full">
+                    <Image src={mapPin.src} height={60} width={60} alt="Map Pin Lightech Icon"/>
                   </div>
                   <div>
                     <p className="font-medium">{contactContent.contactInfoSection.locationTitle}</p>
@@ -76,8 +80,8 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <Mail className="h-6 w-6 text-primary" />
+                  <div className="bg-primary/10 p-1 rounded-full">
+                    <Image src={mailIcon.src} height={40} width={40} alt="E-Mail Lightech Icon"/>
                   </div>
                   <div>
                     <p className="font-medium">{contactContent.contactInfoSection.emailTitle}</p>
@@ -86,8 +90,8 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <Phone className="h-6 w-6 text-primary" />
+                  <div className="bg-primary/10 p-1 rounded-full">
+                    <Image src={phoneIcon.src} height={40} width={40} alt="Phone Lightech Icon"/>
                   </div>
                   <div>
                     <p className="font-medium">{contactContent.contactInfoSection.phoneTitle}</p>

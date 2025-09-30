@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import logo from '../../public/assets/lightech_logo.jpg';
+import logo from '../../public/icons_svg/logo_lightech_02.svg';
 import content from "../../public/assets/content.json"
 import { useLanguage } from "@/context/LanguageContext";
 const Footer = () => {

@@ -77,9 +77,10 @@ const Projects = () => {
                   <Button 
                     variant="outline" 
                     size="sm" 
-                    className={theme==='light'?
-                      "text-black border-white/30 hover:bg-primary-foreground hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0" :
-                      "text-white border-blue/30 hover:bg-primary-foreground hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0"}
+                    className={
+                      // theme==='light'?
+                      "text-black border-white/30 hover:bg-primary-foreground-muted hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0"}
+                      // "text-white border-blue/30 hover:bg-primary-foreground hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0"}
                   >
                     {projectsContent.individual_cta.label}
                   </Button>

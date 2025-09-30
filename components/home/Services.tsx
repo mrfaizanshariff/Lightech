@@ -9,6 +9,7 @@ import Link from "next/link";
 import content from "../../public/assets/content.json";
 import { useTheme } from "next-themes";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 interface Service {
   id: string;
   title: string;
@@ -49,7 +50,8 @@ const Services = () => {
                 onClick={() => setActiveService(service.id)}
               >
                 <div className="flex items-start gap-4">
-                  <div className="text-3xl">{service.icon}</div>
+                  <Image  className={activeService === service.id ? "brightness-200" : ""}
+                  src={`/icons_svg/${service.icon}`} alt={service.id} height={60} width={60}/>
                   <div>
                     <h4 className="text-lg font-semibold">{service.title}</h4>
                     <p className={cn(

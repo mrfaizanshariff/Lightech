@@ -7,7 +7,7 @@ import { Menu, X, SunMoon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./ThemeToggle";
-import logo from '../../public/assets/lightech_logo.jpg';
+import logo from '../../public/icons_svg/logo_lightect_00.svg';
 import content from '../../public/assets/content.json'
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -37,10 +37,10 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed w-full z-50 transition-all duration-300 ",
+        "fixed w-full z-50 transition-all duration-300",
         scrolled
           ? "bg-white/90 dark:bg-black/90 backdrop-blur-md py-3 shadow-md"
-          : "bg-transparent py-5"
+          : "bg-white/10 py-5"
       )}
     >
       
@@ -49,8 +49,7 @@ const Navbar = () => {
           href="/"
           className=""
         >
-          <Image src={logo.src} alt="Lightech Logo" width={124} height={48} className="w-[124px] h-[48px]">
-
+          <Image src={logo.src} alt="Lightech Logo" width={200} height={48} >
           </Image>
         </Link>
 
@@ -72,7 +71,7 @@ const Navbar = () => {
             <Button variant="outline" size="sm" onClick={changeLanguage}>
               {language === "en"? "ar":"en"}
             </Button>
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <Button>Contact Us</Button>
           </div>
         </nav>

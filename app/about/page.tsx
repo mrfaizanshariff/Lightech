@@ -66,14 +66,21 @@ export default function AboutPage() {
                 (card:any,index:number)=>{
                   return (
                     index !== 2 ?
-                  <div key={index} className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-8 rounded-xl">
+                  <div key={index} className="backdrop-blur-md shadow-xl bg-white/50 dark:bg-white/5 p-8 rounded-xl">
+                    <div className="flex items-end justify-between">
                     <h3 className="text-2xl font-bold mb-4">{card.heading}</h3>
+                    <Image src={`/icons_svg/${card.icon}`} alt={card.icon} width={60} height={60} ></Image>
+                    </div>
+                    
                     <p className="text-muted-foreground">
                       {card.body}
                     </p>
                   </div> :
-                    <div key={index} className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-8 rounded-xl">
+                    <div key={index} className="shadow-xl backdrop-blur-md bg-white/50 dark:bg-white/5 p-8 rounded-xl">
+                    <div className="flex items-end justify-between">
                     <h3 className="text-2xl font-bold mb-4">{card.heading}</h3>
+                    <Image src={`/icons_svg/${card.icon}`} alt={card.icon} width={60} height={60} ></Image>
+                    </div>
                     <ul className="space-y-3 text-muted-foreground">
                       {
                         card.values.map(
@@ -108,7 +115,7 @@ export default function AboutPage() {
                     <div key={i} className="group hover:scale-105 transition-transform duration-300">
                       <div className="backdrop-blur-md bg-white/50 dark:bg-white/5 p-6 rounded-xl h-full border border-gray-200 dark:border-gray-800">
                         <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                          <span className="text-xl">{item.icon}</span>
+                          <Image src={`/icons_svg/${item.icon}`} alt={item.icon} width={80} height={80} />
                         </div>
                         <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
                         <p className="text-muted-foreground text-sm">

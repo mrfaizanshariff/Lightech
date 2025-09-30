@@ -124,7 +124,7 @@ export default function ProjectsPage() {
                       <Button 
                         variant="outline" 
                         size="sm" 
-                        className="text-white border-white/30 hover:bg-white hover:text-primary transition-all duration-300"
+                        className="text-black border-white/30 hover:bg-white hover:text-primary transition-all duration-300"
                       >
                         View Project
                       </Button>

@@ -70,7 +70,7 @@ export default function ServicesPage() {
       {/* Scroll progress indicator */}
      
       {/* Sticky sub-navigation */}
-      <div className="sticky top-[4.5rem] z-30 border-b border-gray-200 bg-white/70 backdrop-blur dark:border-gray-800 dark:bg-gray-900/60">
+      <div className="sticky top-[5.5rem] z-30 border-b border-gray-200 bg-white/70 backdrop-blur dark:border-gray-800 dark:bg-gray-900/60">
         <nav className="container mx-auto px-4">
           <ul className="flex flex-wrap items-center gap-3 py-3">
             {navItems.map((item:any) => {
@@ -103,7 +103,7 @@ export default function ServicesPage() {
         </nav>
        <motion.div
         style={{ scaleX }}
-        className={`sticky left-0 top-[6rem] z-1000 h-1 w-full 
+        className={`sticky left-0 top-[6.5rem] z-1000 h-1 w-full 
           ${language === 'ar' ? 'origin-right':'origin-left'} bg-primary/70`}
       />
       </div>

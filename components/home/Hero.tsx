@@ -17,7 +17,7 @@ const Hero = () => {
   const {language} = useLanguage();
   const heroContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].heroSection;
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleMouseMove = (e: any) => {
       if (!containerRef.current || !lightsRef.current) return;
       
       const { left, top, width, height } = containerRef.current.getBoundingClientRect();
@@ -32,10 +32,10 @@ const Hero = () => {
       lightsRef.current.style.transform = `translate(${(xPercent - 0.5) * -20}px, ${(yPercent - 0.5) * -20}px)`;
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
+    // window.addEventListener('scroll', handleMouseMove);
     
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
+      // window.removeEventListener('scroll', handleMouseMove);
     };
   }, []);
 
@@ -45,14 +45,14 @@ const Hero = () => {
       className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-primary/5 to-transparent"
     >
       {/* Animated light effects */}
-      {/* <div 
+      <div 
         ref={lightsRef}
         className="absolute inset-0 z-0 opacity-70"
       >
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/20 filter blur-[80px]"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/50 filter blur-[80px]"></div>
         <div className="absolute bottom-1/3 right-1/4 w-72 h-72 rounded-full bg-blue-400/20 filter blur-[80px]"></div>
-      </div> */}
-      <div className='absolute top-0 inset-0 h-full z-100 overflow-hidden w-full'>
+      </div>
+      {/* <div className='absolute top-0 inset-0 h-full z-100 overflow-hidden w-full'>
                     <LightRays
                       raysOrigin="top-left"
                       // raysColor="#00das"
@@ -68,9 +68,9 @@ const Hero = () => {
                       distortion={0}
                       className="custom-rays"
                     />
-        </div>
+        </div> */}
 
-      <div className="container mx-auto px-4 z-10 pt-20">
+      <div className="container mx-auto px-6 z-10 pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="space-y-6 lg:space-y-8">
             <div className="space-y-1">
