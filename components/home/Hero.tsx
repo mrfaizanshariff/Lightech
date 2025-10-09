@@ -10,6 +10,7 @@ import content from "../../public/assets/content.json"
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useLanguage } from "@/context/LanguageContext";
+import BlurText from "../shared-ui/blur-text-animation";
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const {theme} =  useTheme();
@@ -75,10 +76,17 @@ const Hero = () => {
           <div className="space-y-6 lg:space-y-8">
             <div className="space-y-1">
               <p className="text-primary font-medium tracking-wider">{heroContent.titleDate}</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+              <BlurText
+                text={heroContent.title1 + " " + heroContent.title2}
+                delay={300}
+                animateBy="words"
+                direction="top"
+                className="text-4xl md:text-5xl lg:text-6xl leading-8 md:leading-5 font-bold tracking-tight"
+              />
+              {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
                 {heroContent.title1} <br />
                 <span className="text-primary">{heroContent.title2}</span>
-              </h1>
+              </h1> */}
             </div>
             
             <p className="text-lg text-muted-foreground">

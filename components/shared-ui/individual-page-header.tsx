@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import DotGrid from './dot-grid'
 import Image from 'next/image'
+import BlurText from './blur-text-animation'
 function IndividualPageHeader({backgroundImage,title,description}:any) {
   return (
     <section className="relative py-16 overflow-hidden">
@@ -19,15 +21,15 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
     </div>
 
     <div className="container mx-auto px-4 relative z-10">
-      <div className="max-w-3xl border-primary-foreground backdrop-blur-[2.5px] shadow-lg shad bg-[rgba(255,255,255,0.31)] p-8 rounded-2xl"
-      // style={
-      //   {
-      //     backgroundColor: "#ffffff",
-      //     backgroundColor: "linear-gradient(171deg,rgba(255, 255, 255, 0) 0%, rgba(75, 75, 214, 1) 61%, rgba(26, 61, 132, 1) 100%):
-      //   }
-      //   }
-         >
-        <h1 className="text-4xl md:text-5xl font-bold mb-6  text-black dark:text-white">{title}</h1>
+      <div className="max-w-3xl border-primary-foreground backdrop-blur-[2.5px] shadow-lg shad bg-[rgba(255,255,255,0.31)] p-8 rounded-2xl">
+         <BlurText
+                text={title}
+                delay={300}
+                animateBy="words"
+                direction="top"
+                className="text-4xl md:text-5xl font-bold mb-6  text-black dark:text-white"
+              />  
+        {/* <h1 className="text-4xl md:text-5xl font-bold mb-6  text-black dark:text-white">{title}</h1> */}
         <p className="text-xl text-black/90 dark:text-white/90">
          {description}
         </p>

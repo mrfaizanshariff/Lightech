@@ -94,7 +94,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 bg-background flex flex-col pt-24 px-4 md:hidden transition-transform duration-300 ease-in-out z-40",
+          "fixed inset-0 bg-background h-[100vh] flex flex-col pt-24 px-4 md:hidden transition-transform duration-300 ease-in-out z-40",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >

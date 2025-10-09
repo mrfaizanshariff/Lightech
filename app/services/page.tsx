@@ -170,7 +170,10 @@ export default function ServicesPage() {
               viewport={{ once: true, margin: "-10% 0px" }}
               className="grid grid-cols-1 gap-12 lg:grid-cols-3"
             >
-              <motion.div variants={fadeUp} className="lg:col-span-1">
+              <motion.div variants={{
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
+}} className="lg:col-span-1">
                 <h2 className="text-3xl font-bold">{cat.title}</h2>
                 <p className="mt-4 text-muted-foreground">{cat.summary}</p>
               </motion.div>
@@ -178,10 +181,13 @@ export default function ServicesPage() {
               <div className="lg:col-span-2">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                   <motion.div
-                    variants={fadeUp}
+                    variants={{
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
+}}
                     className="rounded-xl border border-gray-200 p-6 dark:border-gray-800"
                   >
-                    <h4 className="text-lg font-semibold">Offerings</h4>
+                    <h4 className="text-lg font-semibold">{language==='en'?"Offerings":"العروض"}</h4>
                     <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                       {cat.offerings.map((item:any) => (
                         <li key={item} className="flex items-start gap-2">

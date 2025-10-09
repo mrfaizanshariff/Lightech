@@ -89,9 +89,9 @@ const Services = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-8">
               <h3 className="text-3xl font-bold text-white mb-3">{activeServiceData.title}</h3>
               <p className="text-white/80 mb-6 max-w-2xl">{activeServiceData.description}</p>
-              <Link href={`/services#${activeServiceData.id}`}>
+              <Link href={`/services`}>
                 <Button className="group">
-                  Learn More
+                  {servicesContent.cta.label}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>

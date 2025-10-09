@@ -6,45 +6,43 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
 import { Project, projects } from "@/lib/projectsData";
-
+import content from "../../public/assets/content.json"
+import { useLanguage } from "@/context/LanguageContext";
 
 
 const allProjects: Project[] = projects.filter(e=>e.image.length>1)
 
-const categories = ["All", "Governmental Projects", 
-  "Educational Projects", "Towers Projects", 
-  "Hotels Projects","Projects","Restaurants",
-  "Car Showrooms","Retail Outlets","Corporate", "Private Residence"];
-
 export default function ProjectsPage() {
+  const {language} =  useLanguage()
+  const projectPageContent = JSON.parse(JSON.stringify(content))[language === "en"?"english":"ar"].projectsPage;
+  const categories = projectPageContent.categories
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [hoveredProject, setHoveredProject] = useState<string | null>(null);
-
   const filteredProjects = selectedCategory === "All"
     ? allProjects
     : allProjects.filter(project => project.category === selectedCategory);
-
+  console.log(projectPageContent)
   return (
     <main className="pt-20">
    
       <IndividualPageHeader backgroundImage={"url('https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"}
-        title={"Our Projects"}
-        description={"Explore our portfolio of lighting projects that showcase our expertise and innovation."}
+        title={projectPageContent.title}
+        description={projectPageContent.description}
       />
 
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap gap-4 mb-12 justify-center">
-            {categories.map((category) => (
+            {categories.map((category:any,index:number) => (
               <Button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                variant={selectedCategory === category ? "default" : "outline"}
+                key={category.value+index}
+                onClick={() => setSelectedCategory(category.value)}
+                variant={selectedCategory === category.value ? "default" : "outline"}
                 size="sm"
-                className={selectedCategory === category ? "" : "opacity-70"}
+                className={selectedCategory === category.value ? "" : "opacity-70"}
               
               >
-                {category}
+                {category.label}
               </Button>
             ))}
           </div>
@@ -121,13 +119,13 @@ export default function ProjectsPage() {
                       }}
                       transition={{ duration: 0.3 }}
                     >
-                      <Button 
+                      {/* <Button 
                         variant="outline" 
                         size="sm" 
                         className="text-black border-white/30 hover:bg-white hover:text-primary transition-all duration-300"
                       >
                         View Project
-                      </Button>
+                      </Button> */}
                     </motion.div>
                   </div>
                 </motion.div>

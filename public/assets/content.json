@@ -147,17 +147,44 @@
             "title":"CONTACT US",
             "subtitle":"Get In Touch",
             "desciption":"Have a project in mind or need lighting consultation? Reach out to us and our team will get back to you as soon as possible.",
-            "contactInfoSection":{
-                "title":"Contact Information",
-                "locationTitle":"Head Office",
-                "address":"7955 Abdulaziz Ibn Musaid Ibn Jalawi District, Sulaymaniya, Office 108, First Floor Riyadh | Center Province | Saudi Arabia",
-                "emailTitle":"Email Us",
-                "email_1":"info@lightech.com.sa",
-                "phoneTitle":"Call Us",
-                "phone_1":"+966 114664696",
-                "faxTitle":"Fax",
-                "fax_1":"+966 114612070"
-            },
+            "contactInfoSection":[
+                        {
+                        "title":"Contact Information",
+                        "locationTitle":"Head Office",
+                        "address":"7955 Abdulaziz Ibn Musaid Ibn Jalawi District, Sulaymaniya, Office 108, First Floor Riyadh | Center Province | Saudi Arabia",
+                        "emailTitle":"Email Us",
+                        "email_1":"info@lightech.com.sa",
+                        "phoneTitle":"Call Us",
+                        "phone_1":"+966 114664696",
+                        "faxTitle":"Fax",
+                        "fax_1":"+966 114612070",
+                        "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14498.99479851486!2d46.705262!3d24.701164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f030b96d36ffb%3A0x6154e91ab35a42d0!2sLightech%20-%20Light%20Technologies%20Co.%20LTD!5e0!3m2!1sen!2sus!4v1759980243115!5m2!1sen!2sus"
+                        },
+                        {
+                        "title":"Contact Information",
+                        "locationTitle":"Western Branch Office – Jeddah",
+                        "address":"7th floor, Al Dainy Plaza, Hira Street, Jeddah",
+                        "emailTitle":"Email Us",
+                        "email_1":"info@lightech.com.sa",
+                        "phoneTitle":"Call Us",
+                        "phone_1":"+966 126123346",
+                        "faxTitle":"Fax",
+                        "fax_1":"+966 126123347",
+                        "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14837.367180237647!2d39.156302!3d21.611601000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0a72f73d96d%3A0x7bb2286003359106!2sAl%20Dainy%20plaza!5e0!3m2!1sen!2sus!4v1759980962868!5m2!1sen!2sus"
+                        },
+                        {
+                        "title":"Contact Information",
+                        "locationTitle":"Eastern Branch Office – Al Khobar",
+                        "address":"Suite 307, Jarir building, Cornish Road, Al Khobar",
+                        "emailTitle":"Email Us",
+                        "email_1":"info@lightech.com.sa",
+                        "phoneTitle":"Call Us",
+                        "phone_1":"+966 138967245",
+                        "faxTitle":"Fax",
+                        "fax_1":"+966 138951258",
+                        "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7152.741790696206!2d50.21015!3d26.314487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e8f65c342fc1%3A0x1a6f7e480596c4ad!2sKhobar%20Mall!5e0!3m2!1sen!2sus!4v1759981076875!5m2!1sen!2sus"
+                        }
+        ],
             "submitBtn":{"label":"Send Message"}
         },
         "footerSection":{
@@ -352,7 +379,25 @@
             "imageSrc":"E004.jpg"
         }
         ]
-  }
+        },
+        "projectsPage":{
+            "title":"Our Projects",
+            "description":"Explore our portfolio of lighting projects that showcase our expertise and innovation.",
+            "categories" : [
+               {"label":"All","value":"All"}, 
+                {"label":"Governmental Projects","value":"Governmental Projects"}, 
+                {"label":"Educational Projects","value":"Educational Projects"}, 
+                {"label":"Towers Projects","value":"Towers Projects"}, 
+                {"label":"Hotels Projects","value":"Hotels Projects"}, 
+                {"label":"Restaurants","value":"Restaurants"},
+                {"label":"Car Showrooms","value":"Car Showrooms"},
+                {"label":"Retail Outlets","value":"Retail Outlets"},
+                {"label":"Corporate","value":"Corporate"},
+                {"label":"Private Residence","value":"Private Residence"},
+                {"label":"Other Projects","value":"Projects"}
+            ]
+
+        }
 
     },
     "ar":{
@@ -495,7 +540,8 @@
     "title": "اتصل بنا",
     "subtitle": "تواصل معنا",
     "desciption": "هل لديك مشروع في ذهنك أو تحتاج إلى استشارة إضاءة؟ تواصل معنا وسيقوم فريقنا بالرد عليك في أقرب وقت.",
-    "contactInfoSection": {
+    "contactInfoSection": [
+        {
       "title": "معلومات التواصل",
       "locationTitle": "المكتب الرئيسي",
       "address": "7955 عبدالعزيز بن مساعد بن جلوي، حي السليمانية، مكتب 108، الدور الأول الرياض | منطقة الوسطى | المملكة العربية السعودية",
@@ -504,8 +550,37 @@
       "phoneTitle": "اتصل بنا",
       "phone_1": "+966 114664696",
       "faxTitle": "فاكس",
-      "fax_1": "+966 114612070"
+      "fax_1": "+966 114612070",
+      "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14498.99479851486!2d46.705262!3d24.701164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f030b96d36ffb%3A0x6154e91ab35a42d0!2sLightech%20-%20Light%20Technologies%20Co.%20LTD!5e0!3m2!1sen!2sus!4v1759980243115!5m2!1sen!2sus"
+
     },
+        {
+      "title": "معلومات التواصل",
+      "locationTitle": "الفرع الغربي – جدة",
+      "address": "الدور السابع، الديني بلازا، شارع حراء، جدة",
+      "emailTitle": "راسلنا عبر البريد",
+      "email_1": "info@lightech.com.sa",
+      "phoneTitle": "اتصل بنا",
+      "phone_1": "+966 126123346",
+      "faxTitle": "فاكس",
+      "fax_1": "+966 126123347",
+      "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14837.367180237647!2d39.156302!3d21.611601000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0a72f73d96d%3A0x7bb2286003359106!2sAl%20Dainy%20plaza!5e0!3m2!1sen!2sus!4v1759980962868!5m2!1sen!2sus"
+
+    },
+        {
+      "title": "معلومات التواصل",
+      "locationTitle": "المكتب الفرعي الشرقي – الخبر",
+      "address": "جناح 307، بناية جرير، طريق الكورنيش، الخبر",
+      "emailTitle": "راسلنا عبر البريد",
+      "email_1": "info@lightech.com.sa",
+      "phoneTitle": "اتصل بنا",
+      "phone_1": "+966 138967245",
+      "faxTitle": "فاكس",
+      "fax_1": "+966 138951258",
+      "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7152.741790696206!2d50.21015!3d26.314487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e8f65c342fc1%3A0x1a6f7e480596c4ad!2sKhobar%20Mall!5e0!3m2!1sen!2sus!4v1759981076875!5m2!1sen!2sus"
+
+    }
+],
     "submitBtn": { "label": "إرسال الرسالة" }
   },
   "footerSection": {
@@ -614,74 +689,91 @@
 ]
 }
   },
+  "servicesPage": {
+  "header": {
+  "title": "خدماتنا",
+  "subtitle": "يقدم مهندسونا وأخصائيو الإضاءة قدرة فريدة على توفير مفاهيم عالمية المستوى في الإضاءة وأنظمة التحكم والطاقة المتجددة."
+  },
+  "categories": [
+  {
+  "key": "lighting",
+  "title": "الإضاءة",
+  "summary": "تصميم إضاءة متكامل من البداية إلى التسليم الجاهز، يشمل التوريد والتنفيذ للتطبيقات المعمارية والداخلية وإضاءة المناظر الطبيعية.",
+  "offerings": [
+  "تصميم المفهوم والمخططات الأولية للإضاءة",
+  "حسابات الإنارة والدراسات الضوئية والتسليمات عبر Dialux",
+  "اختيار وتجهيز المواصفات والهندسة القيمية للمصابيح",
+  "إضاءة معمارية وداخلية وواجهات ومناظر طبيعية",
+  "مخططات إضاءة للضيافة والتجزئة والمكاتب والصناعة",
+  "تحديثات LED وترقيات كفاءة الطاقة",
+  "الامتثال لإضاءة الطوارئ ومخارج الهروب",
+  "التوريد والتركيب والاختبار والتشغيل (SITC)"
+  ],
+  "imageSrc": "E002.jpg"
+  },
+  {
+  "key": "wiringDevices",
+  "title": "أجهزة التمديدات الكهربائية",
+  "summary": "أجهزة تمديدات كهربائية وإكسسوارات عالية الجودة لتوزيع طاقة موثوق وواجهات تركّز على تجربة المستخدم.",
+  "offerings": [
+  "مفاتيح ومقابس وقواطع تعتيم وأنظمة مخارج",
+  "وحدات شحن USB/Type‑C وصناديق أرضية",
+  "شبكات إكسسوارات للضيافة والمكاتب",
+  "حواضن مقاومة للعوامل الجوية ومصنفة IK",
+  "ألواح وواجهات معيارية بمظهر يتماشى مع الديكور",
+  "تكامل حماية زيادة الجهد وRCD/RCBO وAFCI"
+  ],
+  "imageSrc": "P007.jpg"
+  },
+  {
+  "key": "controlSystems",
+  "title": "أنظمة التحكم",
+  "summary": "أنظمة تحكم ذكية في الإضاءة لراحة وكفاءة أعلى مع إدارة مركزية للمواقع الفردية والمحافظ متعددة المواقع.",
+  "offerings": [
+  "هياكل تحكم DALI/DALI-2 و0–10V وDMX",
+  "تحكم لاسلكي: BLE وZigbee وThread/Matter",
+  "حساسات إشغال/إخلاء واستغلال الإضاءة الطبيعية",
+  "ضبط المشاهد والجداول ومنطق الساعة الزمنية",
+  "تكامل مع نظم إدارة المباني عبر BACnet/Modbus/IP",
+  "لوحات لمس ولوحات مفاتيح وتحكم عبر تطبيقات الجوال",
+  "لوحات تحليلات ومراقبة عن بُعد"
+  ],
+  "imageSrc": "G006.jpg"
+  },
+  {
+  "key": "renewables",
+  "title": "أنظمة الطاقة المتجددة",
+  "summary": "حلول تعمل بالطاقة الشمسية وأنظمة هجينة تكمل الإضاءة عالية الكفاءة لمنشآت مستدامة.",
+  "offerings": [
+  "تصميم وتركيب أنظمة الطاقة الشمسية الكهروضوئية على الشبكة والهجينة",
+  "أنظمة إنارة شوارع ومساحات تعمل بالطاقة الشمسية",
+  "تحجيم واختيار أنظمة تخزين البطاريات",
+  "تنسيق العواكس وMPPT وأنظمة الحماية",
+  "تدقيقات طاقة ونمذجة العائد على الاستثمار",
+  "خطط التشغيل والصيانة ومراقبة الأداء"
+  ],
+  "imageSrc": "E004.jpg"
+  }
+  ]
+  },
+  "projectsPage": {
+    "title": "مشاريعنا",
+    "description": "استكشف مجموعة مشاريع الإضاءة التي تبرز خبرتنا وابتكارنا.",
+    "categories": [
+        { "label": "الكل", "value": "All" },
+        { "label": "المشاريع الحكومية", "value": "Governmental Projects" },
+        { "label": "المشاريع التعليمية", "value": "Educational Projects" },
+        { "label": "مشاريع الأبراج", "value": "Towers Projects" },
+        { "label": "مشاريع الفنادق", "value": "Hotels Projects" },
+        { "label": "المطاعم", "value": "Restaurants" },
+        { "label": "معارض السيارات", "value": "Car Showrooms" },
+        { "label": "متاجر التجزئة", "value": "Retail Outlets" },
+        { "label": "الشركات", "value": "Corporate" },
+        { "label": "المساكن الخاصة", "value": "Private Residence" },
+        { "label": "مشاريع أخرى", "value": "Projects" }
+    ]
+}
 
-"servicesPage": {
-"header": {
-"title": "خدماتنا",
-"subtitle": "يقدم مهندسونا وأخصائيو الإضاءة قدرة فريدة على توفير مفاهيم عالمية المستوى في الإضاءة وأنظمة التحكم والطاقة المتجددة."
-},
-"categories": [
-{
-"key": "lighting",
-"title": "الإضاءة",
-"summary": "تصميم إضاءة متكامل من البداية إلى التسليم الجاهز، يشمل التوريد والتنفيذ للتطبيقات المعمارية والداخلية وإضاءة المناظر الطبيعية.",
-"offerings": [
-"تصميم المفهوم والمخططات الأولية للإضاءة",
-"حسابات الإنارة والدراسات الضوئية والتسليمات عبر Dialux",
-"اختيار وتجهيز المواصفات والهندسة القيمية للمصابيح",
-"إضاءة معمارية وداخلية وواجهات ومناظر طبيعية",
-"مخططات إضاءة للضيافة والتجزئة والمكاتب والصناعة",
-"تحديثات LED وترقيات كفاءة الطاقة",
-"الامتثال لإضاءة الطوارئ ومخارج الهروب",
-"التوريد والتركيب والاختبار والتشغيل (SITC)"
-],
-"imageSrc": "E002.jpg"
-},
-{
-"key": "wiringDevices",
-"title": "أجهزة التمديدات الكهربائية",
-"summary": "أجهزة تمديدات كهربائية وإكسسوارات عالية الجودة لتوزيع طاقة موثوق وواجهات تركّز على تجربة المستخدم.",
-"offerings": [
-"مفاتيح ومقابس وقواطع تعتيم وأنظمة مخارج",
-"وحدات شحن USB/Type‑C وصناديق أرضية",
-"شبكات إكسسوارات للضيافة والمكاتب",
-"حواضن مقاومة للعوامل الجوية ومصنفة IK",
-"ألواح وواجهات معيارية بمظهر يتماشى مع الديكور",
-"تكامل حماية زيادة الجهد وRCD/RCBO وAFCI"
-],
-"imageSrc": "P007.jpg"
-},
-{
-"key": "controlSystems",
-"title": "أنظمة التحكم",
-"summary": "أنظمة تحكم ذكية في الإضاءة لراحة وكفاءة أعلى مع إدارة مركزية للمواقع الفردية والمحافظ متعددة المواقع.",
-"offerings": [
-"هياكل تحكم DALI/DALI-2 و0–10V وDMX",
-"تحكم لاسلكي: BLE وZigbee وThread/Matter",
-"حساسات إشغال/إخلاء واستغلال الإضاءة الطبيعية",
-"ضبط المشاهد والجداول ومنطق الساعة الزمنية",
-"تكامل مع نظم إدارة المباني عبر BACnet/Modbus/IP",
-"لوحات لمس ولوحات مفاتيح وتحكم عبر تطبيقات الجوال",
-"لوحات تحليلات ومراقبة عن بُعد"
-],
-"imageSrc": "G006.jpg"
-},
-{
-"key": "renewables",
-"title": "أنظمة الطاقة المتجددة",
-"summary": "حلول تعمل بالطاقة الشمسية وأنظمة هجينة تكمل الإضاءة عالية الكفاءة لمنشآت مستدامة.",
-"offerings": [
-"تصميم وتركيب أنظمة الطاقة الشمسية الكهروضوئية على الشبكة والهجينة",
-"أنظمة إنارة شوارع ومساحات تعمل بالطاقة الشمسية",
-"تحجيم واختيار أنظمة تخزين البطاريات",
-"تنسيق العواكس وMPPT وأنظمة الحماية",
-"تدقيقات طاقة ونمذجة العائد على الاستثمار",
-"خطط التشغيل والصيانة ومراقبة الأداء"
-],
-"imageSrc": "E004.jpg"
-}
-]
-}
 
 }
 

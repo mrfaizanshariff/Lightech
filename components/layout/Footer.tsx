@@ -80,7 +80,7 @@ const Footer = () => {
                 footerContent.projectsLinks.map(
                 (link:string,index:number)=>{
                   return (
-                  <li>
+                  <li key={index}>
                     <Link href="/projects" className="text-white/80 dark:text-white/90 hover:text-white transition-colors">
                       {link}
                     </Link>

@@ -2,6 +2,7 @@
 import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
 import { useLanguage } from "@/context/LanguageContext";
 import { Metadata } from "next";
+import { motion } from "framer-motion";
 import content from "../../public/assets/content.json"
 import Image from "next/image";
 // export const metadata: Metadata = {
@@ -19,8 +20,12 @@ export default function AboutPage() {
         description={aboutPageContent.header.description}
       />
 
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section
+      
+      className="py-20">
+        <div 
+         
+        className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">{aboutPageContent.ourStory.heading}</h2>

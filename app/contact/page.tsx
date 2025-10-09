@@ -1,34 +1,22 @@
-import { Metadata } from "next";
+'use client'
 import Contact from "@/components/home/Contact";
 import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
+import { useLanguage } from "@/context/LanguageContext";
 
-export const metadata: Metadata = {
-  title: "Contact Us | Lightech",
-  description: "Get in touch with Lightech for professional lighting solutions. Contact our team for consultations, quotes, or inquiries.",
-};
+
 
 export default function ContactPage() {
+  const {language} = useLanguage()
   return (
     <main className="pt-20">
     
    
 
       <IndividualPageHeader backgroundImage={"url('https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"}
-        title={"Contact Us"}
-        description={" Get in touch with our team for lighting consultations, quotes, or inquiries."}
+        title={language==='en'? "Contact Us":"اتصل بنا"}
+        description={language === 'en' ? "Get in touch with our team for lighting consultations, quotes, or inquiries.":"تواصل مع فريقنا للحصول على استشارات الإضاءة أو عروض الأسعار أو الاستفسارات."}
       />
-      <Contact />
-      
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="h-[400px] rounded-xl overflow-hidden">
-            {/* This would be replaced with an actual Google Maps iframe in a production site */}
-            <div className="w-full h-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
-              <p className="text-muted-foreground">Google Maps would be embedded here</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Contact isSection={false} />
     </main>
   );
 }
