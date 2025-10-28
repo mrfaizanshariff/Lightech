@@ -52,7 +52,9 @@ const Navbar = () => {
           href="/"
           className=""
         >
-          <Image src={scrolled ? logo.src : logoLight.src} alt="Lightech Logo" width={200} height={48} >
+          <Image src={searchParams.length>1 
+                      ? scrolled  ? logo.src : logo.src 
+                      : scrolled  ? logo.src : logoLight.src} alt="Lightech Logo" width={200} height={48} >
           </Image>
         </Link>
 

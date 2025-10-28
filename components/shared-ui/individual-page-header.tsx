@@ -16,7 +16,7 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
           scale: 1,
           duration: 1,
           ease: "power2.out",
-          delay: 0.6
+          delay: 0.3
         });
     
 
@@ -33,14 +33,19 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
         </p>
       </div>
     </div>
-    <div 
-      className=" inset-0 z-0 "
-    >
-      
-      {/* </div> */}
-        <Image src="/icons_svg/electric-circuit-gray.svg" alt="animated-lightech-bg" width={100} height={100}
-        className='w-full h-full absolute top-[25%]'
-        ></Image>
+    <div className="absolute inset-0 z-0 pointer-events-none">
+      {/* background image that fades out at the bottom using CSS mask */}
+      <Image
+        src="/icons_svg/electric-circuit-gray.svg"
+        alt="animated-lightech-bg"
+        fill
+        className="object-cover"
+        style={{
+          // fade to transparent at the bottom
+          WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%)',
+          maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%)'
+        }}
+      />
     </div>
   </section>
   )
