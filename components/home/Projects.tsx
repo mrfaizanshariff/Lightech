@@ -26,11 +26,15 @@ const Projects = () => {
 
   return (
     <section className="py-20">
+          <div>
+              <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{projectsContent.title}</h1>
+          <hr className="mb-4 ml-8"/>
+      </div>
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{projectsContent.title}</h2>
-            <h3 className="text-3xl md:text-4xl font-bold">{projectsContent.subtitle}</h3>
+            {/* <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{projectsContent.title}</h2> */}
+            {/* <h3 className="text-3xl md:text-4xl font-bold">{projectsContent.subtitle}</h3> */}
           </div>
           
           <div className="flex flex-wrap gap-2">

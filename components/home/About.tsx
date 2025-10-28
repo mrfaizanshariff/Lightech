@@ -16,6 +16,10 @@ const About = () => {
   const aboutContent = JSON.parse(JSON.stringify(content))[language === 'en'?"english":"ar"].aboutSection;
   return (
     <section className="py-20 bg-white dark:bg-black">
+      <div>
+              <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{aboutContent.title}</h1>
+      <hr className="mb-4 ml-8"/>
+      </div>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
@@ -58,7 +62,6 @@ const About = () => {
           
           <div className="space-y-6">
             <div>
-              <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{aboutContent.title}</h2>
               <h3 className="text-3xl md:text-4xl font-bold mb-4">{aboutContent.subtitle}</h3>
               <div className="w-20 h-1.5 bg-primary rounded-full"></div>
             </div>
@@ -75,7 +78,7 @@ const About = () => {
               {
                 aboutContent.statsCard.map((stat:any,index:number)=>{
                   return (
-                  <div className="flex flex-col gap-1">
+                  <div key={index} className="flex flex-col gap-1">
                     <span className="text-3xl font-bold text-primary">{stat.value}</span>
                     <span className="text-sm text-muted-foreground">{stat.label}</span>
                   </div>

@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import content from "../../public/assets/content.json"
 import { useLanguage } from "@/context/LanguageContext";
+import { Ratio } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 16 },
@@ -179,7 +180,7 @@ export default function ServicesPage() {
               </motion.div>
 
               <div className="lg:col-span-2">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
                   <motion.div
                     variants={{
   hidden: { opacity: 0, y: 16 },
@@ -197,7 +198,7 @@ export default function ServicesPage() {
                       ))}
                     </ul>
                   </motion.div>
-              <div >
+              <div className="aspect-ratio-1-1">
                 <img className="w-full h-full rounded-md" src={`/assets/${cat.imageSrc}`} alt="" />
               </div>
                 </div>

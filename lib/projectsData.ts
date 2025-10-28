@@ -50,13 +50,13 @@ export const projects:Project[]=[
     },
     {
       "category": "Governmental Projects",
-      "id": "G002",
-      "image": G002.src,
-      "title": "NEOM Sindalah Island",
-      "client": "NEOM",
-      "service": "Supply of Internal Lighting Fittings",
-      "location": "Neom",
-      featured:true
+      "id": "G012",
+      "image": G012.src,
+      "title": "The St. Regis",
+      "client": " Red Sea Golbal",
+      "service": "Supply of Internal & External Lighting Fixtures",
+      "location": "Ummahat Islands, Red Sea",
+      "featured":true
     },
     {
       "category": "Governmental Projects",
@@ -68,6 +68,17 @@ export const projects:Project[]=[
       "location": "Red Sea",
       featured:true
     },
+    {
+      "category": "Governmental Projects",
+      "id": "G002",
+      "image": G002.src,
+      "title": "NEOM Sindalah Island",
+      "client": "NEOM",
+      "service": "Supply of Internal Lighting Fittings",
+      "location": "Neom",
+      featured:true
+    },
+    
     {
       "category": "Governmental Projects",
       "id": "G004",
@@ -85,7 +96,9 @@ export const projects:Project[]=[
       "title": "Saudi Arabia Railways - SAR",
       "client": "Saudi Arabia Railways",
       "service": "Supply of Standard & Custom Made Lighting Fixtures For Main Stations",
-      "location": "Western Regions"
+      "location": "Western Regions",
+      featured:true
+
     },
     {
       "category": "Governmental Projects",
@@ -94,7 +107,9 @@ export const projects:Project[]=[
       "title": "Alinma Stadium King Abdullah Sports City",
       "client": "ARAMCO",
       "service": "Supply of Façade & Sports Lighting Fittings",
-      "location": "Jeddah"
+      "location": "Jeddah",
+      featured:true
+
     },
     {
       "category": "Governmental Projects",
@@ -103,17 +118,11 @@ export const projects:Project[]=[
       "title": "Quba Mosque",
       "client": "Amana Almadinah",
       "service": "Supply of Façade Lighting Fittings",
-      "location": "Al Madinah Al Munawwarah"
+      "location": "Al Madinah Al Munawwarah",
+      featured:true
+
     },
-    {
-      "category": "Governmental Projects",
-      "id": "G008",
-      "image": "",
-      "title": "Ministry of Finance",
-      "client": "Ministry of Finance",
-      "service": "Supply of Landscape Lighting",
-      "location": "Riyadh"
-    },
+   
     {
       "category": "Governmental Projects",
       "id": "G009",
@@ -121,7 +130,29 @@ export const projects:Project[]=[
       "title": "King Salman Tunnels",
       "client": "King Salman Park Foundation",
       "service": "Supply of Tunnel, Street & Landscape Light Fittings",
-      "location": "Riyadh"
+      "location": "Riyadh",
+      // featured:true
+
+    },
+     {
+      "category": "Hotels Projects",
+      "id": "H005",
+      "image":H005.src,
+      "title": "JODP Phase 2",
+      "client": "Jabal Omar Development Co",
+      "service": "Supply of Internal & External Light Fittings",
+      "location": "Makkah Al Mukarramah",
+      featured:true
+    },
+     {
+      "category": "Governmental Projects",
+      "id": "G008",
+      "image": "",
+      "title": "Ministry of Finance",
+      "client": "Ministry of Finance",
+      "service": "Supply of Landscape Lighting",
+      "location": "Riyadh",
+      // featured:true
     },
     {
       "category": "Governmental Projects",
@@ -130,7 +161,9 @@ export const projects:Project[]=[
       "title": "King Abdulaziz International Airport",
       "client": "General Authority of Civil Aviation (GACA)",
       "service": "Supply of Indoor & Outdoor Lighting Fittings",
-      "location": "Jeddah"
+      "location": "Jeddah",
+      // featured:true
+
     },
     {
       "category": "Governmental Projects",
@@ -139,17 +172,11 @@ export const projects:Project[]=[
       "title": "King Abdullah Petroleum Studies & Research Center Residential Community - KAPSARC RC",
       "client": "ARAMCO",
       "service": "Design & Supply of Internal & External Lighting Fittings First Platinum LEED Certified Project in MENA",
-      "location": "Riyadh"
+      "location": "Riyadh",
+      // featured:true
+
     },
-    {
-      "category": "Governmental Projects",
-      "id": "G012",
-      "image": G012.src,
-      "title": "The St. Regis",
-      "client": " Red Sea Golbal",
-      "service": "Supply of Internal & External Lighting Fixtures",
-      "location": "Ummahat Islands, Red Sea"
-    },
+    
     {
       "category": "Educational Projects",
       "id": "E001",
@@ -194,8 +221,7 @@ export const projects:Project[]=[
       "title": "Golden Tower",
       "client": "Golden Tower",
       "service": "Supply of Façade Lighting Fittings",
-      "location": "Jeddah",
-      featured:true
+      "location": "Jeddah"
     },
     {
       "category": "Towers Projects",
@@ -231,8 +257,7 @@ export const projects:Project[]=[
       "title": "Marriott Hotel",
       "client": "DUR",
       "service": "Supply of Indoor & Outdoor lighting Fittings",
-      "location": "Riyadh",
-      featured:true
+      "location": "Riyadh"
     },
     {
       "category": "Hotels Projects",
@@ -243,15 +268,7 @@ export const projects:Project[]=[
       "service": "Supply of Indoor & Outdoor lighting Fittings",
       "location": "Riyadh"
     },
-    {
-      "category": "Hotels Projects",
-      "id": "H005",
-      "image":H005.src,
-      "title": "JODP Phase 2",
-      "client": "Jabal Omar Development Co",
-      "service": "Supply of Internal & External Light Fittings",
-      "location": "Makkah Al Mukarramah"
-    },
+   
     {
       "category": "Hotels Projects",
       "id": "H006",
@@ -394,8 +411,7 @@ export const projects:Project[]=[
       "title": "King Salman Social Center - KSSC",
       "client": "King Salman Social Center",
       "service": "Supply of Internal Lighting Fittings",
-      "location": "Riyadh",
-      featured:true
+      "location": "Riyadh"
     },
     {
       "category": "Projects",
@@ -404,8 +420,7 @@ export const projects:Project[]=[
       "title": "Andalusia Hospital",
       "client": "Andalusia Health",
       "service": "Supply of Architectural, Decorative & Facade Lighting Fixtures",
-      "location": "Jeddah",
-      featured:true
+      "location": "Jeddah"
     },
     {
       "category": "Projects",
@@ -468,8 +483,7 @@ export const projects:Project[]=[
       "title": "La Duree Riyadh",
       "client": "Le Duree",
       "service": "Supply of Decorative Lighting Fittings",
-      "location": "Riyadh",
-      featured:true
+      "location": "Riyadh"
     },
     {
       "category": "Restaurants",

@@ -8,13 +8,16 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./ThemeToggle";
 import logo from '../../public/icons_svg/logo_lightect_00.svg';
+import logoLight from '../../public/icons_svg/logo_lightech_02.svg';
 import content from '../../public/assets/content.json'
 import { useLanguage } from "@/context/LanguageContext";
-
+import { usePathname } from 'next/navigation'
 const Navbar = () => {
   const {language,setLanguage} = useLanguage()
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const searchParams = usePathname()
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -49,7 +52,7 @@ const Navbar = () => {
           href="/"
           className=""
         >
-          <Image src={logo.src} alt="Lightech Logo" width={200} height={48} >
+          <Image src={scrolled ? logo.src : logoLight.src} alt="Lightech Logo" width={200} height={48} >
           </Image>
         </Link>
 
@@ -60,7 +63,14 @@ const Navbar = () => {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  className={
+                    cn(" transition-colors duration-300",
+                      searchParams.length>1 
+                      ? (scrolled ?  "text-foreground/80 hover:text-primary" : "text-foreground/100 hover:text-muted-foreground")
+                      : (scrolled ? "text-foreground/80 hover:text-primary":"text-white hover:text-primary"),
+                      
+                    )
+                  }
                 >
                   {link.label}
                 </Link>
@@ -68,17 +78,17 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm" onClick={changeLanguage}>
+            <Button className="hover:bg-white hover:text-primary" size="sm" onClick={changeLanguage}>
               {language === "en"? "ar":"en"}
             </Button>
             {/* <ThemeToggle /> */}
-            <Button>Contact Us</Button>
+            <Button className="hover:bg-white hover:text-primary">Contact Us</Button>
           </div>
         </nav>
 
         {/* Mobile Menu Button */}
         <div className="flex items-center gap-4 md:hidden">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <Button
             variant="ghost"
             size="icon"

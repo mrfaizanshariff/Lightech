@@ -15,9 +15,13 @@ const Partners = () => {
 
   return (
     <section className="py-20">
+       <div>
+              <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{partnersContent.title}</h1>
+          <hr className="mb-4 ml-8"/>
+          </div>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{partnersContent.title}</h2>
+          {/* <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{partnersContent.title}</h2> */}
           <h3 className="text-3xl md:text-4xl font-bold mb-4">{partnersContent.subtitle}</h3>
           <p className="text-muted-foreground">
             {partnersContent.description}

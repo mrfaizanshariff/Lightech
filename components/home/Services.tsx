@@ -27,9 +27,13 @@ const Services = () => {
 
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <div>
+              <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{servicesContent.title}</h1>
+      <hr className="mb-4 ml-8"/>
+      </div>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{servicesContent.title}</h2>
+          {/* <h2 className="text-sm text-primary font-medium tracking-wider mb-2">{servicesContent.title}</h2> */}
           <h3 className="text-3xl md:text-4xl font-bold mb-4">{servicesContent.subtitle}</h3>
           <p className="text-muted-foreground">
            {servicesContent.desc_one}
@@ -50,7 +54,7 @@ const Services = () => {
                 onClick={() => setActiveService(service.id)}
               >
                 <div className="flex items-start gap-4">
-                  <Image  className={activeService === service.id ? "brightness-200" : ""}
+                  <Image  className={activeService === service.id ? "brightness-[10]" : ""}
                   src={`/icons_svg/${service.icon}`} alt={service.id} height={60} width={60}/>
                   <div>
                     <h4 className="text-lg font-semibold">{service.title}</h4>
