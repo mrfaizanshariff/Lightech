@@ -221,7 +221,8 @@ export const projects:Project[]=[
       "title": "Golden Tower",
       "client": "Golden Tower",
       "service": "Supply of Façade Lighting Fittings",
-      "location": "Jeddah"
+      "location": "Jeddah",
+      featured:true
     },
     {
       "category": "Towers Projects",
@@ -248,7 +249,8 @@ export const projects:Project[]=[
       "title": "Aqua Raffles",
       "client": "Aqua Raffles Hotel",
       "service": "Supply of Indoor & Outdoor Lighting Fittings",
-      "location": "Jeddah"
+      "location": "Jeddah",
+      featured:true
     },
     {
       "category": "Hotels Projects",
@@ -465,7 +467,8 @@ export const projects:Project[]=[
       "title": "Bentley Showroom",
       "client": "Bentley Co",
       "service": "Supply of Indoor Lighting Fittings",
-      "location": "Riyadh"
+      "location": "Riyadh",
+      featured:true
     },
     {
       "category": "Projects",
@@ -483,7 +486,8 @@ export const projects:Project[]=[
       "title": "La Duree Riyadh",
       "client": "Le Duree",
       "service": "Supply of Decorative Lighting Fittings",
-      "location": "Riyadh"
+      "location": "Riyadh",
+      featured:true
     },
     {
       "category": "Restaurants",

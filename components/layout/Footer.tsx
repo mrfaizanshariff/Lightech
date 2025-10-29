@@ -39,17 +39,16 @@ const Footer = () => {
             {footerContent.description}
             </p>
             <div className="flex gap-4">
+              
               <Button size="icon" variant="ghost" className="text-white hover:text-white hover:bg-white/20 rounded-full">
-                <Facebook size={20} />
-              </Button>
-              <Button size="icon" variant="ghost" className="text-white hover:text-white hover:bg-white/20 rounded-full">
-                <Twitter size={20} />
-              </Button>
-              <Button size="icon" variant="ghost" className="text-white hover:text-white hover:bg-white/20 rounded-full">
+                <Link href="https://www.instagram.com/lightech_sa" target="_blank" rel="noopener noreferrer">
                 <Instagram size={20} />
+                </Link>
               </Button>
               <Button size="icon" variant="ghost" className="text-white hover:text-white hover:bg-white/20 rounded-full">
+                <Link href="https://www.linkedin.com/company/light-technologies-co-ltd" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={20} />
+                </Link>
               </Button>
             </div>
           </div>
