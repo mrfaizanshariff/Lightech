@@ -9,7 +9,7 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
   
 
     
-        gsap.fromTo(title1Ref.current, { opacity: 0 , y:80}, {
+        gsap.fromTo(title1Ref.current, { opacity: 0 , x:-80}, {
           opacity: 1,
           y: 0,
           x: 0,

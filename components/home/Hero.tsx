@@ -52,7 +52,7 @@ const Hero = () => {
 
     const id = setInterval(() => {
       setCurrentIndex((i) => (i + 1) % images.length);
-    }, 4000);
+    }, 4500);
 
     return () => clearInterval(id);
   }, []);
@@ -101,7 +101,7 @@ const Hero = () => {
         backgroundImage: `url(${images[currentIndex].src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        transition: 'background-image 0.6s ease-in-out'
+        transition: 'background-image 1.5s ease-in-out'
       }}
     >
       {/* Overlay gradient */}
@@ -121,7 +121,7 @@ const Hero = () => {
             <p className="text-primary-foreground font-medium tracking-wider">{heroContent.titleDate}</p>
             <h1 ref={title1Ref} className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white">
               {heroContent.title1} <br />
-              <span ref={title2Ref} className="text-muted-foreground">{heroContent.title2}</span>
+              <span ref={title2Ref} className="text-primary-foreground">{heroContent.title2}</span>
             </h1>
           </div>
           
