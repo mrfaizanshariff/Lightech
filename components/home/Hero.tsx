@@ -24,23 +24,23 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [G002, G001, G012, E004];
 
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current || !lightsRef.current) return;
+  // useEffect(() => {
+  //   const handleMouseMove = (e: MouseEvent) => {
+  //     if (!containerRef.current || !lightsRef.current) return;
       
-      const { left, top, width, height } = containerRef.current.getBoundingClientRect();
-      const x = e.clientX - left;
-      const y = e.clientY - top;
+  //     const { left, top, width, height } = containerRef.current.getBoundingClientRect();
+  //     const x = e.clientX - left;
+  //     const y = e.clientY - top;
       
-      const xPercent = Math.min(Math.max(x / width, 0), 1);
-      const yPercent = Math.min(Math.max(y / height, 0), 1);
+  //     const xPercent = Math.min(Math.max(x / width, 0), 1);
+  //     const yPercent = Math.min(Math.max(y / height, 0), 1);
       
-      lightsRef.current.style.transform = `translate(${(xPercent - 0.5) * -20}px, ${(yPercent - 0.5) * -20}px)`;
-    };
+  //     lightsRef.current.style.transform = `translate(${(xPercent - 0.5) * -20}px, ${(yPercent - 0.5) * -20}px)`;
+  //   };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+  //   window.addEventListener('mousemove', handleMouseMove);
+  //   return () => window.removeEventListener('mousemove', handleMouseMove);
+  // }, []);
 
   // Rotate background image every 4 seconds
   useEffect(() => {
@@ -96,7 +96,6 @@ const Hero = () => {
 
   return (
      <section 
-      ref={containerRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage: `url(${images[currentIndex].src})`,
@@ -106,11 +105,10 @@ const Hero = () => {
       }}
     >
       {/* Overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div> */}
       
       {/* Animated light effects */}
       <div 
-        ref={lightsRef}
         className="absolute inset-0 z-0"
       >
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/20 filter blur-[100px] animate-pulse"></div>
@@ -118,7 +116,7 @@ const Hero = () => {
       </div>
 
       <div className="container mt-32 mx-auto px-4 z-10 text-center">
-        <div className="max-w-4xl mx-auto space-y-8 backdrop-blur-sm bg-white/5 p-12 rounded-2xl">
+        <div className="max-w-4xl mx-auto space-y-8 backdrop-blur-sm bg-white/10 p-12 rounded-2xl">
           <div className="space-y-4">
             <p className="text-primary-foreground font-medium tracking-wider">{heroContent.titleDate}</p>
             <h1 ref={title1Ref} className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white">

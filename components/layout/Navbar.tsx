@@ -43,7 +43,7 @@ const Navbar = () => {
         "fixed w-full z-50 transition-all duration-300",
         scrolled
           ? "bg-white/90 dark:bg-black/90 backdrop-blur-md py-3 shadow-md"
-          : "bg-white/10 py-5"
+          : "bg-white/30 py-5"
       )}
     >
       
@@ -54,7 +54,7 @@ const Navbar = () => {
         >
           <Image src={searchParams.length>1 
                       ? scrolled  ? logo.src : logo.src 
-                      : scrolled  ? logo.src : logoLight.src} alt="Lightech Logo" width={200} height={48} >
+                      : scrolled  ? logo.src : logo.src} alt="Lightech Logo" width={200} height={48} >
           </Image>
         </Link>
 
