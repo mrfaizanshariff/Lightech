@@ -33,7 +33,7 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
         </p>
       </div>
     </div>
-    <div className="absolute inset-0 z-0 pointer-events-none">
+    <div className="absolute inset-0 z-0 top-[13rem] pointer-events-none">
       {/* background image that fades out at the bottom using CSS mask */}
       <Image
         src="/icons_svg/electric-circuit-gray.svg"
@@ -42,8 +42,8 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
         className="object-cover"
         style={{
           // fade to transparent at the bottom
-          WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%)',
-          maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%)'
+          WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
+          maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)'
         }}
       />
     </div>
