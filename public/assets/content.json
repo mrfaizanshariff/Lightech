@@ -21,7 +21,7 @@
             ]
         },
         "aboutSection":{
-            "title":"ABOUT LIGHTECH",
+            "title":"About Lightech",
             "subtitle":"Lighting Experts Since 2005",
             "desc_one":"Lightech is a dynamic lighting company with a wide array of activities and services. Powered by professional experience in lighting projects, and an additional multi-discipline background in architecture, interior, and landscape lighting, we can provide simple and seamless solutions to meet and exceed even the toughest project needs.",
             "desc_two":"At Lightech, one of our main strengths is a permanent variety of products and experienced professionals in the field. This combination has developed a host of capabilities designed to generate sophisticated turnkey lighting solutions.",
@@ -32,7 +32,7 @@
             "cta":{"label":"Learn More About Us","href":"/about"}
         },
         "servicesSection":{
-            "title":"OUR SERVICES",
+            "title":"Our Services",
             "subtitle":"Comprehensive Lighting Solutions",
             "desc_one":"Our engineers and lighting specialists offer the unique ability to provide world-class lighting, controls and renewable energy concepts.",
             "services":[
@@ -75,7 +75,7 @@
             }
         },
         "projectsSection":{
-            "title":"OUR PROJECTS",
+            "title":"Our Projects",
             "subtitle":"Featured Projects",
             "categories":[
                 {"label":"Featured","value":"Featured"}, 
@@ -91,7 +91,7 @@
             
         },
         "testimonialSection":{
-            "title":"TESTIMONIALS",
+            "title":"Testimonials",
             "subtitle":"What Our Clients Say",
             "description":" Don't just take our word for it. Here's what our clients have to say about their experience working with Lightech.",
             "testimonials": [
@@ -122,7 +122,7 @@
             ]
         },
         "partnersSection":{
-            "title":"OUR PARTNERS",
+            "title":"Our Projects",
             "subtitle":"Trusted By Industry Leaders",
             "description":"We collaborate with leading brands and companies to deliver exceptional lighting solutions for projects of all sizes.",
             "features":[
@@ -144,7 +144,7 @@
             ]
         },
         "contactSection":{
-            "title":"CONTACT US",
+            "title":"Contact Us",
             "subtitle":"Get In Touch",
             "desciption":"Have a project in mind or need lighting consultation? Reach out to us and our team will get back to you as soon as possible.",
             "contactInfoSection":[

@@ -5,7 +5,7 @@ const SocialMediaPosts = () => {
   return (
     <section className='my-10 bg-gray-50 py-8 '>
          <div>
-              <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2 ltr">SOCIAL MEDIA</h1>
+              <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2 ltr">Social Media</h1>
           <hr className="mb-4 ml-8"/>
           </div>
         <div className='container mx-auto px-4 flex-col md:flex-row flex justify-around'>
