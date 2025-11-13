@@ -108,9 +108,9 @@ export default function ServicesPage() {
           ${language === 'ar' ? 'origin-right':'origin-left'} bg-primary/70`}
       />
       </div>
-
+        
       {/* Category cards grid with reveal */}
-      <section className="py-16">
+      <section className="pb-16">
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"

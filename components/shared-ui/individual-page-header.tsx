@@ -22,24 +22,30 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
 
   },[]);
   return (
-    <section className="py-16 relative overflow-hidden">
+    <section className="pt-16 overflow-hidden">
     
 
-    <div className="container mx-auto px-4 relative z-10">
-      <div className="max-w-3xl border-primary-foreground backdrop-blur-[2.5px] shadow-2xl bg-[rgba(255,255,255)] p-8 rounded-2xl">
+    <div className="w-full px-4 z-10">
+      <div className="w-full border-primary-foreground backdrop-blur-[2.5px]  bg-[rgba(255,255,255)] p-8 rounded-2xl"
+      style={{
+        WebkitBoxShadow:' 0px 25px 35px 12px rgba(0,0,0,0.3)',
+        boxShadow: '0px 25px 35px 12px rgba(0,0,0,0.3)'
+      }}    
+      >
         <h1 ref={title1Ref} className="text-4xl md:text-5xl font-bold mb-6  text-primary dark:text-white">{title}</h1>
         <p className="text-xl text-primary-muted dark:text-white/90">
          {description}
         </p>
       </div>
     </div>
-    <div>
+    <div className='relative bottom-[4vw]'>
       {/* background image that fades out at the bottom using CSS mask */}
       <Image
         src="/icons_svg/electric-circuit-blue.svg"
         alt="animated-lightech-bg"
-        fill
-        className="object-cover"
+        width={100}
+        height={100}
+        className="w-full h-auto pointer-events-none select-none"
         style={{
           // fade to transparent at the bottom
           WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',

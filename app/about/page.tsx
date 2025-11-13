@@ -20,9 +20,10 @@ export default function AboutPage() {
         description={aboutPageContent.header.description}
       />
 
+      <hr />
       <section
       
-      className="py-20">
+      className="pb-20">
         <div 
          
         className="container mx-auto px-4">

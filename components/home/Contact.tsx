@@ -54,7 +54,7 @@ const Contact = ({isSection=true}) => {
   }
 
   return (
-    <section className="py-20 bg-white dark:bg-black">
+    <section className="pb-20 bg-white dark:bg-black">
       <div>
               <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{contactContent.title}</h1>
           <hr className="mb-4 ml-8"/>
