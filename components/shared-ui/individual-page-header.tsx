@@ -22,21 +22,21 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
 
   },[]);
   return (
-    <section className="relative py-16 overflow-hidden">
+    <section className="py-16 relative overflow-hidden">
     
 
     <div className="container mx-auto px-4 relative z-10">
-      <div className="max-w-3xl border-primary-foreground backdrop-blur-[2.5px] shadow-lg shad bg-[rgba(255,255,255,0.31)] p-8 rounded-2xl">
+      <div className="max-w-3xl border-primary-foreground backdrop-blur-[2.5px] shadow-2xl bg-[rgba(255,255,255)] p-8 rounded-2xl">
         <h1 ref={title1Ref} className="text-4xl md:text-5xl font-bold mb-6  text-primary dark:text-white">{title}</h1>
         <p className="text-xl text-primary-muted dark:text-white/90">
          {description}
         </p>
       </div>
     </div>
-    <div className="absolute inset-0 z-0 top-[13rem] pointer-events-none">
+    <div>
       {/* background image that fades out at the bottom using CSS mask */}
       <Image
-        src="/icons_svg/electric-circuit-gray.svg"
+        src="/icons_svg/electric-circuit-blue.svg"
         alt="animated-lightech-bg"
         fill
         className="object-cover"
