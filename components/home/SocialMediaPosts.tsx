@@ -1,5 +1,5 @@
 import React from 'react'
-import { InstagramEmbed, LinkedInEmbed } from 'react-social-media-embed';
+import { InstagramEmbed, LinkedInEmbed,XEmbed} from 'react-social-media-embed';
 
 const SocialMediaPosts = () => {
   return (
@@ -8,22 +8,29 @@ const SocialMediaPosts = () => {
               <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2 ltr">Social Media</h1>
           <hr className="mb-4 ml-8"/>
           </div>
-        <div className='container mx-auto px-4 flex-col md:flex-row flex justify-around'>
-
+        <div className='container mx-auto px-4 grid gap-5 grid-cols-1 md:grid-cols-2  content-center'>
+        <div>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">LinkedIn</h1>
+            <LinkedInEmbed 
+            url="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7380519668966477824?collapsed=1"
+            postUrl='https://www.linkedin.com/posts/light-technologies-co-ltd_lightech-riaydh-lights-activity-7380519699681456128-arpH?utm_source=share&utm_medium=member_desktop&rcm=ACoAACqTWnEBwQDSajOY0NcqmZTct7al4Rvdtrk'
+            className='h-full w-[100%]'
+            />
+            
+        </div>
         <div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">Instagram</h1>
-            <InstagramEmbed url="https://www.instagram.com/p/DO79842jECZ/?utm_source=ig_embed&amp;utm_campaign=loading" 
+            <InstagramEmbed url="https://www.instagram.com/reel/DPa7PmjjPdB/?igsh=MWd0bzVuODJjdzZrcw==/?utm_source=ig_embed&amp;utm_campaign=loading" 
              className='h-full w-[100%]'
             />
         </div>
         <div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">LinkedIn</h1>
-            <LinkedInEmbed 
-            url="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7380519668966477824"
-            postUrl='https://www.linkedin.com/posts/light-technologies-co-ltd_lightech-riaydh-lights-activity-7380519699681456128-arpH?utm_source=share&utm_medium=member_desktop&rcm=ACoAACqTWnEBwQDSajOY0NcqmZTct7al4Rvdtrk'
-            className='h-full w-[100%]'
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">X</h1>
+            <XEmbed url="https://x.com/lightech_sa/status/1974756809228398889?s=46" 
+             className='h-full w-[100%]'
             />
         </div>
+        
         </div>
     </section>
     
