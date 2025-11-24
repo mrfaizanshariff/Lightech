@@ -1,6 +1,5 @@
 // app/page.tsx
 "use client";
-
 import { Metadata } from "next";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -18,10 +17,38 @@ import SocialMediaPosts from "@/components/home/SocialMediaPosts";
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-// export const metadata: Metadata = {
-//   title: "Lightech - Professional Lighting Solutions in Saudi Arabia",
-//   description: "Lightech provides sophisticated turnkey lighting solutions with professional expertise in architectural, interior, and landscape lighting projects since 2005.",
-// };
+// Home page metadata - Server Component would export this
+// For Client Component, metadata is handled in layout.tsx
+// If you need page-specific metadata, convert to Server Component or use route groups
+
+// JSON-LD for homepage
+const homePageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Lightech',
+  description: 'Professional lighting solutions provider with expertise in architectural, interior, and landscape lighting.',
+  url: 'https://lightech.com.sa',
+  logo: 'https://lightech.com.sa/lightech_logo.jpg',
+  image: 'https://lightech.com.sa/og-image.jpg',
+  telephone: '+966 (contact number)',
+  address: {
+    '@type': 'PostalAddress',
+    addressCountry: 'SA',
+    addressRegion: 'Saudi Arabia',
+  },
+  areaServed: ['SA'],
+  foundingDate: '2005',
+  numberOfEmployees: {
+    '@type': 'QuantitativeValue',
+    value: '50',
+  },
+  sameAs: [
+    'https://www.instagram.com/lightech_sa',
+    'https://www.linkedin.com/company/light-technologies-co-ltd',
+    'https://x.com/lightech_sa'
+  ],
+  priceRange: '$$',
+};
 
 export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -85,6 +112,10 @@ export default function Home() {
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema) }}
+      />
       <Hero />
       
       <div ref={aboutRef}>

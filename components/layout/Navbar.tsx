@@ -45,12 +45,14 @@ const Navbar = () => {
           ? "bg-white/90 dark:bg-black/90 backdrop-blur-md py-3 shadow-md"
           : "bg-white/30 py-5"
       )}
+      role="banner"
     >
       
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link
           href="/"
-          className=""
+          className="focus:outline-none focus:ring-2 focus:ring-primary rounded"
+          aria-label="Lightech - Return to home"
         >
           <Image src={searchParams.length>1 
                       ? scrolled  ? logo.src : logo.src 
@@ -59,14 +61,14 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           <ul className="flex gap-8">
             {links.map((link:any) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   className={
-                    cn(" transition-colors duration-300",
+                    cn(" transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary rounded px-2 py-1",
                       searchParams.length>1 
                       ? (scrolled ?  "text-foreground/80 hover:text-primary" : "text-foreground/100 hover:text-muted-foreground")
                       : (scrolled ? "text-foreground/80 hover:text-primary":"text-white hover:text-primary"),
@@ -94,7 +96,8 @@ const Navbar = () => {
           <Button
             variant="ghost"
             size="icon"
-            aria-label="Toggle Menu"
+            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isOpen}
             onClick={toggleMenu}
             className="z-50"
           >
@@ -109,22 +112,27 @@ const Navbar = () => {
           "fixed inset-0 bg-background h-[100vh] flex flex-col pt-24 px-4 md:hidden transition-transform duration-300 ease-in-out z-40",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
+        role="navigation"
+        aria-label="Mobile navigation"
+        aria-hidden={!isOpen}
       >
-        <ul className="flex flex-col gap-6 text-center">
-          {links.map((link:any) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className="text-xl font-medium text-foreground/80 hover:text-primary transition-colors duration-300"
-                onClick={closeMenu}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <nav>
+          <ul className="flex flex-col gap-6 text-center">
+            {links.map((link:any) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-xl font-medium text-foreground/80 hover:text-primary transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary rounded block px-2 py-1"
+                  onClick={closeMenu}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
         <div className="mt-8 flex justify-center">
-          <Button className="w-full">Contact Us</Button>
+          <Button className="w-full" aria-label="Go to contact page">Contact Us</Button>
         </div>
       </div>
     </header>

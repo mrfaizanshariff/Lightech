@@ -1,13 +1,24 @@
 'use client'
+import { Metadata } from "next";
 import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
 import { useLanguage } from "@/context/LanguageContext";
-import { Metadata } from "next";
 import { motion } from "framer-motion";
 import content from "../../public/assets/content.json"
 import Image from "next/image";
+
+// Note: Client components cannot export metadata
+// Move to server component if you need page-specific metadata
+// For now, metadata is handled in layout.tsx with template
+
+// SEO: This would be in a server component
 // export const metadata: Metadata = {
 //   title: "About Us | Lightech",
-//   description: "Learn about Lightech, a dynamic lighting company founded in 2005 with expertise in lighting projects, architecture, interior, and landscape lighting.",
+//   description: "Learn about Lightech's journey since 2005. Discover our expertise in architectural, interior, and landscape lighting solutions.",
+//   openGraph: {
+//     title: "About Lightech - Professional Lighting Solutions",
+//     description: "Founded in 2005, Lightech has been providing sophisticated lighting solutions for over 19 years with 200+ completed projects.",
+//     url: "https://lightech.com.sa/about",
+//   },
 // };
 
 export default function AboutPage() {

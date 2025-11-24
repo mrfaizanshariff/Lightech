@@ -26,9 +26,9 @@ const Services = () => {
   const activeServiceData = servicesContent.services.find((service:any) => service.id === activeService) || null;
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-gray-50 dark:bg-gray-900" aria-labelledby="services-heading">
       <div>
-              <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{servicesContent.title}</h1>
+              <h2 id="services-heading" className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{servicesContent.title}</h2>
       <hr className="mb-4 ml-8"/>
       </div>
       <div className="container mx-auto px-4">
@@ -43,19 +43,21 @@ const Services = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="space-y-4">
             {servicesContent.services.map((service:any) => (
-              <div
+              <button
                 key={service.id}
                 className={cn(
-                  "p-6 rounded-lg cursor-pointer transition-all duration-300",
+                  "p-6 rounded-lg cursor-pointer transition-all duration-300 w-full text-left focus:outline-none focus:ring-2 focus:ring-primary",
                   activeService === service.id 
                     ? (theme === 'dark'?("bg-primary-foreground text-white shadow-lg") :("bg-primary text-white shadow-lg") )
                     : "bg-white dark:bg-gray-800 hover:shadow-md"
                 )}
                 onClick={() => setActiveService(service.id)}
+                aria-selected={activeService === service.id}
+                aria-label={`${service.title}: ${service.description}`}
               >
                 <div className="flex items-start gap-4">
                   <Image  className={activeService === service.id ? "brightness-[10]" : ""}
-                  src={`/icons_svg/${service.icon}`} alt={service.id} height={60} width={60}/>
+                  src={`/icons_svg/${service.icon}`} alt="" height={60} width={60} aria-hidden="true"/>
                   <div>
                     <h4 className="text-lg font-semibold">{service.title}</h4>
                     <p className={cn(
@@ -66,20 +68,20 @@ const Services = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </button>
             ))}
             
             <div className="pt-4">
               <Link href={servicesContent.cta.href}>
-                <Button variant="outline" className="w-full group">
+                <Button variant="outline" className="w-full group" aria-label={servicesContent.cta.label}>
                   {servicesContent.cta.label}
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                 </Button>
               </Link>
             </div>
           </div>
           
-          <div className="lg:col-span-2 relative rounded-xl overflow-hidden h-[500px]">
+          <div className="lg:col-span-2 relative rounded-xl overflow-hidden h-[500px]" role="region" aria-live="polite" aria-label="Selected service details">
             <motion.img
               key={activeServiceData.id}
               src={`/assets/${activeServiceData.image}`}
@@ -94,9 +96,9 @@ const Services = () => {
               <h3 className="text-3xl font-bold text-white mb-3">{activeServiceData.title}</h3>
               <p className="text-white/80 mb-6 max-w-2xl">{activeServiceData.description}</p>
               <Link href={`/services`}>
-                <Button className="group">
+                <Button className="group" aria-label={`Learn more about ${activeServiceData.title}`}>
                   {servicesContent.cta.label}
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                 </Button>
               </Link>
             </div>

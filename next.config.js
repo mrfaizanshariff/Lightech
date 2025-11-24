@@ -5,6 +5,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
+  compress: true,
+  productionBrowserSourceMaps: false,
+  poweredByHeader: false,
 };
 
 module.exports = nextConfig;

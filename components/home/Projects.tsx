@@ -25,9 +25,9 @@ const Projects = () => {
     : featuredProjects.filter(project => project.category === activeCategory);
 
   return (
-    <section className="py-20">
+    <section className="py-20" aria-labelledby="projects-heading">
           <div>
-              <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{projectsContent.title}</h1>
+              <h2 id="projects-heading" className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{projectsContent.title}</h2>
           <hr className="mb-4 ml-8"/>
       </div>
       <div className="container mx-auto px-4">
@@ -37,7 +37,7 @@ const Projects = () => {
             {/* <h3 className="text-3xl md:text-4xl font-bold">{projectsContent.subtitle}</h3> */}
           </div>
           
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Project category filters">
             {categories.map((category:any) => (
               <Button
                 key={category.value}
@@ -45,6 +45,8 @@ const Projects = () => {
                 variant={activeCategory === category.value ? "default" : "outline"}
                 size="sm"
                 className={activeCategory === category.value ? "" : "opacity-70"}
+                aria-pressed={activeCategory === category.value}
+                aria-label={`Filter projects by ${category.label}`}
               >
                 {category.label}
               </Button>
@@ -52,7 +54,7 @@ const Projects = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="region" aria-live="polite" aria-label="Project listings">
           {filteredProjects.map((project) => (
             <motion.div 
               key={project.id}
@@ -60,12 +62,12 @@ const Projects = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
-              className="group relative rounded-xl overflow-hidden"
+              className="group relative rounded-xl overflow-hidden focus-within:ring-2 focus-within:ring-primary"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={project.image} 
-                  alt={project.title} 
+                  alt={`${project.title} - ${project.location}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
@@ -75,7 +77,7 @@ const Projects = () => {
                   <span className="text-xs text-white/80 font-medium">{project.category}</span>
                   <span className="text-xs text-white/80">{project.year}</span>
                 </div>
-                <h4 className="text-xl font-bold text-white mb-1">{project.title}</h4>
+                <h3 className="text-xl font-bold text-white mb-1">{project.title}</h3>
                 <p className="text-white/70 text-sm mb-4">{project.location}</p>
                 <Link href={`/projects`}>
                   <Button 
@@ -83,8 +85,9 @@ const Projects = () => {
                     size="sm" 
                     className={
                       // theme==='light'?
-                      "text-black border-white/30 hover:bg-primary-foreground-muted hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0"}
+                      "text-black border-white/30 hover:bg-primary-foreground-muted hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 focus:outline-none focus:ring-2 focus:ring-white"}
                       // "text-white border-blue/30 hover:bg-primary-foreground hover:text-primary transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0"}
+                    aria-label={`View details for ${project.title}`}
                   >
                     {projectsContent.individual_cta.label}
                   </Button>
@@ -96,9 +99,9 @@ const Projects = () => {
         
         <div className="mt-12 text-center">
           <Link href="/projects">
-            <Button size="lg" className="group">
+            <Button size="lg" className="group" aria-label="View all projects">
               {projectsContent.cta.label}
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </Button>
           </Link>
         </div>

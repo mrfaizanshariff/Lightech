@@ -13,21 +13,21 @@ const About = () => {
   const {language} = useLanguage()
   const aboutContent = JSON.parse(JSON.stringify(content))[language === 'en'?"english":"ar"].aboutSection;
   return (
-    <section className="py-20 bg-white dark:bg-black">
+    <section className="py-20 bg-white dark:bg-black" aria-labelledby="about-heading">
       <div>
-              <h1 className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{aboutContent.title}</h1>
+              <h2 id="about-heading" className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">{aboutContent.title}</h2>
       <hr className="mb-4 ml-8"/>
       </div>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className="absolute -top-6 -left-6 w-40 h-40 bg-primary/10 rounded-full z-0"></div>
+            <div className="absolute -top-6 -left-6 w-40 h-40 bg-primary/10 rounded-full z-0" aria-hidden="true"></div>
             <div className="relative z-10 grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="overflow-hidden rounded-lg h-48">
                   <img 
                     src={G004.src} 
-                    alt="Architectural lighting" 
+                    alt="Architectural lighting design showcase" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -43,14 +43,14 @@ const About = () => {
                 <div className="overflow-hidden rounded-lg h-64">
                   <img 
                     src={G001.src} 
-                    alt="Interior lighting" 
+                    alt="Interior lighting solutions portfolio" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="overflow-hidden rounded-lg h-48">
                   <img 
                     src={G012.src} 
-                    alt="Landscape lighting" 
+                    alt="Landscape and outdoor lighting installations" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -61,7 +61,7 @@ const About = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl md:text-4xl font-bold mb-4">{aboutContent.subtitle}</h3>
-              <div className="w-20 h-1.5 bg-primary rounded-full"></div>
+              <div className="w-20 h-1.5 bg-primary rounded-full" aria-hidden="true"></div>
             </div>
             
             <p className="text-muted-foreground">
@@ -72,12 +72,12 @@ const About = () => {
              {aboutContent.desc_two}
             </p>
             
-            <div className="grid grid-cols-2 gap-4 py-4">
+            <div className="grid grid-cols-2 gap-4 py-4" role="region" aria-label="Company achievements">
               {
                 aboutContent.statsCard.map((stat:any,index:number)=>{
                   return (
                   <div key={index} className="flex flex-col gap-1">
-                    <span className="text-3xl font-bold text-primary">{stat.value}</span>
+                    <span className="text-3xl font-bold text-primary" aria-label={stat.label}>{stat.value}</span>
                     <span className="text-sm text-muted-foreground">{stat.label}</span>
                   </div>
                   )
@@ -86,9 +86,9 @@ const About = () => {
             </div>
             
             <Link href={aboutContent.cta.href}>
-              <Button className="group">
+              <Button className="group" aria-label="Learn more about Lightech and our history">
                 {aboutContent.cta.label}
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
               </Button>
             </Link>
           </div>
