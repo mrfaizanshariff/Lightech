@@ -5,7 +5,7 @@ import { Noto_Kufi_Arabic } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import LightRays from '@/components/shared-ui/light-rays';
+import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from '@/context/LanguageContext';
 import localFont from 'next/font/local';
 
@@ -88,7 +88,7 @@ export default function RootLayout({
     name: 'Lightech',
     url: 'https://lightech.com.sa',
     logo: 'https://lightech.com.sa/lightech_logo.jpg',
-    description: 'Professional lighting solutions provider with expertise in architectural, interior, and landscape lighting.',
+    description: 'Professional lighting solutions provider in Saudi Arabia, Riyadh, Jeddah, AL khobar with expertise in architectural, interior, and landscape lighting.',
     sameAs: [
       'https://www.instagram.com/lightech_sa',
       'https://www.linkedin.com/company/light-technologies-co-ltd',
@@ -138,6 +138,7 @@ export default function RootLayout({
           <LanguageProvider>
             <Navbar />
             {children}
+            <Analytics/>
             <Footer />
           </LanguageProvider>
         </ThemeProvider>
