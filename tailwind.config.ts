@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'custom': '1000px',  // Your custom breakpoint at 1000px
+        // Or override an existing one if preferred, e.g., 'xl': '1000px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

@@ -11,7 +11,6 @@ import Projects from "@/components/home/Projects";
 import Testimonials from "@/components/home/Testimonials";
 import Partners from "@/components/home/Partners";
 import Contact from "@/components/home/Contact";
-import LightRays from "@/components/shared-ui/light-rays";
 import SocialMediaPosts from "@/components/home/SocialMediaPosts";
 
 // Register ScrollTrigger plugin
@@ -26,7 +25,7 @@ const homePageSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Lightech',
-  description: 'Professional lighting solutions provider with expertise in architectural, interior, and landscape lighting.',
+  description: 'Professional lighting solutions and lighting service provider in Riyadh, Jeddah, Saudi Arabia with expertise in architectural, interior, and landscape lighting.',
   url: 'https://lightech.com.sa',
   logo: 'https://lightech.com.sa/lightech_logo.jpg',
   image: 'https://lightech.com.sa/og-image.jpg',

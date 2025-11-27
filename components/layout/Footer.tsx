@@ -41,16 +41,16 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               
-              <Button size="icon" variant="ghost" className="text-white hover:text-white hover:bg-white/20 rounded-full focus:outline-none focus:ring-2 focus:ring-white" aria-label="Follow us on Instagram">
-                <Link href="https://www.instagram.com/lightech_sa" target="_blank" rel="noopener noreferrer">
-                <Instagram size={20} aria-hidden="true" />
-                </Link>
-              </Button>
               <Button size="icon" variant="ghost" className="text-white hover:text-white hover:bg-white/20 rounded-full focus:outline-none focus:ring-2 focus:ring-white" aria-label="Connect with us on LinkedIn">
                 <Link href="https://www.linkedin.com/company/light-technologies-co-ltd" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={20} aria-hidden="true" />
                 </Link>
               </Button>
+              <Button size="icon" variant="ghost" className="text-white hover:text-white hover:bg-white/20 rounded-full focus:outline-none focus:ring-2 focus:ring-white" aria-label="Follow us on Instagram">
+                <Link href="https://www.instagram.com/lightech_sa" target="_blank" rel="noopener noreferrer">
+                <Instagram size={20} aria-hidden="true" />
+                </Link>
+              </Button>             
               <Button size="icon" variant="ghost" className="text-white hover:text-white hover:bg-white/20 rounded-full focus:outline-none focus:ring-2 focus:ring-white" aria-label="Connect with us on LinkedIn">
                 <Link href="https://x.com/lightech_sa" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" className="bi bi-twitter-x" viewBox="0 0 20 20" id="Twitter-X--Streamline-Bootstrap" height="20" width="20">

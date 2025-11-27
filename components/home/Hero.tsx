@@ -24,24 +24,7 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [G002, G001, G012, E004];
 
-  // useEffect(() => {
-  //   const handleMouseMove = (e: MouseEvent) => {
-  //     if (!containerRef.current || !lightsRef.current) return;
-      
-  //     const { left, top, width, height } = containerRef.current.getBoundingClientRect();
-  //     const x = e.clientX - left;
-  //     const y = e.clientY - top;
-      
-  //     const xPercent = Math.min(Math.max(x / width, 0), 1);
-  //     const yPercent = Math.min(Math.max(y / height, 0), 1);
-      
-  //     lightsRef.current.style.transform = `translate(${(xPercent - 0.5) * -20}px, ${(yPercent - 0.5) * -20}px)`;
-  //   };
-
-  //   window.addEventListener('mousemove', handleMouseMove);
-  //   return () => window.removeEventListener('mousemove', handleMouseMove);
-  // }, []);
-
+  
   // Rotate background image every 4 seconds
   useEffect(() => {
     // Preload images

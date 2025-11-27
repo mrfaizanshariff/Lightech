@@ -86,7 +86,7 @@ const Navbar = () => {
               {language === "en"? "ar":"en"}
             </Button>
             {/* <ThemeToggle /> */}
-            <Button className="hover:bg-white hover:text-primary">Contact Us</Button>
+            {/* <Button className="hover:bg-white hover:text-primary">Contact Us</Button> */}
           </div>
         </nav>
 
@@ -132,7 +132,10 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="mt-8 flex justify-center">
-          <Button className="w-full" aria-label="Go to contact page">Contact Us</Button>
+          <Button className="hover:bg-white hover:text-primary" size="sm" onClick={changeLanguage}>
+              {language === "en"? "ar":"en"}
+            </Button>
+          {/* <Button className="w-full" aria-label="Go to contact page">Contact Us</Button> */}
         </div>
       </div>
     </header>

@@ -6,7 +6,6 @@ import { Check } from "lucide-react";
 import {partnerLogos} from '../../public/assets/partner_logos/index'
 import content from '../../public/assets/content.json';
 import { useLanguage } from "@/context/LanguageContext";
-import { InfiniteLogoSlider } from "../shared-ui/infinite-logo-animation";
 const Partners = () => {
   const {language}=useLanguage()
   const partnersContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].partnersSection
@@ -45,7 +44,6 @@ const Partners = () => {
             ))}
           </div>
         </div>
-        {/* <InfiniteLogoSlider logos={partnerLogos} ></InfiniteLogoSlider> */}
         
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           {
