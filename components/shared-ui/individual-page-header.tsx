@@ -26,26 +26,50 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
     
 
     <div className="w-full px-4 z-10">
-      <div className="w-full border-primary-foreground backdrop-blur-[2.5px]  bg-[rgba(255,255,255)] p-8 rounded-2xl"
-      style={{
-        WebkitBoxShadow:' 0px 25px 35px 12px rgba(0,0,0,0.3)',
-        boxShadow: '0px 25px 35px 12px rgba(0,0,0,0.3)'
-      }}    
-      >
+      <div className="w-full md:relative md:overflow-hidden md:mb-8 md:flex md:justify-end border-primary-foreground backdrop-blur-[2.5px] bg-[rgba(255,255,255)] p-8 rounded-2xl mobile-shadow">
+        <div className='md:flex-1 md:basis-[60%]'>
         <h1 ref={title1Ref} className="text-4xl md:text-5xl font-bold mb-6  text-primary dark:text-white">{title}</h1>
         <p className="text-xl text-primary-muted dark:text-white/90">
          {description}
         </p>
+        </div>
+        <div className='hidden md:block md:absolute custom:bottom-[8vw] bottom-[10vw] left-[40vw]'>
+
+        <Image
+        src="/icons_svg/electric-circuit-blue.svg"
+        alt="animated-lightech-bg"
+        width={100}
+        height={100}
+        className="w-[100vw] h-auto pointer-events-none select-none "
+        style={{
+          // fade to transparent at the bottom
+          WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
+          maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)'
+        }}
+      />
+        </div>
       </div>
     </div>
-    <div className='relative bottom-[4vw]'>
+    <style jsx>{`
+      .mobile-shadow {
+        -webkit-box-shadow: 0px 25px 35px 12px rgba(0,0,0,0.3);
+        box-shadow: 0px 25px 35px 12px rgba(0,0,0,0.3);
+      }
+      @media (min-width: 768px) {
+        .mobile-shadow {
+          -webkit-box-shadow: 0px 15px 15px 2px rgba(0,0,0,0.3);
+        box-shadow: 0px 15px 15px 2px rgba(0,0,0,0.3);
+        }
+      }
+    `}</style>
+    <div className='relative bottom-[4vw] md:hidden'>
       {/* background image that fades out at the bottom using CSS mask */}
       <Image
         src="/icons_svg/electric-circuit-blue.svg"
         alt="animated-lightech-bg"
         width={100}
         height={100}
-        className="w-full h-auto pointer-events-none select-none"
+        className="w-full h-auto pointer-events-none select-none "
         style={{
           // fade to transparent at the bottom
           WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
