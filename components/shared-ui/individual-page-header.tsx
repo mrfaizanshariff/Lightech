@@ -33,7 +33,7 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
          {description}
         </p>
         </div>
-        <div className='hidden md:block md:absolute custom:bottom-[8vw] bottom-[10vw] left-[40vw]'>
+        <div className='hidden md:block md:absolute custom:bottom-[4vw] bottom-[8vw] left-[40vw]'>
 
         <Image
         src="/icons_svg/electric-circuit-blue.svg"
