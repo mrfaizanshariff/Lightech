@@ -27,13 +27,14 @@ const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please enter a valid email address." }),
   phone: z.string().min(6, { message: "Please enter a valid phone number." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+  message: z.string().min(1, { message: "Message must be at least 1 characters." }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
 
 const Contact = ({isSection=true}) => {
   const {language} = useLanguage()
+  const [sendingMessage, setSendingMessage] = useState(false);
   const contactContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].contactSection;
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -46,11 +47,30 @@ const Contact = ({isSection=true}) => {
   });
   const [activeLocation, setActiveLocation] = useState<any>(contactContent.contactInfoSection[0]);
 
-  function onSubmit(values: FormValues) {
-    console.log(values);
-    // Here you would normally send the form data to your backend
-    form.reset();
-    // Show success message
+  async function onSubmit(values: any) {
+    setSendingMessage(true);
+    const formData = new FormData();
+    formData.append("name", values.name);
+    formData.append("email", values.email);
+    formData.append("phone", values.phone);
+    formData.append("message", values.message);
+    formData.append("access_key", "25802634-a3cc-4424-9b59-36b44c7c392f");
+    console.log(formData);
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+    const result = await response.json(); 
+    if(result.success){
+        setSendingMessage(false);
+        form.reset();
+        
+        console.log("Form submitted successfully:", result);
+      } else {
+      setSendingMessage(false);
+      form.reset();
+      console.error("Form submission error:", result);
+    }
   }
 
   return (
@@ -186,7 +206,7 @@ const Contact = ({isSection=true}) => {
                 />
                 
                 <Button type="submit" size="lg" className="w-full group">
-                  {contactContent.submitBtn.label}
+                  {sendingMessage ? contactContent.submitBtn.label2  : contactContent.submitBtn.label}
                   <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </form>
@@ -263,7 +283,7 @@ const Contact = ({isSection=true}) => {
                 />
                 
                 <Button type="submit" size="lg" className="w-full group">
-                  {contactContent.submitBtn.label}
+                  {sendingMessage ? contactContent.submitBtn.label2 : contactContent.submitBtn.label}
                   <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </form>

@@ -122,7 +122,7 @@
             ]
         },
         "partnersSection":{
-            "title":"Our Projects",
+            "title":"Our Partners",
             "subtitle":"Trusted By Industry Leaders",
             "description":"We collaborate with leading brands and companies to deliver exceptional lighting solutions for projects of all sizes.",
             "features":[
@@ -189,7 +189,7 @@
                         "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7152.741790696206!2d50.21015!3d26.314487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e8f65c342fc1%3A0x1a6f7e480596c4ad!2sKhobar%20Mall!5e0!3m2!1sen!2sus!4v1759981076875!5m2!1sen!2sus"
                         }
         ],
-            "submitBtn":{"label":"Send Message"}
+            "submitBtn":{"label":"Send Message","label2":"Sending..."}
         },
         "footerSection":{
             "description":"A dynamic lighting company with professional experience in lighting projects, architecture, interior, and landscape lighting solutions.",
@@ -588,7 +588,7 @@
 
     }
 ],
-    "submitBtn": { "label": "إرسال الرسالة" }
+    "submitBtn": { "label": "إرسال الرسالة", "label2": "إرسال" }
   },
   "footerSection": {
     "description": "شركة ديناميكية في مجال الإضاءة بخبرة مهنية في مشاريع الإضاءة، العمارة، التصميم الداخلي، وحلول إضاءة المساحات.",

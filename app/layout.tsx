@@ -5,8 +5,6 @@ import { Noto_Kufi_Arabic } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import { LanguageProvider } from '@/context/LanguageContext';
 import localFont from 'next/font/local';
 
@@ -128,6 +126,18 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
+               
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5067FWQBX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-M5067FWQBX');
+            `,
+          }}
+        />
       </head>
       <body>
         <ThemeProvider
@@ -139,8 +149,6 @@ export default function RootLayout({
           <LanguageProvider>
             <Navbar />
             {children}
-            <Analytics/>
-            <SpeedInsights/>
             <Footer />
           </LanguageProvider>
         </ThemeProvider>
