@@ -37,6 +37,9 @@ import G005 from '../public/assets/G005.jpg'
 import G006 from '../public/assets/G006.jpg'
 import G007 from '../public/assets/G007.jpg'
 import G012 from '../public/assets/G012.jpg'
+import G013 from '../public/assets/G013_KingSalmanTunnels.jpg'
+import G014 from '../public/assets/G014_AirportCity.jpg'
+import G015 from '../public/assets/G015_ministryOfFinance.jpg'
 export const projects:Project[]=[
     {
       "category": "Governmental Projects",
@@ -126,7 +129,7 @@ export const projects:Project[]=[
     {
       "category": "Governmental Projects",
       "id": "G009",
-      "image": "",
+      "image": G013.src,
       "title": "King Salman Tunnels",
       "client": "King Salman Park Foundation",
       "service": "Supply of Tunnel, Street & Landscape Light Fittings",
@@ -147,7 +150,7 @@ export const projects:Project[]=[
      {
       "category": "Governmental Projects",
       "id": "G008",
-      "image": "",
+      "image": G015.src,
       "title": "Ministry of Finance",
       "client": "Ministry of Finance",
       "service": "Supply of Landscape Lighting",
@@ -157,7 +160,7 @@ export const projects:Project[]=[
     {
       "category": "Governmental Projects",
       "id": "G010",
-      "image": "",
+      "image": G014.src,
       "title": "King Abdulaziz International Airport",
       "client": "General Authority of Civil Aviation (GACA)",
       "service": "Supply of Indoor & Outdoor Lighting Fittings",

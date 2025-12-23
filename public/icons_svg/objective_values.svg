@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.46 283.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: url(#linear-gradient-5);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="68.62" y1="150.42" x2="97.98" y2="150.42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f5495"/>
+      <stop offset="1" stop-color="#203462"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="108.85" y1="165.58" x2="138.2" y2="165.58" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="149.07" y1="174.31" x2="178.42" y2="174.31" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="189.29" y1="187.11" x2="218.65" y2="187.11" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="107.11" y1="111.51" x2="209.96" y2="111.51" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="90.97" y1="73.25" x2="121.1" y2="73.25" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="56.12" y1="206.24" x2="227.34" y2="206.24" xlink:href="#linear-gradient"/>
+  </defs>
+  <rect class="cls-7" x="68.62" y="92.2" width="29.35" height="116.43"/>
+  <rect class="cls-2" x="108.85" y="122.53" width="29.35" height="86.1"/>
+  <rect class="cls-4" x="149.07" y="139.98" width="29.35" height="68.66"/>
+  <rect class="cls-3" x="189.29" y="165.58" width="29.35" height="43.05"/>
+  <polyline class="cls-1" points="209.16 147.88 176.4 103.21 135.39 103.38 107.82 75.24"/>
+  <path class="cls-6" d="M90.97,58.04l30.13,14.43s-13.28,2.77-16.32,15.99l-13.81-30.42Z"/>
+  <rect class="cls-5" x="56.12" y="202.41" width="171.22" height="7.67"/>
+</svg>
