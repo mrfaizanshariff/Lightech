@@ -14,6 +14,7 @@ import CO001 from '../public/assets/CO001.jpg'
 import P001 from '../public/assets/P001.jpg'
 import P002 from '../public/assets/P002.jpg'
 import P003 from '../public/assets/P003.jpg'
+import P004 from '../public/assets/P004_swalim.jpg'
 import P007 from '../public/assets/P007.jpg'
 import PR001 from '../public/assets/PR001.jpg'
 import R001 from '../public/assets/R001.jpg'
@@ -41,6 +42,9 @@ import G013 from '../public/assets/G013_KingSalmanTunnels.jpg'
 import G014 from '../public/assets/G014_AirportCity.jpg'
 import G015 from '../public/assets/G015_ministryOfFinance.jpg'
 import G016 from '../public/assets/G016_KAPSARC.jpg'
+import P006 from '../public/assets/P006_cosefan.jpg'
+import P008 from '../public/assets/P008_YunbuExportRefinery.jpg'
+import H019 from '../public/assets/H019_MAAD.jpg'
 export const projects:Project[]=[
     {
       "category": "Governmental Projects",
@@ -395,7 +399,7 @@ export const projects:Project[]=[
     {
       "category": "Hotels Projects",
       "id": "H019",
-      "image": "",
+      "image": H019.src,
       "title": "MAAD Towers",
       "client": "Jabal Omar Development Co",
       "service": "Supply of Internal & External Light Fittings",
@@ -440,7 +444,7 @@ export const projects:Project[]=[
     {
       "category": "Projects",
       "id": "P004",
-      "image": "",
+      "image": P004.src,
       "title": "Swailem Tower Riyadh",
       "client": "Alswailem",
       "service": "Supply of Façade Lighting Fittings",
@@ -458,7 +462,7 @@ export const projects:Project[]=[
     {
       "category": "Projects",
       "id": "P006",
-      "image": "",
+      "image": P006.src,
       "title": "Cosefan",
       "client": "Cosefan",
       "service": "Supply of Indoor & Decorative Lighting Fittings",
@@ -477,7 +481,7 @@ export const projects:Project[]=[
     {
       "category": "Projects",
       "id": "P008",
-      "image": "",
+      "image": P008.src,
       "title": "Yunbu Export Refinery",
       "client": "ARAMCO",
       "service": "Supply of Industrial Lighting",
