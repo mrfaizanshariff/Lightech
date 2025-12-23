@@ -33,20 +33,21 @@ function IndividualPageHeader({backgroundImage,title,description}:any) {
          {description}
         </p>
         </div>
-        <div className='hidden md:block md:absolute custom:bottom-[5vw] bottom-[9vw] left-[40vw]'>
-
-        <Image
-        src="/icons_svg/electric-circuit-blue.svg"
-        alt="animated-lightech-bg"
-        width={100}
-        height={100}
-        className="w-[100vw] h-auto pointer-events-none select-none "
-        style={{
-          // fade to transparent at the bottom
-          WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
-          maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)'
-        }}
-      />
+        <div className='hidden md:block md:absolute md:bottom-[4rem] md:right-[26rem]'>
+          {/* responsive wrapper: width is percentage of parent so image scales with container */}
+          <div className="pointer-events-none select-none" style={{ width: '240%' }}>
+            <Image
+              src="/icons_svg/electric-circuit-blue.svg"
+              alt="animated-lightech-bg"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-contain"
+              style={{
+                WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
+                maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)'
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>

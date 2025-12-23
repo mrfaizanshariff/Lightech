@@ -40,6 +40,7 @@ import G012 from '../public/assets/G012.jpg'
 import G013 from '../public/assets/G013_KingSalmanTunnels.jpg'
 import G014 from '../public/assets/G014_AirportCity.jpg'
 import G015 from '../public/assets/G015_ministryOfFinance.jpg'
+import G016 from '../public/assets/G016_KAPSARC.jpg'
 export const projects:Project[]=[
     {
       "category": "Governmental Projects",
@@ -171,7 +172,7 @@ export const projects:Project[]=[
     {
       "category": "Governmental Projects",
       "id": "G011",
-      "image": "",
+      "image": G016.src,
       "title": "King Abdullah Petroleum Studies & Research Center Residential Community - KAPSARC RC",
       "client": "ARAMCO",
       "service": "Design & Supply of Internal & External Lighting Fittings First Platinum LEED Certified Project in MENA",
