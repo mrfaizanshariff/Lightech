@@ -16,8 +16,8 @@ import Image from "next/image";
 import logo from '../../public/icons_svg/logo_lightech_02.svg';
 import content from "../../public/assets/content.json"
 import { useLanguage } from "@/context/LanguageContext";
-const Footer = () => {
-  const {language} =  useLanguage()
+const Footer = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
+  const language = params?.lang
   const currentYear = new Date().getFullYear();
   const footerContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].footerSection
   return (

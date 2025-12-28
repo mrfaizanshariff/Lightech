@@ -32,8 +32,8 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-const Contact = ({isSection=true}) => {
-  const {language} = useLanguage()
+const Contact = ({isSection=true, params }: { isSection?:boolean; params: { lang: 'en' | 'ar' } }) => {
+  const language = params?.lang
   const [sendingMessage, setSendingMessage] = useState(false);
   const contactContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].contactSection;
   const form = useForm<FormValues>({

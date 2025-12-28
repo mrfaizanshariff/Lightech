@@ -18,8 +18,8 @@ interface Service {
   image: string;
 }
 
-const Services = () => {
-  const {language} = useLanguage();
+const Services = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
+  const language = params?.lang
   const servicesContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].servicesSection;
   const [activeService, setActiveService] = useState<string>(servicesContent?.services[0].id || null);
   const { theme} = useTheme();

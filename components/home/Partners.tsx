@@ -6,8 +6,8 @@ import { Check } from "lucide-react";
 import {partnerLogos} from '../../public/assets/partner_logos/index'
 import content from '../../public/assets/content.json';
 import { useLanguage } from "@/context/LanguageContext";
-const Partners = () => {
-  const {language}=useLanguage()
+const Partners = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
+  const language = params?.lang
   const partnersContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].partnersSection
   // const plogo = partnerLogos
   const features = partnersContent.features;

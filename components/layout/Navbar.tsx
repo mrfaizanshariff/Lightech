@@ -11,13 +11,13 @@ import logo from '../../public/icons_svg/logo_lightect_00.svg';
 import logoLight from '../../public/icons_svg/logo_lightech_02.svg';
 import content from '../../public/assets/content.json'
 import { useLanguage } from "@/context/LanguageContext";
-import { usePathname } from 'next/navigation'
-const Navbar = () => {
-  const {language,setLanguage} = useLanguage()
+import { usePathname, useRouter } from 'next/navigation';
+const Navbar = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
+  const language = params?.lang
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const searchParams = usePathname()
-
+  const router = useRouter();
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -30,13 +30,33 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
   const changeLanguage = ()=>{
-    if(language === "en"){
-      setLanguage("ar")
-    }else{
-      setLanguage("en")
-    }
+    searchParams.startsWith('/en') ?
+    switchToArabic()
+    :
+    switchToEnglish()
+    // if(language === "en"){
+    //   setLanguage("ar")
+    // }else{
+    //   setLanguage("en")
+    // }
   }
-  const links = JSON.parse(JSON.stringify(content))[language == 'en' ? "english":"ar"].navBar;
+
+   const switchToArabic = () => {
+    router.push(
+      searchParams.startsWith('/en')
+        ? searchParams.replace(/^\/en/, '/ar')
+        : `/ar${searchParams}`
+    );
+  };
+
+  const switchToEnglish = () => {
+    router.push(
+      searchParams.startsWith('/ar')
+        ? searchParams.replace(/^\/ar/, '/en')
+        : `/en${searchParams}`
+    );
+  };
+  const links = JSON.parse(JSON.stringify(content))[language === "en" ? "english":"ar"].navBar;
   return (
     <header
       className={cn(
@@ -133,7 +153,8 @@ const Navbar = () => {
         </nav>
         <div className="mt-8 flex justify-center">
           <Button className="hover:bg-white hover:text-primary" size="sm" onClick={changeLanguage}>
-              {language === "en"? "ar":"en"}
+              {/* {language === "en"? "en":"ar"} */}
+              {language}
             </Button>
           {/* <Button className="w-full" aria-label="Go to contact page">Contact Us</Button> */}
         </div>

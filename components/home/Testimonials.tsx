@@ -17,8 +17,8 @@ interface Testimonial {
   image: string;
 }
 
-const Testimonials = () => {
-  const {language} = useLanguage()
+const Testimonials =({ params }: { params: { lang: 'en' | 'ar' } }) => {
+  const language = params?.lang
   const testimonialsContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].testimonialSection
   
   const testimonials: Testimonial[] = testimonialsContent.testimonials

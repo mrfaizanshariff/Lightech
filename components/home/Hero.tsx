@@ -12,8 +12,8 @@ import G012 from "../../public/assets/G012_US.jpg"
 import content from "../../public/assets/content.json"
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-const Hero = () => {
-  const {language} = useLanguage();
+const Hero = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
+  const language = params?.lang
   const heroContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].heroSection;
   const containerRef = useRef<HTMLDivElement>(null);
   const lightsRef = useRef<HTMLDivElement>(null);

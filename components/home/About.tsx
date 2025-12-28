@@ -8,9 +8,8 @@ import G012 from '../../public/assets/G012.jpg'
 import G004 from '../../public/assets/G004.jpg'
 import content from "../../public/assets/content.json"
 import { useLanguage } from "@/context/LanguageContext";
-const About = () => {
-
-  const {language} = useLanguage()
+const About = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
+  const language = params?.lang
   const aboutContent = JSON.parse(JSON.stringify(content))[language === 'en'?"english":"ar"].aboutSection;
   return (
     <section className="py-20 bg-white dark:bg-black" aria-labelledby="about-heading">

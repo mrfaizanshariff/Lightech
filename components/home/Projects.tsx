@@ -13,8 +13,8 @@ import { useLanguage } from "@/context/LanguageContext";
 
 
 
-const Projects = () => {
-  const {language} = useLanguage();
+const Projects = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
+  const language = params?.lang
   const featuredProjects: Project[] = projects.filter(e=>e.featured)
   const projectsContent = JSON.parse(JSON.stringify(content))[language==="en"?"english":"ar"].projectsSection;
   const categories = projectsContent.categories;

@@ -1,33 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ===================== -->
+  <!-- English (Primary) -->
+  <!-- ===================== -->
+
   <url>
-    <loc>https://lightech.com.sa</loc>
-    <lastmod>2025-11-25</lastmod>
+    <loc>https://lightech.com.sa/en/</loc>
+    <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-SA" href="https://lightech.com.sa/en/" />
+    <xhtml:link rel="alternate" hreflang="ar-SA" href="https://lightech.com.sa/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lightech.com.sa/en/" />
   </url>
+
   <url>
-    <loc>https://lightech.com.sa/about</loc>
-    <lastmod>2025-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lightech.com.sa/services</loc>
-    <lastmod>2025-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://lightech.com.sa/projects</loc>
-    <lastmod>2025-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://lightech.com.sa/contact</loc>
-    <lastmod>2025-11-25</lastmod>
+    <loc>https://lightech.com.sa/en/about/</loc>
+    <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-SA" href="https://lightech.com.sa/en/about/" />
+    <xhtml:link rel="alternate" hreflang="ar-SA" href="https://lightech.com.sa/ar/about/" />
   </url>
+
+  <url>
+    <loc>https://lightech.com.sa/en/services/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-SA" href="https://lightech.com.sa/en/services/" />
+    <xhtml:link rel="alternate" hreflang="ar-SA" href="https://lightech.com.sa/ar/services/" />
+  </url>
+
+  <url>
+    <loc>https://lightech.com.sa/en/projects/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-SA" href="https://lightech.com.sa/en/projects/" />
+    <xhtml:link rel="alternate" hreflang="ar-SA" href="https://lightech.com.sa/ar/projects/" />
+  </url>
+
+  <url>
+    <loc>https://lightech.com.sa/en/contact/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en-SA" href="https://lightech.com.sa/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="ar-SA" href="https://lightech.com.sa/ar/contact/" />
+  </url>
+
+  <!-- ===================== -->
+  <!-- Arabic (Secondary) -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://lightech.com.sa/ar/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://lightech.com.sa/ar/about/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://lightech.com.sa/ar/services/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lightech.com.sa/ar/projects/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lightech.com.sa/ar/contact/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
