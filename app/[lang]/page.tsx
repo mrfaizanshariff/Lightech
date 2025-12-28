@@ -27,9 +27,9 @@ const homePageSchema = {
   name: 'Lightech',
   description: 'Professional lighting solutions and lighting service provider in Riyadh, Jeddah, Saudi Arabia with expertise in architectural, interior, and landscape lighting.',
   url: 'https://lightech.com.sa',
-  logo: 'https://lightech.com.sa/lightech_logo.jpg',
-  image: 'https://lightech.com.sa/og-image.jpg',
-  telephone: '+966 (contact number)',
+  logo: 'https://lightech.com.sa/_next/static/media/logo_lightect_00.999146cd.svg',
+  image: 'https://lightech.com.sa/_next/static/media/logo_lightect_00.999146cd.svg',
+  telephone: '+966 114664696',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'SA',
@@ -39,7 +39,7 @@ const homePageSchema = {
   foundingDate: '2005',
   numberOfEmployees: {
     '@type': 'QuantitativeValue',
-    value: '50',
+    value: '100',
   },
   sameAs: [
     'https://www.instagram.com/lightech_sa',
