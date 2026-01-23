@@ -1,10 +1,13 @@
-'use client'
 import Contact from "@/components/home/Contact";
 import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
-import { useLanguage } from "@/context/LanguageContext";
 
 
-
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'ar' },
+  ];
+}
 export default function ContactPage({ params }: { params: { lang: 'en' | 'ar' } }) {
   const language = params.lang
   return (

@@ -10,41 +10,50 @@ export async function generateMetadata({
 
   return {
     title: isArabic
-      ?' مشاريع الإضاءة في السعودية | أعمال وتصاميم إضاءة احترافية – لايتك'
-
-      : "Lighting Projects in Saudi Arabia | Architectural & Commercial Portfolio – Lightech",
+      ? 'مشاريع الإضاءة | لايتك - +200 مشروع إضاءة معمارية وداخلية في السعودية'
+      : 'Lighting Projects | Lightech - 200+ Architectural & Interior Lighting Projects in Saudi Arabia',
 
     description: isArabic
-      ? 'استعرض مشاريع لايتك في الإضاءة المعمارية والتجارية وإضاءة المساحات الخارجية المنفذة في مختلف مناطق المملكة العربية السعودية.'
-      : "Explore Lightech’s lighting projects across Saudi Arabia, including architectural, commercial, and outdoor lighting installations delivered across Riyadh and major cities.",
+      ? 'اكتشف محفظة مشاريع لايتك: +200 مشروع إضاءة معمارية وداخلية منجز في الرياض وجدة والدمام. مشاريع تجارية، سكنية، حكومية، وضيافة. شاهد أعمالنا في الإضاءة المعمارية، الواجهات، والإضاءة الداخلية.'
+      : 'Discover Lightech project portfolio: 200+ completed architectural and interior lighting projects in Riyadh, Jeddah, and Dammam. Commercial, residential, government, and hospitality projects. View our work in architectural lighting, facades, and interior lighting.',
+
+    keywords: isArabic
+      ? [
+          'مشاريع إضاءة السعودية',
+          'مشاريع لايتك',
+          'مشاريع إضاءة معمارية',
+          'مشاريع إضاءة داخلية',
+          'مشاريع إضاءة الرياض',
+          'مشاريع إضاءة جدة',
+          'مشاريع إضاءة الدمام',
+          'معرض أعمال إضاءة',
+          'مشاريع إضاءة تجارية',
+          'مشاريع إضاءة سكنية',
+        ]
+      : [
+          'lighting projects Saudi Arabia',
+          'Lightech projects',
+          'architectural lighting projects',
+          'interior lighting projects',
+          'lighting projects Riyadh',
+          'lighting projects Jeddah',
+          'lighting projects Dammam',
+          'lighting portfolio',
+          'commercial lighting projects',
+          'residential lighting projects',
+        ],
 
     openGraph: {
       title: isArabic
-        ?'مشاريع الإضاءة في السعودية | أعمال وتصاميم إضاءة احترافية – لايتك'
-        : 'Lighting Projects in Saudi Arabia | Architectural & Commercial Portfolio – Lightech',
+        ? 'مشاريع الإضاءة | لايتك'
+        : 'Lighting Projects | Lightech',
       description: isArabic
-        ? 'استعرض مشاريع لايتك في الإضاءة المعمارية والتجارية وإضاءة المساحات الخارجية المنفذة في مختلف مناطق المملكة العربية السعودية.'
-        : 'Explore Lightech’s lighting projects across Saudi Arabia, including architectural, commercial, and outdoor lighting installations delivered across Riyadh and major cities.',
+        ? '+200 مشروع إضاءة منجز في السعودية'
+        : '200+ completed lighting projects in Saudi Arabia',
       url: `${baseUrl}/${params.lang}${path}`,
       type: 'website',
     },
-    keywords: isArabic ? [
-     ' مشاريع إضاءة السعودية',
-     ' أعمال إضاءة',
-     ' تنفيذ إضاءة مشاريع',
-     ' تصاميم إضاءة',
-     ' إضاءة معمارية',
-     ' مشاريع لايتك'
 
-    ] : [
-      'lighting projects Saudi Arabia',
-      'lighting installations KSA',
-      'architectural lighting projects',
-      'commercial lighting projects',
-      'lighting design portfolio Saudi Arabia',
-      'Lightech projects'
-
-    ],
     alternates: {
       canonical: `${baseUrl}/${params.lang}${path}`,
       languages: {

@@ -1,11 +1,11 @@
 {
     "english":{
         "navBar":[
-            { "href": "/", "label": "Home" },
-            { "href": "/about", "label": "About" },
-            { "href": "/services", "label": "Services" },
-            { "href": "/projects", "label": "Projects" },
-            { "href": "/contact", "label": "Contact" }
+            { "href": "/en/", "label": "Home" },
+            { "href": "/en/about", "label": "About" },
+            { "href": "/en/services", "label": "Services" },
+            { "href": "/en/projects", "label": "Projects" },
+            { "href": "/en/contact", "label": "Contact" }
         ],
         "heroSection":{
             "titleDate":"Since 2005",
@@ -197,23 +197,23 @@
             "quickLinks":[
                 {
                     "label":"Home",
-                    "href":"/"
+                    "href":"/en/"
                 },
                 {
                     "label":"About Us",
-                    "href":"/about"
+                    "href":"/en/about"
                 },
                 {
                     "label":"Services",
-                    "href":"/services"
+                    "href":"/en/services"
                 },
                 {
                     "label":"Projects",
-                    "href":"/projects"
+                    "href":"/en/projects"
                 },
                 {
                     "label":"Contact",
-                    "href":"/contact"
+                    "href":"/en/contact"
                 }
             ],
             "links_2":"Projects",
@@ -406,11 +406,11 @@
     },
     "ar":{
   "navBar": [
-    { "href": "/", "label": "الرئيسية" },
-    { "href": "/about", "label": "من نحن" },
-    { "href": "/services", "label": "خدماتنا" },
-    { "href": "/projects", "label": "مشاريعنا" },
-    { "href": "/contact", "label": "اتصل بنا" }
+    { "href": "/ar/", "label": "الرئيسية" },
+    { "href": "/ar/about", "label": "من نحن" },
+    { "href": "/ar/services", "label": "خدماتنا" },
+    { "href": "/ar/projects", "label": "مشاريعنا" },
+    { "href": "/ar/contact", "label": "اتصل بنا" }
   ],
   "heroSection": {
     "titleDate": "منذ عام 2005",
@@ -594,11 +594,11 @@
     "description": "شركة ديناميكية في مجال الإضاءة بخبرة مهنية في مشاريع الإضاءة، العمارة، التصميم الداخلي، وحلول إضاءة المساحات.",
     "links_1": "روابط سريعة",
     "quickLinks": [
-      { "label": "الرئيسية", "href": "/" },
-      { "label": "من نحن", "href": "/about" },
-      { "label": "خدماتنا", "href": "/services" },
-      { "label": "مشاريعنا", "href": "/projects" },
-      { "label": "اتصل بنا", "href": "/contact" }
+      { "label": "الرئيسية", "href": "/ar/" },
+      { "label": "من نحن", "href": "/ar/about" },
+      { "label": "خدماتنا", "href": "/ar/services" },
+      { "label": "مشاريعنا", "href": "/ar/projects" },
+      { "label": "اتصل بنا", "href": "/ar/contact" }
     ],
     "links_2": "المشاريع",
     "projectsLinks": [

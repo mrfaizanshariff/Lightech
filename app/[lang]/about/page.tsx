@@ -1,10 +1,15 @@
-'use client'
+// 'use client'
 
 import IndividualPageHeader from "@/components/shared-ui/individual-page-header";
 import content from "../../../public/assets/content.json"
 import Image from "next/image";
 
-
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'ar' },
+  ];
+}
 
 export default function AboutPage({ params }: { params: { lang: 'en' | 'ar' } }) {
   const language = params.lang

@@ -6,7 +6,8 @@ import { useEffect, useMemo, useState } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import content from "../../../public/assets/content.json"
 import { useLanguage } from "@/context/LanguageContext";
-import { Ratio } from "lucide-react";
+import { ArrowRight, Ratio } from "lucide-react";
+import Link from "next/link";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 16 },
@@ -135,7 +136,9 @@ export default function ServicesPage({ params }: { params: { lang: 'en' | 'ar' }
                 whileHover={{ scale: 1.01 }}
                 whileTap={{ scale: 0.99 }}
               >
-                <h3 className="text-lg font-semibold tracking-wide">{cat.title}</h3>
+                <h3 className="text-lg font-semibold tracking-wide">
+                  {cat.title}
+                  </h3>
                 <p className="mt-2 line-clamp-3 text-sm text-muted-foreground">
                   {cat.summary}
                 </p>
@@ -175,7 +178,12 @@ export default function ServicesPage({ params }: { params: { lang: 'en' | 'ar' }
   hidden: { opacity: 0, y: 16 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
 }} className="lg:col-span-1">
-                <h2 className="text-3xl font-bold">{cat.title}</h2>
+                <h2 className="text-3xl font-bold hover:underline">
+                   <Link className="flex items-center gap-2   " href={`${cat.key}`}>
+                  {cat.title}
+                  <ArrowRight/>
+                  </Link>
+                  </h2>
                 <p className="mt-4 text-muted-foreground">{cat.summary}</p>
               </motion.div>
 

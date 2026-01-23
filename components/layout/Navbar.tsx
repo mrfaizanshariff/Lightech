@@ -11,7 +11,8 @@ import logo from '../../public/icons_svg/logo_lightect_00.svg';
 import logoLight from '../../public/icons_svg/logo_lightech_02.svg';
 import content from '../../public/assets/content.json'
 import { useLanguage } from "@/context/LanguageContext";
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname,useRouter } from 'next/navigation';
+// import { useRouter } from 'next/compat/router';
 const Navbar = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
   const language = params?.lang
   const [isOpen, setIsOpen] = useState(false);
@@ -30,10 +31,15 @@ const Navbar = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
   const changeLanguage = ()=>{
-    searchParams.startsWith('/en') ?
+    searchParams.startsWith('/en/') ?
     switchToArabic()
     :
     switchToEnglish()
+    if (typeof window !== 'undefined') {
+      searchParams.startsWith('/en/') ? 
+      sessionStorage.setItem('language', 'ar') :
+      sessionStorage.setItem('language', 'en') 
+    }
     // if(language === "en"){
     //   setLanguage("ar")
     // }else{
@@ -42,16 +48,16 @@ const Navbar = ({ params }: { params: { lang: 'en' | 'ar' } }) => {
   }
 
    const switchToArabic = () => {
-    router.push(
-      searchParams.startsWith('/en')
+    router?.push(
+      searchParams.startsWith('/en/')
         ? searchParams.replace(/^\/en/, '/ar')
         : `/ar${searchParams}`
     );
   };
 
   const switchToEnglish = () => {
-    router.push(
-      searchParams.startsWith('/ar')
+    router?.push(
+      searchParams.startsWith('/ar/')
         ? searchParams.replace(/^\/ar/, '/en')
         : `/en${searchParams}`
     );

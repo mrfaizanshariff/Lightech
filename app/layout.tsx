@@ -1,8 +1,8 @@
-import type { Metadata } from 'next';
+// app/layout.tsx
+import './globals.css';
+import { Inter } from 'next/font/google'; // Keep if needed for fallback
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://lightech.com.sa'),
-};
+const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({
   children,
@@ -10,8 +10,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-    {children}
-    </>
+    <html lang="en" className={inter.className}> {/* Default lang */}
+      <body>{children}</body>
+    </html>
   );
 }

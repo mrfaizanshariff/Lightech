@@ -1,5 +1,12 @@
 import { Metadata } from "next";
 
+export async function generateStaticParams() {
+  return [
+    { lang: 'en', serviceName:'lighting' },
+    { lang: 'en', serviceName:'wiringDevices' },
+    { lang: 'ar' },
+  ];
+}
 export async function generateMetadata({
   params,
 }: {
@@ -11,43 +18,49 @@ export async function generateMetadata({
 
   return {
     title: isArabic
-      ? 'خدمات الإضاءة في السعودية | تصميم وتنفيذ حلول الإضاءة – لايتك'
-      : "Lighting Services in Saudi Arabia | Architectural, Commercial & Landscape – Lightech",
+      ? 'خدمات الإضاءة | لايتك - حلول إضاءة معمارية وداخلية ومناظر طبيعية في السعودية'
+      : 'Lighting Services | Lightech - Architectural, Interior & Landscape Lighting Solutions in Saudi Arabia',
 
     description: isArabic
-      ? 'تقدم لايتك خدمات الإضاءة في السعودية تشمل الإضاءة المعمارية، التجارية، إضاءة الواجهات، وإضاءة المناظر الطبيعية باحترافية عالية.'
-      : "Professional lighting services in Saudi Arabia by Lightech. We specialize in architectural, commercial, facade, and landscape lighting solutions across Riyadh and KSA.",
+      ? 'خدمات إضاءة متكاملة في السعودية: إضاءة معمارية، داخلية، مناظر طبيعية، أنظمة تحكم ذكية، أجهزة كهربائية، وطاقة متجددة. لايتك تقدم حلول إضاءة مبتكرة وموفرة للطاقة في الرياض وجدة والدمام.'
+      : 'Comprehensive lighting services in Saudi Arabia: architectural, interior, landscape lighting, smart control systems, wiring devices, and renewable energy. Lightech delivers innovative and energy-efficient lighting solutions in Riyadh, Jeddah, and Dammam.',
+
+    keywords: isArabic
+      ? [
+          'خدمات إضاءة',
+          'خدمات إضاءة السعودية',
+          'إضاءة معمارية',
+          'إضاءة داخلية',
+          'إضاءة مناظر طبيعية',
+          'أنظمة تحكم إضاءة',
+          'أجهزة كهربائية',
+          'طاقة شمسية',
+          'حلول إضاءة متكاملة',
+          'خدمات إضاءة احترافية',
+        ]
+      : [
+          'lighting services',
+          'lighting services Saudi Arabia',
+          'architectural lighting',
+          'interior lighting',
+          'landscape lighting',
+          'lighting control systems',
+          'wiring devices',
+          'solar energy',
+          'comprehensive lighting solutions',
+          'professional lighting services',
+        ],
 
     openGraph: {
       title: isArabic
-        ? 'خدمات الإضاءة في السعودية | تصميم وتنفيذ حلول الإضاءة – لايتك'
-        : 'Lighting Services in Saudi Arabia | Architectural, Commercial & Landscape – Lightech',
+        ? 'خدمات الإضاءة | لايتك السعودية'
+        : 'Lighting Services | Lightech Saudi Arabia',
       description: isArabic
-        ? 'تقدم لايتك خدمات الإضاءة في السعودية تشمل الإضاءة المعمارية، التجارية، إضاءة الواجهات، وإضاءة المناظر الطبيعية باحترافية عالية.'
-        : 'Professional lighting services in Saudi Arabia by Lightech. We specialize in architectural, commercial, facade, and landscape lighting solutions across Riyadh and KSA.',
+        ? 'حلول إضاءة متكاملة: معمارية، داخلية، مناظر طبيعية، أنظمة تحكم'
+        : 'Comprehensive lighting solutions: architectural, interior, landscape, control systems',
       url: `${baseUrl}/${params.lang}${path}`,
       type: 'website',
     },
-keywords: isArabic?
-[
- ' خدمات الإضاءة السعودية',
-'تصميم إضاءة معماري',
-'شركة إضاءة مشاريع',
-'إضاءة تجارية',
-'إضاءة واجهات',
-'مقاول إضاءة السعودية',
-'حلول الإضاءة المتكاملة'
-
-]:
-[
-  'lighting services Saudi Arabia',
-  'architectural lighting Saudi Arabia',
-  'commercial lighting Riyadh',
-  'landscape lighting KSA',
-  'facade lighting Saudi Arabia',
-  'lighting design services',
-  'lighting contractor Saudi Arabia',
-],
 
     alternates: {
       canonical: `${baseUrl}/${params.lang}${path}`,

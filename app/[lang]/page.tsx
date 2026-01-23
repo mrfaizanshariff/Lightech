@@ -1,148 +1,266 @@
-// app/page.tsx
-"use client";
-import { Metadata } from "next";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Hero from "@/components/home/Hero";
-import About from "@/components/home/About";
-import Services from "@/components/home/Services";
-import Projects from "@/components/home/Projects";
-import Testimonials from "@/components/home/Testimonials";
-import Partners from "@/components/home/Partners";
-import Contact from "@/components/home/Contact";
-import SocialMediaPosts from "@/components/home/SocialMediaPosts";
+// app/[lang]/page.tsx
+// NO 'use client'; — server component for static export
 
-// Register ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+import { Metadata } from "next";  // If adding page-specific metadata later
+import HomeClient from "@/components/home/HomeClient";  // Import the new client component
 
-// Home page metadata - Server Component would export this
-// For Client Component, metadata is handled in layout.tsx
-// If you need page-specific metadata, convert to Server Component or use route groups
+// Optional: Page-specific metadata (inherits from layout, but override if needed)
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: 'en' | 'ar' };
+}): Promise<Metadata> {
+  const baseUrl = 'https://lightech.com.sa';
+  const isArabic = params.lang === 'ar';
 
-// JSON-LD for homepage
-const homePageSchema = {
+  return {
+    title: isArabic
+      ? 'لايتك | شركة إضاءة رائدة في السعودية - الرياض، جدة، الدمام | حلول إضاءة معمارية وداخلية'
+      : 'Lightech | Leading Lighting Company in Saudi Arabia - Riyadh, Jeddah, Dammam | Architectural & Interior Lighting Solutions',
+
+    description: isArabic
+      ? 'لايتك - شركة إضاءة سعودية رائدة منذ 2005 تقدم حلول إضاءة متكاملة: معمارية، داخلية، مناظر طبيعية، وأنظمة تحكم ذكية. خبرة +19 عاماً، +200 مشروع منجز في الرياض وجدة والدمام. حلول LED موفرة للطاقة ومتوافقة مع رؤية 2030.'
+      : 'Lightech - Leading Saudi lighting company since 2005 providing comprehensive lighting solutions: architectural, interior, landscape, and smart control systems. 19+ years experience, 200+ completed projects in Riyadh, Jeddah, and Dammam. Energy-efficient LED solutions aligned with Vision 2030.',
+
+    keywords: isArabic
+      ? [
+          'شركة إضاءة السعودية',
+          'شركة إضاءة الرياض',
+          'شركة إضاءة جدة',
+          'شركة إضاءة الدمام',
+          'حلول إضاءة معمارية',
+          'إضاءة داخلية السعودية',
+          'إضاءة LED',
+          'أنظمة إنارة ذكية',
+          'مقاول إضاءة السعودية',
+          'تصميم إضاءة معمارية',
+          'إضاءة واجهات مباني',
+          'إضاءة تجارية',
+          'إضاءة سكنية',
+          'شركات الإضاءة في السعودية',
+          'لايتك',
+          'أنظمة تحكم إضاءة',
+          'طاقة متجددة',
+          'أجهزة كهربائية',
+        ]
+      : [
+          'lighting company Saudi Arabia',
+          'lighting company Riyadh',
+          'lighting company Jeddah',
+          'lighting company Dammam',
+          'architectural lighting Saudi',
+          'interior lighting KSA',
+          'LED lighting solutions',
+          'smart lighting systems',
+          'lighting contractor Saudi Arabia',
+          'architectural lighting design',
+          'facade lighting',
+          'commercial lighting',
+          'residential lighting',
+          'lighting companies Saudi Arabia',
+          'Lightech',
+          'lighting control systems',
+          'renewable energy',
+          'wiring devices',
+          'lighting services Saudi',
+        ],
+
+    openGraph: {
+      title: isArabic
+        ? 'لايتك | شركة إضاءة رائدة في السعودية'
+        : 'Lightech | Leading Lighting Company in Saudi Arabia',
+      description: isArabic
+        ? 'حلول إضاءة متكاملة: معمارية، داخلية، مناظر طبيعية | +19 عاماً خبرة | +200 مشروع'
+        : 'Comprehensive lighting solutions: architectural, interior, landscape | 19+ years | 200+ projects',
+      url: `${baseUrl}/${params.lang}`,
+      type: 'website',
+      locale: isArabic ? 'ar_SA' : 'en_SA',
+      siteName: 'Lightech',
+      images: [
+        {
+          url: `${baseUrl}/og-image.jpg`,
+          width: 1200,
+          height: 630,
+          alt: isArabic ? 'لايتك - شركة إضاءة السعودية' : 'Lightech - Saudi Lighting Company',
+        },
+      ],
+    },
+
+    twitter: {
+      card: 'summary_large_image',
+      site: '@lightech_sa',
+      title: isArabic
+        ? 'لايتك | شركة إضاءة رائدة في السعودية'
+        : 'Lightech | Leading Lighting Company in Saudi Arabia',
+      description: isArabic
+        ? 'حلول إضاءة متكاملة في السعودية | +19 عاماً خبرة'
+        : 'Comprehensive lighting solutions in Saudi Arabia | 19+ years experience',
+      images: [`${baseUrl}/twitter-card.jpg`],
+    },
+
+    alternates: {
+      canonical: `${baseUrl}/${params.lang}`,
+      languages: {
+        'en-SA': `${baseUrl}/en`,
+        'ar-SA': `${baseUrl}/ar`,
+        'x-default': `${baseUrl}/en`,
+      },
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    }
+  };
+}
+
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'ar' },
+  ];
+}
+
+interface Props {
+  params: { lang: 'en' | 'ar' };
+}
+
+
+
+export default function LangHomePage({ params }: Props) {
+  
+  const isArabic = params.lang === 'ar';
+
+  const organizationSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'Organization',
   name: 'Lightech',
-  description: 'Professional lighting solutions and lighting service provider in Riyadh, Jeddah, Saudi Arabia with expertise in architectural, interior, and landscape lighting.',
+  alternateName: isArabic ? 'لايتك' : 'Light Technologies Co. Ltd.',
   url: 'https://lightech.com.sa',
-  logo: 'https://lightech.com.sa/_next/static/media/logo_lightect_00.999146cd.svg',
-  image: 'https://lightech.com.sa/_next/static/media/logo_lightect_00.999146cd.svg',
-  telephone: '+966 114664696',
-  address: {
-    '@type': 'PostalAddress',
-    addressCountry: 'SA',
-    addressRegion: 'Saudi Arabia',
-  },
-  areaServed: ['SA'],
+  logo: 'https://lightech.com.sa/lightech_logo.jpg',
+  description: isArabic
+    ? 'شركة إضاءة سعودية رائدة تقدم حلول إضاءة معمارية وداخلية ومناظر طبيعية في الرياض وجدة والدمام'
+    : 'Leading Saudi lighting company providing architectural, interior, and landscape lighting solutions in Riyadh, Jeddah, and Dammam',
   foundingDate: '2005',
-  numberOfEmployees: {
-    '@type': 'QuantitativeValue',
-    value: '100',
+  founder: {
+    '@type': 'Organization',
+    name: 'Lightech Founders',
   },
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Service',
+      telephone: '+966 114664696',
+      areaServed: 'SA',
+      availableLanguage: ['Arabic', 'English'],
+    },
+    {
+      '@type': 'ContactPoint',
+      contactType: 'Sales',
+      telephone: '+966 114664696',
+      areaServed: ['Riyadh', 'Jeddah', 'Dammam'],
+      availableLanguage: ['Arabic', 'English'],
+    },
+  ],
+  address: [
+    {
+      '@type': 'PostalAddress',
+      addressLocality: 'Riyadh',
+      addressRegion: 'Riyadh',
+      addressCountry: 'SA',
+    },
+    {
+      '@type': 'PostalAddress',
+      addressLocality: 'Jeddah',
+      addressRegion: 'Makkah',
+      addressCountry: 'SA',
+    },
+    {
+      '@type': 'PostalAddress',
+      addressLocality: 'Dammam',
+      addressRegion: 'Eastern Province',
+      addressCountry: 'SA',
+    },
+  ],
   sameAs: [
     'https://www.instagram.com/lightech_sa',
     'https://www.linkedin.com/company/light-technologies-co-ltd',
-    'https://x.com/lightech_sa'
+    'https://x.com/lightech_sa',
   ],
-  priceRange: '$$',
+  serviceArea: {
+    '@type': 'Country',
+    name: 'Saudi Arabia',
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: isArabic ? 'خدمات الإضاءة' : 'Lighting Services',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: isArabic ? 'الإضاءة المعمارية' : 'Architectural Lighting',
+          description: isArabic
+            ? 'تصميم وتنفيذ حلول إضاءة معمارية متكاملة'
+            : 'Comprehensive architectural lighting design and implementation',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: isArabic ? 'الإضاءة الداخلية' : 'Interior Lighting',
+          description: isArabic
+            ? 'حلول إضاءة داخلية مخصصة للمساحات التجارية والسكنية'
+            : 'Custom interior lighting solutions for commercial and residential spaces',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: isArabic ? 'إضاءة المناظر الطبيعية' : 'Landscape Lighting',
+          description: isArabic
+            ? 'تصميم إضاءة خارجية للحدائق والمساحات الطبيعية'
+            : 'Outdoor lighting design for gardens and natural spaces',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: isArabic ? 'أنظمة التحكم الذكية' : 'Smart Control Systems',
+          description: isArabic
+            ? 'أنظمة تحكم ذكية للإضاءة وإدارة الطاقة'
+            : 'Smart lighting control and energy management systems',
+        },
+      },
+    ],
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '150',
+    bestRating: '5',
+    worstRating: '1',
+  },
 };
-
-export default function Home({ params }: { params: { lang: 'en' | 'ar' } }) {
-  const aboutRef = useRef<HTMLDivElement>(null);
-  const servicesRef = useRef<HTMLDivElement>(null);
-  const projectsRef = useRef<HTMLDivElement>(null);
-  const partnersRef = useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
-  const socialMediasRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const sections = [
-      { ref: aboutRef, direction: "up" },
-      { ref: servicesRef, direction: "left" },
-      { ref: projectsRef, direction: "scale" },
-      { ref: socialMediasRef, direction: "left" },
-      { ref: partnersRef, direction: "up" },
-      { ref: contactRef, direction: "up" },
-    ];
-
-    sections.forEach(({ ref, direction }, index) => {
-      if (ref.current) {
-        let fromProps: any = { opacity: 0 };
-        
-        switch (direction) {
-          case "up":
-            fromProps.y = 80;
-            break;
-          case "left":
-            fromProps.x = -80;
-            break;
-          case "right":  
-            fromProps.x = 80;
-            break;
-          case "scale":
-            fromProps.scale = 0.8;
-            break;
-        }
-
-        gsap.fromTo(ref.current, fromProps, {
-          opacity: 1,
-          y: 0,
-          x: 0,
-          scale: 1,
-          duration: 0.8,
-          ease: "power2.out",
-          delay: index * 0.1,
-          scrollTrigger: {
-            trigger: ref.current,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse"
-          }
-        });
-      }
-    });
-
-    return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-    };
-  }, []);
+  // JSON-LD for homepage (server-rendered into static HTML)
 
   return (
-    <main>
+    <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      <Hero params={params} />
-      
-      <div ref={aboutRef}>
-        <About params={params}/>
-      </div>
-      
-      <div ref={servicesRef}>
-        <Services params={params}/>
-      </div>
-      
-      <div ref={projectsRef}>
-        <Projects params={params}/>
-      </div>
-      
-      {/* <div ref={testimonialsRef}>
-        <Testimonials />
-      </div> */}
-      <div ref={socialMediasRef}>
-        <SocialMediaPosts></SocialMediaPosts>
-      </div>
-      
-      <div ref={partnersRef}>
-        <Partners params={params}/>
-      </div>
-      
-      <div ref={contactRef}>
-        <Contact params={params}/>
-      </div>
-    </main>
+      <HomeClient params={params} />
+    </>
   );
 }
