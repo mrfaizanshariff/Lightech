@@ -175,9 +175,10 @@ export default function LangLayout({
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
-        <GoogleAnalytics gaId="G-M5067FWQBX" />
+        <meta name="google-site-verification" content="SQ57qL58D4tfGp3rf_66j8lMCPVw1XcMi_CMiRxLnIM" />
       </head>
       <body>
+        <GoogleAnalytics gaId="G-M5067FWQBX" />
         <Navbar params={params} />
         {children}
         <Footer params={params} />
