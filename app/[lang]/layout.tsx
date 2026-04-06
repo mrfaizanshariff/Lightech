@@ -5,6 +5,7 @@ import localFont from 'next/font/local';
 import { LanguageProvider } from '@/context/LanguageContext'; // Uncomment if using
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import AccessibilityWidget from '@/components/AccessibilityWidget';
 // Import other providers/components as needed
 
 const Bahnschrift = localFont({
@@ -194,11 +195,14 @@ export default function LangLayout({
                 `,
               }}
             />
+            {/* Accessibility Widget - Managed by client component for persistence across navigation */}
+            <AccessibilityWidget />
             {/* <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange> */}
               <Navbar params={params} />
               {children}
               <Footer params={params} />
             {/* </ThemeProvider> */}
+          
           </body>
         </html>
       {/* </LanguageProvider> */}
