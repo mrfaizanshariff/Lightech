@@ -1,330 +1,395 @@
 {
-    "english":{
-        "navBar":[
-            { "href": "/en/", "label": "Home" },
-            { "href": "/en/about", "label": "About" },
-            { "href": "/en/services", "label": "Services" },
-            { "href": "/en/projects", "label": "Projects" },
-            { "href": "/en/contact", "label": "Contact" }
-        ],
-        "heroSection":{
-            "titleDate":"Since 2005",
-            "title1":"Illuminate Spaces",
-            "title2":"Designing Experiences",
-            "subtitle":"Lightech provides sophisticated turnkey lighting solutions with professional expertise in architectural, interior, and landscape lighting projects.",
-            "btn1":{"label":"Explore Projects","href":"/projects"},
-            "btn2":{"label":"Our Services","href":"/services"},
-            "statsCard":[
-                { "label": "Projects Completed", "value": "200" },
-                { "label": "Years of Excellence", "value": "19" },
-                { "label": "Professional Experts", "value": "50" }
-            ]
-        },
-        "aboutSection":{
-            "title":"About Lightech",
-            "subtitle":"Lighting Experts Since 2005",
-            "desc_one":"Lightech is a dynamic lighting company with a wide array of activities and services. Powered by professional experience in lighting projects, and an additional multi-discipline background in architecture, interior, and landscape lighting, we can provide simple and seamless solutions to meet and exceed even the toughest project needs.",
-            "desc_two":"At Lightech, one of our main strengths is a permanent variety of products and experienced professionals in the field. This combination has developed a host of capabilities designed to generate sophisticated turnkey lighting solutions.",
-            "statsCard":[
-                { "label": "Projects Completed", "value": "200+" },
-                { "label": "Years of Excellence", "value": "19+" }
-            ],
-            "cta":{"label":"Learn More About Us","href":"/about"}
-        },
-        "servicesSection":{
-            "title":"Our Services",
-            "subtitle":"Comprehensive Lighting Solutions",
-            "desc_one":"Our engineers and lighting specialists offer the unique ability to provide world-class lighting, controls and renewable energy concepts.",
-            "services":[
-                {
-                    "id": "innovative",
-                    "title": "Innovative",
-                    "description": "Innovative and high-tech lighting fixtures range from decorative to technical, interior, and/or exterior applications, including special or custom-made-fixtures.",
-                    "icon": "innovation_18.svg",
-                    "image": "G004.jpg"
-
-                },
-                {
-                    "id": "know_how",
-                    "title": "The know-how",
-                    "description": "The know-how to create the most innovative lighting features and schemes while saving the environment (light pollution, energy conservation, and cost restraints).",
-                    "icon": "institution_09.svg",
-                    "image": "G007.jpg"
-
-                },
-                {
-                    "id": "different_solutions",
-                    "title": "Different solutions",
-                    "description": "Different solutions are offered according to the customer’s request and budget availability.",
-                    "icon": "global_book_05.svg",
-                    "image": "G006.jpg"
-
-                },
-                {
-                    "id": "full_coperation",
-                    "title": "Full cooperation",
-                    "description": "Full cooperation between our team, international partners, customers, and international lighting designers.",
-                    "icon": "cooperation_20.svg",
-                    "image": "G012.jpg"
-
-                }
-            ],
-            "cta":{
-                "label":"View All Services",
-                "href":"/services"
-            }
-        },
-        "projectsSection":{
-            "title":"Our Projects",
-            "subtitle":"Featured Projects",
-            "categories":[
-                {"label":"Featured","value":"Featured"}, 
-                {"label":"Governmental Projects","value":"Governmental Projects"}, 
-                {"label":"Educational Projects","value":"Educational Projects"}, 
-                {"label":"Towers Projects","value":"Towers Projects"}, 
-                {"label":"Hotels Projects","value":"Hotels Projects"}, 
-                {"label":"Restaurants","value":"Restaurants"},
-                {"label":"Other Projects","value":"Projects"} 
-                   ],
-            "individual_cta":{"label":"View Project","href":"/projects"},       
-            "cta":{"label":"View All Projects","href":"/projects"}
-            
-        },
-        "testimonialSection":{
-            "title":"Testimonials",
-            "subtitle":"What Our Clients Say",
-            "description":" Don't just take our word for it. Here's what our clients have to say about their experience working with Lightech.",
-            "testimonials": [
-                {
-                    "id": 1,
-                    "name": "Mohammed Al-Farsi",
-                    "position": "Project Manager",
-                    "company": "Saudi Construction Co.",
-                    "text": "Working with Lightech was an exceptional experience. Their team's expertise in lighting design transformed our commercial building into a stunning visual landmark. Their attention to detail and understanding of our needs exceeded our expectations.",
-                    "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                },
-                {
-                    "id": 2,
-                    "name": "Sara Al-Qahtani",
-                    "position": "Interior Designer",
-                    "company": "Modern Spaces",
-                    "text": "Lightech provided innovative lighting solutions for our luxury residential project. Their understanding of how lighting affects spaces helped create the perfect ambiance throughout the property. Highly professional and responsive team.",
-                    "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                },
-                {
-                    "id": 3,
-                    "name": "Abdullah Rahman",
-                    "position": "Facility Director",
-                    "company": "Riyadh Mall",
-                    "text": "We've been working with Lightech for our mall's lighting needs for over 5 years. Their maintenance service is prompt and reliable, and their lighting solutions have helped us reduce energy costs while improving the shopping experience.",
-                    "image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                }
-            ]
-        },
-        "partnersSection":{
-            "title":"Our Partners",
-            "subtitle":"Trusted By Industry Leaders",
-            "description":"We collaborate with leading brands and companies to deliver exceptional lighting solutions for projects of all sizes.",
-            "features":[
-                {
-                    "icon":"services_19.svg",
-                    "title":"Quality Products",
-                    "descriptions":"We work with the industry's leading manufacturers to ensure we provide our clients with high-quality, durable lighting products that meet international standards."
-                },
-                {
-                    "icon":"mission_08.svg",
-                    "title":"Expert Installation",
-                    "descriptions":"Our team of certified technicians ensures professional installation of all lighting systems, following best practices and safety standards for optimal performance."
-                },
-                {
-                    "icon":"cooperation_20.svg",
-                    "title":"Ongoing Support",
-                    "descriptions":"We provide comprehensive maintenance services and technical support to ensure your lighting systems continue to perform at their best for years to come."
-                }
-            ]
-        },
-        "contactSection":{
-            "title":"Contact Us",
-            "subtitle":"Get In Touch",
-            "desciption":"Have a project in mind or need lighting consultation? Reach out to us and our team will get back to you as soon as possible.",
-            "contactInfoSection":[
-                        {
-                          "id":"riyadh",
-                        "title":"Contact Information",
-                        "locationTitle":"Head Office - Riyadh",
-                        "address":"7955 Abdulaziz Ibn Musaid Ibn Jalawi District, Sulaymaniya, Office 108, First Floor Riyadh | Center Province | Saudi Arabia",
-                        "emailTitle":"Email Us",
-                        "email_1":"info@lightech.com.sa",
-                        "phoneTitle":"Call Us",
-                        "phone_1":"+966 114664696",
-                        "faxTitle":"Fax",
-                        "fax_1":"+966 114612070",
-                        "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14498.99479851486!2d46.705262!3d24.701164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f030b96d36ffb%3A0x6154e91ab35a42d0!2sLightech%20-%20Light%20Technologies%20Co.%20LTD!5e0!3m2!1sen!2sus!4v1759980243115!5m2!1sen!2sus"
-                        },
-                        {
-                          "id":"jeddah",
-
-                        "title":"Contact Information",
-                        "locationTitle":"Western Branch Office – Jeddah",
-                        "address":"First Floor, Retaj Plaza (Aldainy Plaza), Office 301, Heraa Street, Jeddah",
-                        "emailTitle":"Email Us",
-                        "email_1":"info@lightech.com.sa",
-                        "phoneTitle":"Call Us",
-                        "phone_1":"+966 126123346",
-                        "faxTitle":"Fax",
-                        "fax_1":"+966 126123347",
-                        "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14837.367180237647!2d39.156302!3d21.611601000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0a72f73d96d%3A0x7bb2286003359106!2sAl%20Dainy%20plaza!5e0!3m2!1sen!2sus!4v1759980962868!5m2!1sen!2sus"
-                        },
-                        {
-                          "id":"alkhobar",
-                        "title":"Contact Information",
-                        "locationTitle":"Eastern Branch Office – Al Khobar",
-                        "address":"Suite 307, Jarir building, Cornish Road, Al Khobar",
-                        "emailTitle":"Email Us",
-                        "email_1":"info@lightech.com.sa",
-                        "phoneTitle":"Call Us",
-                        "phone_1":"+966 138967245",
-                        "faxTitle":"Fax",
-                        "fax_1":"+966 138951258",
-                        "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7152.741790696206!2d50.21015!3d26.314487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e8f65c342fc1%3A0x1a6f7e480596c4ad!2sKhobar%20Mall!5e0!3m2!1sen!2sus!4v1759981076875!5m2!1sen!2sus"
-                        }
-        ],
-            "submitBtn":{"label":"Send Message","label2":"Sending..."}
-        },
-        "footerSection":{
-            "description":"A dynamic lighting company with professional experience in lighting projects, architecture, interior, and landscape lighting solutions.",
-            "links_1":"Quick Links",
-            "quickLinks":[
-                {
-                    "label":"Home",
-                    "href":"/en/"
-                },
-                {
-                    "label":"About Us",
-                    "href":"/en/about"
-                },
-                {
-                    "label":"Services",
-                    "href":"/en/services"
-                },
-                {
-                    "label":"Projects",
-                    "href":"/en/projects"
-                },
-                {
-                    "label":"Contact",
-                    "href":"/en/contact"
-                }
-            ],
-            "links_2":"Projects",
-            "projectsLinks":[
-                "Governmental Projects",
-                "Educational Projects",
-                "Towers Projects",
-                "Hotel Projects",
-                "Restaurant Projects"
-            ],
-            "contactSection":{
-                "title":"Contact Us",
-                "address":"7955 Abdulaziz Ibn Musaid Ibn Jalawi District, Sulaymaniya, Office 108, First Floor Riyadh | Center Province | Saudi Arabia",
-                "phone":"+966 114664696",
-                "email":"info@lightech.com.sa"
-            }
-        },
-        "aboutPage":{
-                "header": {
-                    "title": "About Lightech",
-                    "description": "A dynamic lighting company with a wide array of activities and services, powered by professional experience since 2005."
-                },
-                "ourStory": {
-                    "heading": "Our Story",
-                    "paragraphs": [
-                    "Founded in 2005, Lightech has established itself as a leading lighting company in Saudi Arabia. Our journey began with a vision to transform spaces through innovative lighting solutions.",
-                    "Powered by professional experience in lighting projects, and an additional multi-discipline background in architecture, interior, and landscape lighting, we can provide simple and seamless solutions to meet and exceed even the toughest project needs.",
-                    "At Lightech, one of our main strengths is a permanent variety of products and experienced professionals in the field. This combination has developed a host of capabilities designed to generate sophisticated turnkey lighting solutions."
-                    ],
-                    "gallery": [
-                    {
-                        "src": "G005.jpg",
-                        "alt": "Lightech office"
-                    },
-                    {
-                        "src": "G006.jpg",
-                        "alt": "Lightech project"
-                    },
-                    {
-                        "src": "G007.jpg",
-                        "alt": "Lighting design"
-                    },
-                    {
-                        "src": "G012.jpg",
-                        "alt": "Lightech office"
-                    }
-                    ]
-                },
-                "missionVisionValues": {
-                    "cards": [
-                    {
-                        "icon":"target_02.svg",
-                        "heading": "Our Mission",
-                        "body": "To transform spaces through innovative lighting solutions that enhance the beauty, functionality, and sustainability of architectural environments while exceeding our clients' expectations through excellence in design, technology, and service."
-                    },
-                    {
-                        "icon":"vision_03.svg",
-                        "heading": "Our Vision",
-                        "body": "To be the leading lighting solutions provider in Saudi Arabia and beyond, recognized for our innovation, sustainability, and commitment to creating exceptional lighting experiences that inspire and transform spaces."
-                    },
-                    {
-                        "icon":"objective_values.svg",
-                        "heading": "Our Values",
-                        "values": [
-                        "Innovation in Design",
-                        "Sustainability Focus",
-                        "Customer Excellence",
-                        "Professional Expertise"
-                        ]
-                    }
-                    ]
-                },
-                "strategicObjectives": {
-                    "heading": "Strategic Objectives",
-                    "items": [
-                    {
-                        "icon": "mission_08.svg",
-                        "title": "Market Leadership",
-                        "description": "Maintain and expand our position as a leading lighting solutions provider in Saudi Arabia."
-                    },
-                    {
-                        "icon": "innovation_18.svg",
-                        "title": "Innovation",
-                        "description": "Continuously develop and implement innovative lighting solutions and technologies."
-                    },
-                    {
-                        "icon": "sustanability.svg",
-                        "title": "Sustainability",
-                        "description": "Promote energy-efficient and environmentally sustainable lighting solutions."
-                    },
-                    {
-                        "icon": "cooperation_20.svg",
-                        "title": "Client Success",
-                        "description": "Ensure client satisfaction through exceptional service and support."
-                    }
-                    ]
-                }
-        },
-         "servicesPage": {
-        "header": {
-        "title": "Our Services",
-        "subtitle":
-            "Our engineers and lighting specialists offer the unique ability to provide world-class lighting, controls and renewable energy concepts."
-        },
-        "categories": [
+  "english": {
+    "navBar": [
+      {
+        "href": "/en/",
+        "label": "Home"
+      },
+      {
+        "href": "/en/about",
+        "label": "About"
+      },
+      {
+        "href": "/en/services",
+        "label": "Services"
+      },
+      {
+        "href": "/en/projects",
+        "label": "Projects"
+      },
+      {
+        "href": "/en/contact",
+        "label": "Contact"
+      }
+    ],
+    "heroSection": {
+      "titleDate": "Since 2005",
+      "title1": "Illuminate Spaces with Lightech",
+      "title2": "Designing Experiences in Saudi Arabia",
+      "subtitle": "Lightech is a premier lighting company in Saudi Arabia, providing sophisticated turnkey lighting solutions. We specialize in architectural, interior, and landscape lighting projects across Riyadh, Jeddah, and Dammam.",
+      "btn1": {
+        "label": "Explore Projects",
+        "href": "/projects"
+      },
+      "btn2": {
+        "label": "Our Services",
+        "href": "/services"
+      },
+      "statsCard": [
         {
-            "key": "lighting",
-            "title": "LIGHTING",
-            "summary":
-            "End-to-end lighting design, supply, and turnkey delivery for architectural, interior, and landscape applications.",
-            "offerings": [
+          "label": "Projects Completed",
+          "value": "200"
+        },
+        {
+          "label": "Years of Excellence",
+          "value": "19"
+        },
+        {
+          "label": "Professional Experts",
+          "value": "50"
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "About Lightech",
+      "subtitle": "Leading Lighting Experts in KSA Since 2005",
+      "desc_one": "Lightech is a dynamic lighting company in Saudi Arabia with a wide array of activities and services. Powered by professional experience in lighting projects, and an additional multi-discipline background in architectural, interior, and landscape lighting, we can provide simple and seamless solutions to meet and exceed even the toughest project needs.",
+      "desc_two": "At Lightech, one of our main strengths is a permanent variety of products and experienced professionals in the field. This combination has developed a host of capabilities designed to generate sophisticated turnkey lighting solutions for commercial and residential sectors.",
+      "statsCard": [
+        {
+          "label": "Projects Completed",
+          "value": "200+"
+        },
+        {
+          "label": "Years of Excellence",
+          "value": "19+"
+        }
+      ],
+      "cta": {
+        "label": "Learn More About Us",
+        "href": "/about"
+      }
+    },
+    "servicesSection": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive Lighting Solutions & Design",
+      "desc_one": "Our engineers and lighting specialists offer the unique ability to provide world-class lighting design, smart controls, and renewable energy concepts for projects in Saudi Arabia.",
+      "services": [
+        {
+          "id": "innovative",
+          "title": "Innovative Lighting",
+          "description": "Innovative and high-tech lighting fixtures range from decorative to technical, interior, and exterior applications, including custom-made fixtures for unique Saudi projects.",
+          "icon": "innovation_18.svg",
+          "image": "G004.jpg",
+          "alt": "Innovative architectural lighting design in Saudi Arabia"
+        },
+        {
+          "id": "know_how",
+          "title": "Technical Know-how",
+          "description": "The know-how to create the most innovative lighting features and schemes while saving the environment utilizing energy-efficient LED solutions (light pollution, energy conservation).",
+          "icon": "institution_09.svg",
+          "image": "G007.jpg",
+          "alt": "Technical lighting expertise for energy efficient projects"
+        },
+        {
+          "id": "different_solutions",
+          "title": "Tailored Solutions",
+          "description": "Different lighting solutions are offered according to the customer’s request and budget availability, ensuring the best value for lighting supply in KSA.",
+          "icon": "global_book_05.svg",
+          "image": "G006.jpg",
+          "alt": "Tailored lighting solutions for commercial and residential needs"
+        },
+        {
+          "id": "full_coperation",
+          "title": "Full Cooperation",
+          "description": "Full cooperation between our team, international partners, customers, and international lighting designers to deliver excellence in every Saudi lighting project.",
+          "icon": "cooperation_20.svg",
+          "image": "G012.jpg",
+          "alt": "Collaborative lighting project management team"
+        }
+      ],
+      "cta": {
+        "label": "View All Services",
+        "href": "/services"
+      }
+    },
+    "projectsSection": {
+      "title": "Our Projects",
+      "subtitle": "Featured Lighting Projects",
+      "categories": [
+        {
+          "label": "Featured",
+          "value": "Featured"
+        },
+        {
+          "label": "Governmental Projects",
+          "value": "Governmental Projects"
+        },
+        {
+          "label": "Educational Projects",
+          "value": "Educational Projects"
+        },
+        {
+          "label": "Towers Projects",
+          "value": "Towers Projects"
+        },
+        {
+          "label": "Hotels Projects",
+          "value": "Hotels Projects"
+        },
+        {
+          "label": "Restaurants",
+          "value": "Restaurants"
+        },
+        {
+          "label": "Other Projects",
+          "value": "Projects"
+        }
+      ],
+      "individual_cta": {
+        "label": "View Project",
+        "href": "/projects"
+      },
+      "cta": {
+        "label": "View All Projects",
+        "href": "/projects"
+      }
+    },
+    "testimonialSection": {
+      "title": "Testimonials",
+      "subtitle": "What Our Clients Say",
+      "description": " Don't just take our word for it. Here's what our clients have to say about their experience working with Lightech, the top lighting company in Saudi Arabia.",
+      "testimonials": [
+        {
+          "id": 1,
+          "name": "Mohammed Al-Farsi",
+          "position": "Project Manager",
+          "company": "Saudi Construction Co.",
+          "text": "Working with Lightech was an exceptional experience. Their team's expertise in lighting design transformed our commercial building into a stunning visual landmark. Their attention to detail and understanding of our needs exceeded our expectations.",
+          "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+          "id": 2,
+          "name": "Sara Al-Qahtani",
+          "position": "Interior Designer",
+          "company": "Modern Spaces",
+          "text": "Lightech provided innovative lighting solutions for our luxury residential project. Their understanding of how lighting affects spaces helped create the perfect ambiance throughout the property. Highly professional and responsive team.",
+          "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+          "id": 3,
+          "name": "Abdullah Rahman",
+          "position": "Facility Director",
+          "company": "Riyadh Mall",
+          "text": "We've been working with Lightech for our mall's lighting needs for over 5 years. Their maintenance service is prompt and reliable, and their lighting solutions have helped us reduce energy costs while improving the shopping experience.",
+          "image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        }
+      ]
+    },
+    "partnersSection": {
+      "title": "Our Partners",
+      "subtitle": "Trusted By Industry Leaders",
+      "description": "We collaborate with leading brands and companies to deliver exceptional lighting solutions for projects of all sizes in Saudi Arabia.",
+      "features": [
+        {
+          "icon": "services_19.svg",
+          "title": "Quality Products",
+          "descriptions": "We work with the industry's leading manufacturers to ensure we provide our clients with high-quality, durable lighting products that meet international standards."
+        },
+        {
+          "icon": "mission_08.svg",
+          "title": "Expert Installation",
+          "descriptions": "Our team of certified technicians ensures professional installation of all lighting systems, following best practices and safety standards for optimal performance."
+        },
+        {
+          "icon": "cooperation_20.svg",
+          "title": "Ongoing Support",
+          "descriptions": "We provide comprehensive maintenance services and technical support to ensure your lighting systems continue to perform at their best for years to come."
+        }
+      ]
+    },
+    "contactSection": {
+      "title": "Contact Us",
+      "subtitle": "Get In Touch",
+      "desciption": "Have a project in mind or need lighting consultation in Riyadh, Jeddah, or Khobar? Reach out to us and our team will get back to you as soon as possible.",
+      "contactInfoSection": [
+        {
+          "id": "riyadh",
+          "title": "Contact Information",
+          "locationTitle": "Head Office - Riyadh",
+          "address": "7955 Abdulaziz Ibn Musaid Ibn Jalawi District, Sulaymaniya, Office 108, First Floor Riyadh | Center Province | Saudi Arabia",
+          "emailTitle": "Email Us",
+          "email_1": "info@lightech.com.sa",
+          "phoneTitle": "Call Us",
+          "phone_1": "+966 114664696",
+          "faxTitle": "Fax",
+          "fax_1": "+966 114612070",
+          "googleMapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14498.99479851486!2d46.705262!3d24.701164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f030b96d36ffb%3A0x6154e91ab35a42d0!2sLightech%20-%20Light%20Technologies%20Co.%20LTD!5e0!3m2!1sen!2sus!4v1759980243115!5m2!1sen!2sus"
+        },
+        {
+          "id": "jeddah",
+          "title": "Contact Information",
+          "locationTitle": "Western Branch Office – Jeddah",
+          "address": "First Floor, Retaj Plaza (Aldainy Plaza), Office 301, Heraa Street, Jeddah",
+          "emailTitle": "Email Us",
+          "email_1": "info@lightech.com.sa",
+          "phoneTitle": "Call Us",
+          "phone_1": "+966 126123346",
+          "faxTitle": "Fax",
+          "fax_1": "+966 126123347",
+          "googleMapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14837.367180237647!2d39.156302!3d21.611601000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0a72f73d96d%3A0x7bb2286003359106!2sAl%20Dainy%20plaza!5e0!3m2!1sen!2sus!4v1759980962868!5m2!1sen!2sus"
+        },
+        {
+          "id": "alkhobar",
+          "title": "Contact Information",
+          "locationTitle": "Eastern Branch Office – Al Khobar",
+          "address": "Suite 307, Jarir building, Cornish Road, Al Khobar",
+          "emailTitle": "Email Us",
+          "email_1": "info@lightech.com.sa",
+          "phoneTitle": "Call Us",
+          "phone_1": "+966 138967245",
+          "faxTitle": "Fax",
+          "fax_1": "+966 138951258",
+          "googleMapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7152.741790696206!2d50.21015!3d26.314487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e8f65c342fc1%3A0x1a6f7e480596c4ad!2sKhobar%20Mall!5e0!3m2!1sen!2sus!4v1759981076875!5m2!1sen!2sus"
+        }
+      ],
+      "submitBtn": {
+        "label": "Send Message",
+        "label2": "Sending..."
+      }
+    },
+    "footerSection": {
+      "description": "A dynamic lighting company in Saudi Arabia with professional experience in lighting projects, architecture, interior, and landscape lighting solutions.",
+      "links_1": "Quick Links",
+      "quickLinks": [
+        {
+          "label": "Home",
+          "href": "/en/"
+        },
+        {
+          "label": "About Us",
+          "href": "/en/about"
+        },
+        {
+          "label": "Services",
+          "href": "/en/services"
+        },
+        {
+          "label": "Projects",
+          "href": "/en/projects"
+        },
+        {
+          "label": "Contact",
+          "href": "/en/contact"
+        }
+      ],
+      "links_2": "Projects",
+      "projectsLinks": [
+        "Governmental Projects",
+        "Educational Projects",
+        "Towers Projects",
+        "Hotel Projects",
+        "Restaurant Projects"
+      ],
+      "contactSection": {
+        "title": "Contact Us",
+        "address": "7955 Abdulaziz Ibn Musaid Ibn Jalawi District, Sulaymaniya, Office 108, First Floor Riyadh | Center Province | Saudi Arabia",
+        "phone": "+966 114664696",
+        "email": "info@lightech.com.sa"
+      }
+    },
+    "aboutPage": {
+      "header": {
+        "title": "About Lightech",
+        "description": "A dynamic lighting company in Saudi Arabia offering a wide array of activities and services, powered by professional experience since 2005."
+      },
+      "ourStory": {
+        "heading": "Our Story",
+        "paragraphs": [
+          "Founded in 2005, Lightech has established itself as a leading lighting company in Saudi Arabia. Our journey began with a vision to transform spaces through innovative lighting solutions.",
+          "Powered by professional experience in lighting projects, and an additional multi-discipline background in architectural, interior, and landscape lighting, we can provide simple and seamless solutions to meet and exceed even the toughest project needs.",
+          "At Lightech, one of our main strengths is a permanent variety of products and experienced professionals in the field. This combination has developed a host of capabilities designed to generate sophisticated turnkey lighting solutions."
+        ],
+        "gallery": [
+          {
+            "src": "G005.jpg",
+            "alt": "Lightech office in Riyadh"
+          },
+          {
+            "src": "G006.jpg",
+            "alt": "Lightech lighting project in Saudi Arabia"
+          },
+          {
+            "src": "G007.jpg",
+            "alt": "Professional lighting design"
+          },
+          {
+            "src": "G012.jpg",
+            "alt": "Lightech corporate office"
+          }
+        ]
+      },
+      "missionVisionValues": {
+        "cards": [
+          {
+            "icon": "target_02.svg",
+            "heading": "Our Mission",
+            "body": "To transform spaces in Saudi Arabia through innovative lighting solutions that enhance the beauty, functionality, and sustainability of architectural environments."
+          },
+          {
+            "icon": "vision_03.svg",
+            "heading": "Our Vision",
+            "body": "To be the leading lighting solutions provider in Saudi Arabia and beyond, recognized for our innovation, sustainability, and commitment to creating exceptional lighting experiences."
+          },
+          {
+            "icon": "objective_values.svg",
+            "heading": "Our Values",
+            "values": [
+              "Innovation in Design",
+              "Sustainability Focus",
+              "Customer Excellence",
+              "Professional Expertise"
+            ]
+          }
+        ]
+      },
+      "strategicObjectives": {
+        "heading": "Strategic Objectives",
+        "items": [
+          {
+            "icon": "mission_08.svg",
+            "title": "Market Leadership",
+            "description": "Maintain and expand our position as a leading lighting company in Saudi Arabia."
+          },
+          {
+            "icon": "innovation_18.svg",
+            "title": "Innovation",
+            "description": "Continuously develop and implement innovative lighting solutions and technologies."
+          },
+          {
+            "icon": "sustanability.svg",
+            "title": "Sustainability",
+            "description": "Promote energy-efficient and environmentally sustainable lighting solutions."
+          },
+          {
+            "icon": "cooperation_20.svg",
+            "title": "Client Success",
+            "description": "Ensure client satisfaction through exceptional service and support."
+          }
+        ]
+      }
+    },
+    "servicesPage": {
+      "header": {
+        "title": "Our Services",
+        "subtitle": "Our engineers and lighting specialists offer the unique ability to provide world-class lighting, controls and renewable energy concepts."
+      },
+      "categories": [
+        {
+          "key": "lighting",
+          "title": "LIGHTING SOLUTIONS",
+          "summary": "End-to-end lighting design, supply, and turnkey delivery for architectural, interior, and landscape applications in Saudi Arabia.",
+          "offerings": [
             "Concept and schematic lighting design",
             "Lux calculations, photometric studies, and dialux deliverables",
             "Fixture selection, specification, and value engineering",
@@ -333,30 +398,28 @@
             "LED retrofits and energy-efficiency upgrades",
             "Emergency and egress lighting compliance",
             "Supply, installation, testing, and commissioning (SITC)"
-            ],
-            "imageSrc":"E002.jpg"
+          ],
+          "imageSrc": "E002.jpg"
         },
         {
-            "key": "wiringDevices",
-            "title": "WIRING DEVICES",
-            "summary":
-            "Premium wiring devices and accessories for reliable power distribution and user-centric interfaces.",
-            "offerings": [
+          "key": "wiringDevices",
+          "title": "WIRING DEVICES",
+          "summary": "Premium wiring devices and accessories for reliable power distribution and user-centric interfaces.",
+          "offerings": [
             "Switches, sockets, dimmers, and outlet systems",
             "USB/Type‑C charging modules and floor boxes",
             "Hospitality and office accessory grids",
             "Weatherproof and IK-rated enclosures",
             "Modular plates and finishes to match interiors",
             "Surge, RCD/RCBO, and AFCI protection integration"
-            ],
-            "imageSrc":"P007.jpg"
+          ],
+          "imageSrc": "P007.jpg"
         },
         {
-            "key": "controlSystems",
-            "title": "CONTROL SYSTEMS",
-            "summary":
-            "Smart lighting controls for comfort, efficiency, and centralized management across single sites and portfolios.",
-            "offerings": [
+          "key": "controlSystems",
+          "title": "CONTROL SYSTEMS",
+          "summary": "Smart lighting controls for comfort, efficiency, and centralized management across single sites and portfolios.",
+          "offerings": [
             "DALI/DALI-2, 0–10V, and DMX control architectures",
             "Wireless controls: BLE, Zigbee, Thread/Matter",
             "Occupancy, vacancy, and daylight harvesting sensors",
@@ -364,424 +427,572 @@
             "BMS integration via BACnet/Modbus/IP",
             "Touch panels, keypads, and mobile app control",
             "Analytics dashboards and remote monitoring"
-            ],
-            "imageSrc":"G006.jpg"
+          ],
+          "imageSrc": "G006.jpg"
         },
         {
-            "key": "renewables",
-            "title": "RENEWABLE ENERGY SYSTEMS",
-            "summary":
-            "Solar-powered solutions and hybrid systems that complement efficient lighting for sustainable facilities.",
-            "offerings": [
+          "key": "renewables",
+          "title": "RENEWABLE ENERGY SYSTEMS",
+          "summary": "Solar-powered solutions and hybrid systems that complement efficient lighting for sustainable facilities.",
+          "offerings": [
             "On-grid and hybrid solar PV design and installation",
             "Solar street and area lighting systems",
             "Battery storage sizing and selection",
             "Inverter, MPPT, and protection coordination",
             "Energy audits and ROI modeling",
             "O&M plans and performance monitoring"
-            ],
-            "imageSrc":"E004.jpg"
+          ],
+          "imageSrc": "E004.jpg"
         }
-        ]
+      ]
+    },
+    "projectsPage": {
+      "title": "Our Projects",
+      "description": "Explore our portfolio of lighting projects that showcase our expertise and innovation.",
+      "categories": [
+        {
+          "label": "All",
+          "value": "All"
         },
-        "projectsPage":{
-            "title":"Our Projects",
-            "description":"Explore our portfolio of lighting projects that showcase our expertise and innovation.",
-            "categories" : [
-               {"label":"All","value":"All"}, 
-                {"label":"Governmental Projects","value":"Governmental Projects"}, 
-                {"label":"Educational Projects","value":"Educational Projects"}, 
-                {"label":"Towers Projects","value":"Towers Projects"}, 
-                {"label":"Hotels Projects","value":"Hotels Projects"}, 
-                {"label":"Restaurants","value":"Restaurants"},
-                {"label":"Car Showrooms","value":"Car Showrooms"},
-                {"label":"Retail Outlets","value":"Retail Outlets"},
-                {"label":"Corporate","value":"Corporate"},
-                {"label":"Private Residence","value":"Private Residence"},
-                {"label":"Other Projects","value":"Projects"}
-            ]
-
+        {
+          "label": "Governmental Projects",
+          "value": "Governmental Projects"
+        },
+        {
+          "label": "Educational Projects",
+          "value": "Educational Projects"
+        },
+        {
+          "label": "Towers Projects",
+          "value": "Towers Projects"
+        },
+        {
+          "label": "Hotels Projects",
+          "value": "Hotels Projects"
+        },
+        {
+          "label": "Restaurants",
+          "value": "Restaurants"
+        },
+        {
+          "label": "Car Showrooms",
+          "value": "Car Showrooms"
+        },
+        {
+          "label": "Retail Outlets",
+          "value": "Retail Outlets"
+        },
+        {
+          "label": "Corporate",
+          "value": "Corporate"
+        },
+        {
+          "label": "Private Residence",
+          "value": "Private Residence"
+        },
+        {
+          "label": "Other Projects",
+          "value": "Projects"
         }
-
-    },
-    "ar":{
-  "navBar": [
-    { "href": "/ar/", "label": "الرئيسية" },
-    { "href": "/ar/about", "label": "من نحن" },
-    { "href": "/ar/services", "label": "خدماتنا" },
-    { "href": "/ar/projects", "label": "مشاريعنا" },
-    { "href": "/ar/contact", "label": "اتصل بنا" }
-  ],
-  "heroSection": {
-    "titleDate": "منذ عام 2005",
-    "title1": "إضاءة المساحات",
-    "title2": "تصميم التجارب",
-    "subtitle": "تقدم لايتك حلول إضاءة متكاملة ومتطورة بفضل خبرتها المهنية في المشاريع المعمارية والداخلية وإضاءة المساحات الخارجية.",
-    "btn1": { "label": "استعرض المشاريع", "href": "/projects" },
-    "btn2": { "label": "خدماتنا", "href": "/services" },
-    "statsCard": [
-      { "label": "المشاريع المنجزة", "value": "200" },
-      { "label": "سنوات من التميز", "value": "19" },
-      { "label": "الخبراء المحترفون", "value": "50" }
-    ]
-  },
-  "aboutSection": {
-    "title": "حول لايتك",
-    "subtitle": "خبراء الإضاءة منذ 2005",
-    "desc_one": "لايتك شركة ديناميكية في مجال الإضاءة تقدم مجموعة واسعة من الأنشطة والخدمات. بفضل الخبرة في مشاريع الإضاءة، بالإضافة إلى الخلفية متعددة التخصصات في العمارة والإضاءة الداخلية والخارجية، يمكننا توفير حلول بسيطة وسلسة تلبي حتى أصعب احتياجات المشاريع.",
-    "desc_two": "إحدى نقاط قوتنا الرئيسية في لايتك هي التنوع الدائم في المنتجات وكادر من الخبراء المتمرسين. هذا المزيج منحنا القدرة على تقديم حلول إضاءة متكاملة ومتطورة.",
-    "statsCard": [
-      { "label": "المشاريع المنجزة", "value": "200+" },
-      { "label": "سنوات من التميز", "value": "19+" }
-    ],
-    "cta": { "label": "تعرف أكثر عنا", "href": "/about" }
-  },
-  "servicesSection": {
-    "title": "خدماتنا",
-    "subtitle": "حلول إضاءة متكاملة",
-    "desc_one": "يقدم مهندسونا واختصاصيو الإضاءة القدرة الفريدة على تقديم مفاهيم عالمية في الإضاءة والتحكم والطاقة المتجددة.",
-    "services": [
-      {
-        "id": "innovative",
-        "title": "ابتكارية",
-        "description": "تشمل تجهيزات إضاءة ابتكارية وعالية التقنية من الزخرفية إلى التقنية للتطبيقات الداخلية أو الخارجية بما في ذلك التجهيزات الخاصة أو المصممة حسب الطلب.",
-        "icon": "innovation_18.svg",
-        "image": "G004.jpg"
-      },
-      {
-        "id": "know_how",
-        "title": "المعرفة والخبرة",
-        "description": "المعرفة والخبرة لابتكار أكثر ميزات وأنظمة الإضاءة تطوراً مع الحفاظ على البيئة (منع التلوث الضوئي، ترشيد الطاقة، وتقليل التكاليف).",
-        "icon": "institution_09.svg",
-        "image": "G007.jpg"
-      },
-      {
-        "id": "different_solutions",
-        "title": "حلول متنوعة",
-        "description": "يتم تقديم حلول مختلفة وفقاً لطلب العميل وإمكانيات الميزانية.",
-        "icon": "global_book_05.svg",
-        "image": "G006.jpg"
-      },
-      {
-        "id": "full_coperation",
-        "title": "تعاون كامل",
-        "description": "تعاون كامل بين فريقنا وشركائنا الدوليين والعملاء ومصممي الإضاءة العالميين.",
-        "icon": "cooperation_20.svg",
-        "image": "G012.jpg"
-      }
-    ],
-    "cta": { "label": "عرض جميع الخدمات", "href": "/services" }
-  },
-  "projectsSection": {
-    "title": "مشاريعنا",
-    "subtitle": "مشاريع مميزة",
-    "categories": [
-          {"label":"مميز","value":"Featured"}, 
-                {"label":"المشاريع الحكومية","value":"Governmental Projects"}, 
-                {"label":"المشاريع التعليمية","value":"Educational Projects"}, 
-                {"label":"مشاريع الأبراج","value":"Towers Projects"}, 
-                {"label":"مشاريع الفنادق","value":"Hotels Projects"}, 
-                {"label":"المطاعم","value":"Restaurants"},
-                {"label":"المشاريع","value":"Projects"} 
-    ],
-    "individual_cta": { "label": "عرض المشروع", "href": "/projects" },
-    "cta": { "label": "عرض جميع المشاريع", "href": "/projects" }
-  },
-  "testimonialSection": {
-    "title": "آراء العملاء",
-    "subtitle": "ماذا يقول عملاؤنا",
-    "description": "لا تكتفِ بكلامنا فقط، إليك آراء عملائنا وتجاربهم مع لايتك.",
-    "testimonials": [
-      {
-        "id": 1,
-        "name": "محمد الفارسي",
-        "position": "مدير مشروع",
-        "company": "شركة البناء السعودية",
-        "text": "كان العمل مع لايتك تجربة استثنائية. خبرتهم في تصميم الإضاءة حولت مبنانا التجاري إلى معلم بصري رائع. اهتمامهم بالتفاصيل وفهمهم لاحتياجاتنا تجاوز توقعاتنا.",
-        "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      },
-      {
-        "id": 2,
-        "name": "سارة القحطاني",
-        "position": "مصممة داخلية",
-        "company": "مودرن سبيس",
-        "text": "قدمت لايتك حلولاً مبتكرة للإضاءة في مشروع سكني فاخر. فهمهم لتأثير الإضاءة على المساحات ساعد على خلق الأجواء المثالية. فريق محترف وسريع الاستجابة.",
-        "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      },
-      {
-        "id": 3,
-        "name": "عبدالله رحمن",
-        "position": "مدير المرافق",
-        "company": "الرياض مول",
-        "text": "نتعاون مع لايتك في احتياجات الإضاءة لمولنا منذ أكثر من 5 سنوات. خدمات الصيانة سريعة وموثوقة، وحلولهم ساعدتنا على تقليل تكاليف الطاقة وتحسين تجربة التسوق.",
-        "image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      }
-    ]
-  },
-  "partnersSection": {
-    "title": "شركاؤنا",
-    "subtitle": "موثوق بهم من قِبل قادة الصناعة",
-    "description": "نتعاون مع أبرز العلامات التجارية والشركات لتقديم حلول إضاءة استثنائية للمشاريع بمختلف الأحجام.",
-    "features": [
-      {
-        "icon": "services_19.svg",
-        "title": "منتجات عالية الجودة",
-        "descriptions": "نعمل مع أفضل المصنعين في الصناعة لضمان توفير منتجات إضاءة عالية الجودة ومتينة لعملائنا وفق المعايير الدولية."
-      },
-      {
-        "icon": "mission_08.svg",
-        "title": "تركيب احترافي",
-        "descriptions": "يضمن فريقنا من الفنيين المعتمدين تركيباً احترافياً لأنظمة الإضاءة، مع الالتزام بأفضل الممارسات ومعايير السلامة لأداء مثالي."
-      },
-      {
-        "icon": "cooperation_20.svg",
-        "title": "دعم متواصل",
-        "descriptions": "نقدم خدمات صيانة شاملة ودعماً فنياً لضمان استمرار أنظمة الإضاءة بأداءها الأمثل لسنوات عديدة."
-      }
-    ]
-  },
-  "contactSection": {
-    "title": "اتصل بنا",
-    "subtitle": "تواصل معنا",
-    "desciption": "هل لديك مشروع في ذهنك أو تحتاج إلى استشارة إضاءة؟ تواصل معنا وسيقوم فريقنا بالرد عليك في أقرب وقت.",
-    "contactInfoSection": [
-        {
-           "id":"riyadh",
-      "title": "معلومات التواصل",
-      "locationTitle": "المكتب الرئيسي - الرياض",
-      "address": "7955 عبدالعزيز بن مساعد بن جلوي، حي السليمانية، مكتب 108، الدور الأول الرياض | منطقة الوسطى | المملكة العربية السعودية",
-      "emailTitle": "راسلنا عبر البريد",
-      "email_1": "info@lightech.com.sa",
-      "phoneTitle": "اتصل بنا",
-      "phone_1": "+966 114664696",
-      "faxTitle": "فاكس",
-      "fax_1": "+966 114612070",
-      "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14498.99479851486!2d46.705262!3d24.701164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f030b96d36ffb%3A0x6154e91ab35a42d0!2sLightech%20-%20Light%20Technologies%20Co.%20LTD!5e0!3m2!1sen!2sus!4v1759980243115!5m2!1sen!2sus"
-
-    },
-        {
-           "id":"jeddah",
-      "title": "معلومات التواصل",
-      "locationTitle": "الفرع الغربي – جدة",
-      "address": "الطابق الأول، ساحة البيع بالتجزئة (ميدان الدينيني)، مكتب 301، شارع حراء",
-      "emailTitle": "راسلنا عبر البريد",
-      "email_1": "info@lightech.com.sa",
-      "phoneTitle": "اتصل بنا",
-      "phone_1": "+966 126123346",
-      "faxTitle": "فاكس",
-      "fax_1": "+966 126123347",
-      "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14837.367180237647!2d39.156302!3d21.611601000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0a72f73d96d%3A0x7bb2286003359106!2sAl%20Dainy%20plaza!5e0!3m2!1sen!2sus!4v1759980962868!5m2!1sen!2sus"
-
-    },
-        {
-           "id":"alkhobar",
-      "title": "معلومات التواصل",
-      "locationTitle": "المكتب الفرعي الشرقي – الخبر",
-      "address": "جناح 307، بناية جرير، طريق الكورنيش، الخبر",
-      "emailTitle": "راسلنا عبر البريد",
-      "email_1": "info@lightech.com.sa",
-      "phoneTitle": "اتصل بنا",
-      "phone_1": "+966 138967245",
-      "faxTitle": "فاكس",
-      "fax_1": "+966 138951258",
-      "googleMapUrl":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7152.741790696206!2d50.21015!3d26.314487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e8f65c342fc1%3A0x1a6f7e480596c4ad!2sKhobar%20Mall!5e0!3m2!1sen!2sus!4v1759981076875!5m2!1sen!2sus"
-
+      ]
     }
-],
-    "submitBtn": { "label": "إرسال الرسالة", "label2": "إرسال" }
   },
-  "footerSection": {
-    "description": "شركة ديناميكية في مجال الإضاءة بخبرة مهنية في مشاريع الإضاءة، العمارة، التصميم الداخلي، وحلول إضاءة المساحات.",
-    "links_1": "روابط سريعة",
-    "quickLinks": [
-      { "label": "الرئيسية", "href": "/ar/" },
-      { "label": "من نحن", "href": "/ar/about" },
-      { "label": "خدماتنا", "href": "/ar/services" },
-      { "label": "مشاريعنا", "href": "/ar/projects" },
-      { "label": "اتصل بنا", "href": "/ar/contact" }
+  "ar": {
+    "navBar": [
+      {
+        "href": "/ar/",
+        "label": "الرئيسية"
+      },
+      {
+        "href": "/ar/about",
+        "label": "من نحن"
+      },
+      {
+        "href": "/ar/services",
+        "label": "خدماتنا"
+      },
+      {
+        "href": "/ar/projects",
+        "label": "مشاريعنا"
+      },
+      {
+        "href": "/ar/contact",
+        "label": "اتصل بنا"
+      }
     ],
-    "links_2": "المشاريع",
-    "projectsLinks": [
-      "المشاريع الحكومية",
-      "المشاريع التعليمية",
-      "مشاريع الأبراج",
-      "مشاريع الفنادق",
-      "مشاريع المطاعم"
-    ],
+    "heroSection": {
+      "titleDate": "منذ عام 2005",
+      "title1": "إضاءة المساحات",
+      "title2": "تصميم تجارب فريدة",
+      "subtitle": "تقدم لايتك حلول إضاءة متكاملة في السعودية، بفضل خبرتها المهنية في المشاريع المعمارية والداخلية وإضاءة المساحات الخارجية في الرياض وجدة والخبر.",
+      "btn1": {
+        "label": "استعرض المشاريع",
+        "href": "/projects"
+      },
+      "btn2": {
+        "label": "خدماتنا",
+        "href": "/services"
+      },
+      "statsCard": [
+        {
+          "label": "المشاريع المنجزة",
+          "value": "200"
+        },
+        {
+          "label": "سنوات من التميز",
+          "value": "19"
+        },
+        {
+          "label": "الخبراء المحترفون",
+          "value": "50"
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "حول لايتك - شركة إضاءة رائدة",
+      "subtitle": "خبراء الإضاءة في السعودية منذ 2005",
+      "desc_one": "لايتك هي شركة إضاءة سعودية رائدة تقدم مجموعة واسعة من الأنشطة والخدمات. بفضل الخبرة في مشاريع الإضاءة المعمارية، وتصميم الإضاءة الداخلية والخارجية، نقدم حلول إضاءة مبتكرة تلبي احتياجات مشاريعكم في المملكة.",
+      "desc_two": "إحدى نقاط قوتنا الرئيسية في لايتك هي التنوع الدائم في منتجات الإضاءة وكادر من الخبراء المتمرسين. هذا المزيج منحنا القدرة على تقديم حلول إضاءة متكاملة (Turnkey Solutions) للمشاريع التجارية والسكنية.",
+      "statsCard": [
+        {
+          "label": "المشاريع المنجزة",
+          "value": "200+"
+        },
+        {
+          "label": "سنوات من التميز",
+          "value": "19+"
+        }
+      ],
+      "cta": {
+        "label": "تعرف أكثر عنا",
+        "href": "/about"
+      }
+    },
+    "servicesSection": {
+      "title": "خدماتنا",
+      "subtitle": "حلول إضاءة متكاملة وتصميم احترافي",
+      "desc_one": "يقدم مهندسونا واختصاصيو الإضاءة حلولاً عالمية في تصميم الإضاءة، وأنظمة التحكم الذكية، ومفاهيم الطاقة المتجددة للمشاريع في السعودية.",
+      "services": [
+        {
+          "id": "innovative",
+          "title": "إضاءة ابتكارية",
+          "description": "تشمل تجهيزات إضاءة ابتكارية وعالية التقنية من الزخرفية إلى التقنية للتطبيقات الداخلية أو الخارجية، بما في ذلك التجهيزات المصممة حسب الطلب للمشاريع السعودية.",
+          "icon": "innovation_18.svg",
+          "image": "G004.jpg",
+          "alt": "حلول إضاءة ابتكارية في السعودية"
+        },
+        {
+          "id": "know_how",
+          "title": "الخبرة التقنية",
+          "description": "الخبرة لابتكار أكثر أنظمة الإضاءة تطوراً مع الحفاظ على البيئة باستخدام تقنيات LED الموفرة للطاقة ومنع التلوث الضوئي.",
+          "icon": "institution_09.svg",
+          "image": "G007.jpg",
+          "alt": "خبرة تقنية في مجال الإضاءة الموفرة للطاقة"
+        },
+        {
+          "id": "different_solutions",
+          "title": "حلول مخصصة",
+          "description": "يتم تقديم حلول إضاءة متنوعة وفقاً لطلب العميل وميزانيته، لضمان أفضل قيمة لتوريد الإضاءة في المملكة.",
+          "icon": "global_book_05.svg",
+          "image": "G006.jpg",
+          "alt": "حلول إضاءة مخصصة للمشاريع"
+        },
+        {
+          "id": "full_coperation",
+          "title": "تعاون متكامل",
+          "description": "تعاون كامل بين فريقنا وشركائنا الدوليين وعملائنا ومصممي الإضاءة العالميين لضمان نجاح مشاريع الإضاءة.",
+          "icon": "cooperation_20.svg",
+          "image": "G012.jpg",
+          "alt": "تعاون فريق العمل مع الشركاء الدوليين"
+        }
+      ],
+      "cta": {
+        "label": "عرض جميع الخدمات",
+        "href": "/services"
+      }
+    },
+    "projectsSection": {
+      "title": "مشاريعنا",
+      "subtitle": "مشاريع إضاءة مميزة في السعودية",
+      "categories": [
+        {
+          "label": "مميز",
+          "value": "Featured"
+        },
+        {
+          "label": "المشاريع الحكومية",
+          "value": "Governmental Projects"
+        },
+        {
+          "label": "المشاريع التعليمية",
+          "value": "Educational Projects"
+        },
+        {
+          "label": "مشاريع الأبراج",
+          "value": "Towers Projects"
+        },
+        {
+          "label": "مشاريع الفنادق",
+          "value": "Hotels Projects"
+        },
+        {
+          "label": "المطاعم",
+          "value": "Restaurants"
+        },
+        {
+          "label": "المشاريع",
+          "value": "Projects"
+        }
+      ],
+      "individual_cta": {
+        "label": "عرض المشروع",
+        "href": "/projects"
+      },
+      "cta": {
+        "label": "عرض جميع المشاريع",
+        "href": "/projects"
+      }
+    },
+    "testimonialSection": {
+      "title": "آراء العملاء",
+      "subtitle": "ماذا يقول عملاؤنا",
+      "description": "لا تكتفِ بكلامنا فقط، إليك آراء عملائنا وتجاربهم في التعامل مع لايتك كواحدة من أفضل شركات الإضاءة في السعودية.",
+      "testimonials": [
+        {
+          "id": 1,
+          "name": "محمد الفارسي",
+          "position": "مدير مشروع",
+          "company": "شركة البناء السعودية",
+          "text": "كان العمل مع لايتك تجربة استثنائية. خبرتهم في تصميم الإضاءة حولت مبنانا التجاري إلى معلم بصري رائع. اهتمامهم بالتفاصيل وفهمهم لاحتياجاتنا تجاوز توقعاتنا.",
+          "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+          "id": 2,
+          "name": "سارة القحطاني",
+          "position": "مصممة داخلية",
+          "company": "مودرن سبيس",
+          "text": "قدمت لايتك حلولاً مبتكرة للإضاءة في مشروع سكني فاخر. فهمهم لتأثير الإضاءة على المساحات ساعد على خلق الأجواء المثالية. فريق محترف وسريع الاستجابة.",
+          "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+          "id": 3,
+          "name": "عبدالله رحمن",
+          "position": "مدير المرافق",
+          "company": "الرياض مول",
+          "text": "نتعاون مع لايتك في احتياجات الإضاءة لمولنا منذ أكثر من 5 سنوات. خدمات الصيانة سريعة وموثوقة، وحلولهم ساعدتنا على تقليل تكاليف الطاقة وتحسين تجربة التسوق.",
+          "image": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        }
+      ]
+    },
+    "partnersSection": {
+      "title": "شركاؤنا",
+      "subtitle": "موثوق بهم من قِبل قادة الصناعة",
+      "description": "نتعاون مع أبرز العلامات التجارية لتقديم حلول إضاءة استثنائية للمشاريع بمختلف الأحجام في المملكة.",
+      "features": [
+        {
+          "icon": "services_19.svg",
+          "title": "منتجات عالية الجودة",
+          "descriptions": "نعمل مع أفضل المصنعين لضمان توفير منتجات إضاءة عالية الجودة ومتينة لعملائنا وفق المعايير الدولية."
+        },
+        {
+          "icon": "mission_08.svg",
+          "title": "تركيب احترافي",
+          "descriptions": "يضمن فريقنا من الفنيين المعتمدين تركيباً احترافياً لأنظمة الإضاءة، مع الالتزام بأفضل الممارسات ومعايير السلامة."
+        },
+        {
+          "icon": "cooperation_20.svg",
+          "title": "دعم متواصل",
+          "descriptions": "نقدم خدمات صيانة شاملة ودعماً فنياً لضمان استمرار أنظمة الإضاءة بأداءها الأمثل لسنوات عديدة."
+        }
+      ]
+    },
     "contactSection": {
       "title": "اتصل بنا",
-      "address": "7955 عبدالعزيز بن مساعد بن جلوي، حي السليمانية، مكتب 108، الدور الأول الرياض | منطقة الوسطى | المملكة العربية السعودية",
-      "phone": "+966 114664696",
-      "email": "info@lightech.com.sa"
+      "subtitle": "تواصل معنا",
+      "desciption": "هل لديك مشروع إضاءة في الرياض أو جدة أو الخبر؟ تواصل معنا وسيقوم فريقنا بالرد عليك في أقرب وقت.",
+      "contactInfoSection": [
+        {
+          "id": "riyadh",
+          "title": "معلومات التواصل",
+          "locationTitle": "المكتب الرئيسي - الرياض",
+          "address": "7955 عبدالعزيز بن مساعد بن جلوي، حي السليمانية، مكتب 108، الدور الأول الرياض | منطقة الوسطى | المملكة العربية السعودية",
+          "emailTitle": "راسلنا عبر البريد",
+          "email_1": "info@lightech.com.sa",
+          "phoneTitle": "اتصل بنا",
+          "phone_1": "+966 114664696",
+          "faxTitle": "فاكس",
+          "fax_1": "+966 114612070",
+          "googleMapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14498.99479851486!2d46.705262!3d24.701164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f030b96d36ffb%3A0x6154e91ab35a42d0!2sLightech%20-%20Light%20Technologies%20Co.%20LTD!5e0!3m2!1sen!2sus!4v1759980243115!5m2!1sen!2sus"
+        },
+        {
+          "id": "jeddah",
+          "title": "معلومات التواصل",
+          "locationTitle": "الفرع الغربي – جدة",
+          "address": "الطابق الأول، ساحة البيع بالتجزئة (ميدان الدينيني)، مكتب 301، شارع حراء",
+          "emailTitle": "راسلنا عبر البريد",
+          "email_1": "info@lightech.com.sa",
+          "phoneTitle": "اتصل بنا",
+          "phone_1": "+966 126123346",
+          "faxTitle": "فاكس",
+          "fax_1": "+966 126123347",
+          "googleMapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14837.367180237647!2d39.156302!3d21.611601000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0a72f73d96d%3A0x7bb2286003359106!2sAl%20Dainy%20plaza!5e0!3m2!1sen!2sus!4v1759980962868!5m2!1sen!2sus"
+        },
+        {
+          "id": "alkhobar",
+          "title": "معلومات التواصل",
+          "locationTitle": "المكتب الفرعي الشرقي – الخبر",
+          "address": "جناح 307، بناية جرير، طريق الكورنيش، الخبر",
+          "emailTitle": "راسلنا عبر البريد",
+          "email_1": "info@lightech.com.sa",
+          "phoneTitle": "اتصل بنا",
+          "phone_1": "+966 138967245",
+          "faxTitle": "فاكس",
+          "fax_1": "+966 138951258",
+          "googleMapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7152.741790696206!2d50.21015!3d26.314487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e8f65c342fc1%3A0x1a6f7e480596c4ad!2sKhobar%20Mall!5e0!3m2!1sen!2sus!4v1759981076875!5m2!1sen!2sus"
+        }
+      ],
+      "submitBtn": {
+        "label": "إرسال الرسالة",
+        "label2": "إرسال"
+      }
+    },
+    "footerSection": {
+      "description": "شركة إضاءة ديناميكية في السعودية تقدم حلول إضاءة احترافية للمشاريع المعمارية والداخلية وإضاءة المناظر الطبيعية في المملكة.",
+      "links_1": "روابط سريعة",
+      "quickLinks": [
+        {
+          "label": "الرئيسية",
+          "href": "/ar/"
+        },
+        {
+          "label": "من نحن",
+          "href": "/ar/about"
+        },
+        {
+          "label": "خدماتنا",
+          "href": "/ar/services"
+        },
+        {
+          "label": "مشاريعنا",
+          "href": "/ar/projects"
+        },
+        {
+          "label": "اتصل بنا",
+          "href": "/ar/contact"
+        }
+      ],
+      "links_2": "المشاريع",
+      "projectsLinks": [
+        "المشاريع الحكومية",
+        "المشاريع التعليمية",
+        "مشاريع الأبراج",
+        "مشاريع الفنادق",
+        "مشاريع المطاعم"
+      ],
+      "contactSection": {
+        "title": "اتصل بنا",
+        "address": "7955 عبدالعزيز بن مساعد بن جلوي، حي السليمانية، مكتب 108، الدور الأول الرياض | منطقة الوسطى | المملكة العربية السعودية",
+        "phone": "+966 114664696",
+        "email": "info@lightech.com.sa"
+      }
+    },
+    "aboutPage": {
+      "header": {
+        "title": "عن لايتك",
+        "description": "شركة إضاءة رائدة في السعودية تقدم مجموعة واسعة من الأنشطة والخدمات، مدعومة بخبرة مهنية منذ عام 2005."
+      },
+      "ourStory": {
+        "heading": "قصتنا",
+        "paragraphs": [
+          "تأسست لايتك عام 2005 وقد رسخت مكانتها كواحدة من أفضل شركات الإضاءة في المملكة العربية السعودية. بدأت رحلتنا برؤية تهدف إلى تحويل المساحات من خلال حلول إضاءة مبتكرة.",
+          "مدعومةً بخبرة مهنية في مشاريع الإضاءة، وبخلفية متعددة التخصصات في العمارة والتصميم الداخلي وإضاءة المناظر الطبيعية، نستطيع تقديم حلول بسيطة وسلسة لتلبية وتجاوز حتى أصعب متطلبات المشاريع.",
+          "في لايتك، من أبرز نقاط قوتنا التنوع الدائم في المنتجات ووجود محترفين ذوي خبرة في المجال. وقد أسهم هذا المزيج في تطوير مجموعة من القدرات المصممة لتقديم حلول إضاءة متكاملة جاهزة للتسليم."
+        ],
+        "gallery": [
+          {
+            "src": "G005.jpg",
+            "alt": "مكتب لايتك في الرياض"
+          },
+          {
+            "src": "G006.jpg",
+            "alt": "مشروع إضاءة السعودية من لايتك"
+          },
+          {
+            "src": "G007.jpg",
+            "alt": "تصميم إضاءة احترافي"
+          },
+          {
+            "src": "G012.jpg",
+            "alt": "مكتب لايتك الرئيسي"
+          }
+        ]
+      },
+      "missionVisionValues": {
+        "cards": [
+          {
+            "icon": "target_02.svg",
+            "heading": "رسالتنا",
+            "body": "تحويل المساحات في السعودية من خلال حلول إضاءة مبتكرة تعزز جمال البيئات المعمارية ووظائفها واستدامتها."
+          },
+          {
+            "icon": "vision_03.svg",
+            "heading": "رؤيتنا",
+            "body": "أن نكون المزود الرائد لحلول الإضاءة في المملكة العربية السعودية وما بعدها، معترفاً بنا بابتكارنا واستدامتنا والتزامنا بخلق تجارب إضاءة استثنائية."
+          },
+          {
+            "icon": "global_book_05.svg",
+            "heading": "قيمنا",
+            "values": [
+              "الابتكار في التصميم",
+              "التركيز على الاستدامة",
+              "تميز العميل",
+              "الخبرة المهنية"
+            ]
+          }
+        ]
+      },
+      "strategicObjectives": {
+        "heading": "الأهداف الاستراتيجية",
+        "items": [
+          {
+            "icon": "mission_08.svg",
+            "title": "الريادة السوقية",
+            "description": "المحافظة على مكانتنا وتوسيعها كأفضل شركة إضاءة في المملكة العربية السعودية."
+          },
+          {
+            "icon": "innovation_18.svg",
+            "title": "الابتكار",
+            "description": "تطوير وتنفيذ حلول وتقنيات إضاءة مبتكرة بشكل مستمر لمشاريع السعودية."
+          },
+          {
+            "icon": "institution_09.svg",
+            "title": "الاستدامة",
+            "description": "تعزيز حلول الإضاءة الموفرة للطاقة والصديقة للبيئة."
+          },
+          {
+            "icon": "cooperation_20.svg",
+            "title": "نجاح العملاء",
+            "description": "ضمان رضا العملاء من خلال خدمة ودعم استثنائيين."
+          }
+        ]
+      }
+    },
+    "servicesPage": {
+      "header": {
+        "title": "خدماتنا",
+        "subtitle": "يقدم مهندسونا وأخصائيو الإضاءة قدرة فريدة على توفير مفاهيم عالمية المستوى في الإضاءة وأنظمة التحكم والطاقة المتجددة في السعودية."
+      },
+      "categories": [
+        {
+          "key": "lighting",
+          "title": "حلول الإضاءة",
+          "summary": "تصميم إضاءة متكامل من البداية إلى التسليم الجاهز، يشمل التوريد والتنفيذ للتطبيقات المعمارية والداخلية وإضاءة المناظر الطبيعية في السعودية.",
+          "offerings": [
+            "تصميم المفهوم والمخططات الأولية للإضاءة",
+            "حسابات الإنارة والدراسات الضوئية والتسليمات عبر Dialux",
+            "اختيار وتجهيز المواصفات والهندسة القيمية للمصابيح",
+            "إضاءة معمارية وداخلية وواجهات ومناظر طبيعية",
+            "مخططات إضاءة للضيافة والتجزئة والمكاتب والصناعة",
+            "تحديثات LED وترقيات كفاءة الطاقة",
+            "الامتثال لإضاءة الطوارئ ومخارج الهروب",
+            "التوريد والتركيب والاختبار والتشغيل (SITC)"
+          ],
+          "imageSrc": "E002.jpg"
+        },
+        {
+          "key": "wiringDevices",
+          "title": "أجهزة التمديدات الكهربائية",
+          "summary": "أجهزة تمديدات كهربائية وإكسسوارات عالية الجودة لتوزيع طاقة موثوق وواجهات تركّز على تجربة المستخدم.",
+          "offerings": [
+            "مفاتيح ومقابس وقواطع تعتيم وأنظمة مخارج",
+            "وحدات شحن USB/Type‑C وصناديق أرضية",
+            "شبكات إكسسوارات للضيافة والمكاتب",
+            "حواضن مقاومة للعوامل الجوية ومصنفة IK",
+            "ألواح وواجهات معيارية بمظهر يتماشى مع الديكور",
+            "تكامل حماية زيادة الجهد وRCD/RCBO وAFCI"
+          ],
+          "imageSrc": "P007.jpg"
+        },
+        {
+          "key": "controlSystems",
+          "title": "أنظمة التحكم",
+          "summary": "أنظمة تحكم ذكية في الإضاءة لراحة وكفاءة أعلى مع إدارة مركزية للمواقع الفردية والمحافظ متعددة المواقع في المملكة.",
+          "offerings": [
+            "هياكل تحكم DALI/DALI-2 و0–10V وDMX",
+            "تحكم لاسلكي: BLE وZigbee وThread/Matter",
+            "حساسات إشغال/إخلاء واستغلال الإضاءة الطبيعية",
+            "ضبط المشاهد والجداول ومنطق الساعة الزمنية",
+            "تكامل مع نظم إدارة المباني عبر BACnet/Modbus/IP",
+            "لوحات لمس ولوحات مفاتيح وتحكم عبر تطبيقات الجوال",
+            "لوحات تحليلات ومراقبة عن بُعد"
+          ],
+          "imageSrc": "G006.jpg"
+        },
+        {
+          "key": "renewables",
+          "title": "أنظمة الطاقة المتجددة",
+          "summary": "حلول تعمل بالطاقة الشمسية وأنظمة هجينة تكمل الإضاءة عالية الكفاءة لمنشآت مستدامة في السعودية.",
+          "offerings": [
+            "تصميم وتركيب أنظمة الطاقة الشمسية الكهروضوئية على الشبكة والهجينة",
+            "أنظمة إنارة شوارع ومساحات تعمل بالطاقة الشمسية",
+            "تحجيم واختيار أنظمة تخزين البطاريات",
+            "تنسيق العواكس وMPPT وأنظمة الحماية",
+            "تدقيقات طاقة ونمذجة العائد على الاستثمار",
+            "خطط التشغيل والصيانة ومراقبة الأداء"
+          ],
+          "imageSrc": "E004.jpg"
+        }
+      ]
+    },
+    "projectsPage": {
+      "title": "مشاريعنا",
+      "description": "استكشف مجموعة مشاريع الإضاءة في السعودية التي تبرز خبرتنا وابتكارنا.",
+      "categories": [
+        {
+          "label": "الكل",
+          "value": "All"
+        },
+        {
+          "label": "المشاريع الحكومية",
+          "value": "Governmental Projects"
+        },
+        {
+          "label": "المشاريع التعليمية",
+          "value": "Educational Projects"
+        },
+        {
+          "label": "مشاريع الأبراج",
+          "value": "Towers Projects"
+        },
+        {
+          "label": "مشاريع الفنادق",
+          "value": "Hotels Projects"
+        },
+        {
+          "label": "المطاعم",
+          "value": "Restaurants"
+        },
+        {
+          "label": "معارض السيارات",
+          "value": "Car Showrooms"
+        },
+        {
+          "label": "متاجر التجزئة",
+          "value": "Retail Outlets"
+        },
+        {
+          "label": "الشركات",
+          "value": "Corporate"
+        },
+        {
+          "label": "المساكن الخاصة",
+          "value": "Private Residence"
+        },
+        {
+          "label": "مشاريع أخرى",
+          "value": "Projects"
+        }
+      ]
     }
-  },
-  "aboutPage":{
-"header": {
-"title": "عن لايتك",
-"description": "شركة إضاءة ديناميكية تقدم مجموعة واسعة من الأنشطة والخدمات، مدعومة بخبرة مهنية منذ عام 2005."
-},
-"ourStory": {
-"heading": "قصتنا",
-"paragraphs": [
-"تأسست لايتك عام 2005 وقد رسخت مكانتها كشركة رائدة في مجال الإضاءة في المملكة العربية السعودية. بدأت رحلتنا برؤية تهدف إلى تحويل المساحات من خلال حلول إضاءة مبتكرة.",
-"مدعومةً بخبرة مهنية في مشاريع الإضاءة، وبخلفية متعددة التخصصات في العمارة والتصميم الداخلي وإضاءة المناظر الطبيعية، نستطيع تقديم حلول بسيطة وسلسة لتلبية وتجاوز حتى أصعب متطلبات المشاريع.",
-"في لايتك، من أبرز نقاط قوتنا التنوع الدائم في المنتجات ووجود محترفين ذوي خبرة في المجال. وقد أسهم هذا المزيج في تطوير مجموعة من القدرات المصممة لتقديم حلول إضاءة متكاملة جاهزة للتسليم."
-],
-"gallery": [
-{
-"src": "G005.jpg",
-"alt": "مكتب لايتك"
-},
-{
-"src": "G006.jpg",
-"alt": "مشروع لايتك"
-},
-{
-"src": "G007.jpg",
-"alt": "تصميم إضاءة"
-},
-{
-"src": "G012.jpg",
-"alt": "مكتب لايتك"
-}
-]
-},
-"missionVisionValues": {
-"cards": [
-{
-    "icon":"target_02.svg",
-"heading": "رسالتنا",
-"body": "تحويل المساحات من خلال حلول إضاءة مبتكرة تعزز جمال البيئات المعمارية ووظائفها واستدامتها، مع تجاوز توقعات عملائنا عبر التميز في التصميم والتقنية والخدمة."
-},
-{
-    "icon":"vision_03.svg",
-"heading": "رؤيتنا",
-"body": "أن نكون المزود الرائد لحلول الإضاءة في المملكة العربية السعودية وما بعدها، معترفاً بنا بابتكارنا واستدامتنا والتزامنا بخلق تجارب إضاءة استثنائية تُلهم وتحوّل المساحات."
-},
-{
-    "icon":"global_book_05.svg",
-"heading": "قيمنا",
-"values": [
-"الابتكار في التصميم",
-"التركيز على الاستدامة",
-"تميز العميل",
-"الخبرة المهنية"
-]
-}
-]
-},
-"strategicObjectives": {
-"heading": "الأهداف الاستراتيجية",
-"items": [
-{
-"icon": "mission_08.svg",
-"title": "الريادة السوقية",
-"description": "المحافظة على مكانتنا وتوسيعها كمزود رائد لحلول الإضاءة في المملكة العربية السعودية."
-},
-{
-"icon": "innovation_18.svg",
-"title": "الابتكار",
-"description": "تطوير وتنفيذ حلول وتقنيات إضاءة مبتكرة بشكل مستمر."
-},
-{
-"icon": "institution_09.svg",
-"title": "الاستدامة",
-"description": "تعزيز حلول الإضاءة الموفرة للطاقة والصديقة للبيئة."
-},
-{
-"icon": "cooperation_20.svg",
-"title": "نجاح العملاء",
-"description": "ضمان رضا العملاء من خلال خدمة ودعم استثنائيين."
-}
-]
-}
-  },
-  "servicesPage": {
-  "header": {
-  "title": "خدماتنا",
-  "subtitle": "يقدم مهندسونا وأخصائيو الإضاءة قدرة فريدة على توفير مفاهيم عالمية المستوى في الإضاءة وأنظمة التحكم والطاقة المتجددة."
-  },
-  "categories": [
-  {
-  "key": "lighting",
-  "title": "الإضاءة",
-  "summary": "تصميم إضاءة متكامل من البداية إلى التسليم الجاهز، يشمل التوريد والتنفيذ للتطبيقات المعمارية والداخلية وإضاءة المناظر الطبيعية.",
-  "offerings": [
-  "تصميم المفهوم والمخططات الأولية للإضاءة",
-  "حسابات الإنارة والدراسات الضوئية والتسليمات عبر Dialux",
-  "اختيار وتجهيز المواصفات والهندسة القيمية للمصابيح",
-  "إضاءة معمارية وداخلية وواجهات ومناظر طبيعية",
-  "مخططات إضاءة للضيافة والتجزئة والمكاتب والصناعة",
-  "تحديثات LED وترقيات كفاءة الطاقة",
-  "الامتثال لإضاءة الطوارئ ومخارج الهروب",
-  "التوريد والتركيب والاختبار والتشغيل (SITC)"
-  ],
-  "imageSrc": "E002.jpg"
-  },
-  {
-  "key": "wiringDevices",
-  "title": "أجهزة التمديدات الكهربائية",
-  "summary": "أجهزة تمديدات كهربائية وإكسسوارات عالية الجودة لتوزيع طاقة موثوق وواجهات تركّز على تجربة المستخدم.",
-  "offerings": [
-  "مفاتيح ومقابس وقواطع تعتيم وأنظمة مخارج",
-  "وحدات شحن USB/Type‑C وصناديق أرضية",
-  "شبكات إكسسوارات للضيافة والمكاتب",
-  "حواضن مقاومة للعوامل الجوية ومصنفة IK",
-  "ألواح وواجهات معيارية بمظهر يتماشى مع الديكور",
-  "تكامل حماية زيادة الجهد وRCD/RCBO وAFCI"
-  ],
-  "imageSrc": "P007.jpg"
-  },
-  {
-  "key": "controlSystems",
-  "title": "أنظمة التحكم",
-  "summary": "أنظمة تحكم ذكية في الإضاءة لراحة وكفاءة أعلى مع إدارة مركزية للمواقع الفردية والمحافظ متعددة المواقع.",
-  "offerings": [
-  "هياكل تحكم DALI/DALI-2 و0–10V وDMX",
-  "تحكم لاسلكي: BLE وZigbee وThread/Matter",
-  "حساسات إشغال/إخلاء واستغلال الإضاءة الطبيعية",
-  "ضبط المشاهد والجداول ومنطق الساعة الزمنية",
-  "تكامل مع نظم إدارة المباني عبر BACnet/Modbus/IP",
-  "لوحات لمس ولوحات مفاتيح وتحكم عبر تطبيقات الجوال",
-  "لوحات تحليلات ومراقبة عن بُعد"
-  ],
-  "imageSrc": "G006.jpg"
-  },
-  {
-  "key": "renewables",
-  "title": "أنظمة الطاقة المتجددة",
-  "summary": "حلول تعمل بالطاقة الشمسية وأنظمة هجينة تكمل الإضاءة عالية الكفاءة لمنشآت مستدامة.",
-  "offerings": [
-  "تصميم وتركيب أنظمة الطاقة الشمسية الكهروضوئية على الشبكة والهجينة",
-  "أنظمة إنارة شوارع ومساحات تعمل بالطاقة الشمسية",
-  "تحجيم واختيار أنظمة تخزين البطاريات",
-  "تنسيق العواكس وMPPT وأنظمة الحماية",
-  "تدقيقات طاقة ونمذجة العائد على الاستثمار",
-  "خطط التشغيل والصيانة ومراقبة الأداء"
-  ],
-  "imageSrc": "E004.jpg"
   }
-  ]
-  },
-  "projectsPage": {
-    "title": "مشاريعنا",
-    "description": "استكشف مجموعة مشاريع الإضاءة التي تبرز خبرتنا وابتكارنا.",
-    "categories": [
-        { "label": "الكل", "value": "All" },
-        { "label": "المشاريع الحكومية", "value": "Governmental Projects" },
-        { "label": "المشاريع التعليمية", "value": "Educational Projects" },
-        { "label": "مشاريع الأبراج", "value": "Towers Projects" },
-        { "label": "مشاريع الفنادق", "value": "Hotels Projects" },
-        { "label": "المطاعم", "value": "Restaurants" },
-        { "label": "معارض السيارات", "value": "Car Showrooms" },
-        { "label": "متاجر التجزئة", "value": "Retail Outlets" },
-        { "label": "الشركات", "value": "Corporate" },
-        { "label": "المساكن الخاصة", "value": "Private Residence" },
-        { "label": "مشاريع أخرى", "value": "Projects" }
-    ]
-}
-
-
-}
-
 }

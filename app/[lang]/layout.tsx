@@ -6,6 +6,7 @@ import { LanguageProvider } from '@/context/LanguageContext'; // Uncomment if us
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import AccessibilityWidget from '@/components/AccessibilityWidget';
+import { GoogleAnalytics } from '@next/third-parties/google'
 // Import other providers/components as needed
 
 const Bahnschrift = localFont({
@@ -141,7 +142,7 @@ export default function LangLayout({
     name: 'Lightech',
     url: 'https://lightech.com.sa',
     logo: 'https://lightech.com.sa/lightech_logo.jpg',
-    description: isArabic 
+    description: isArabic
       ? 'مزود حلول إضاءة احترافية في السعودية، الرياض، جدة، الخبر بخبرة في الإضاءة المعمارية والداخلية والمناظر الطبيعية.'
       : 'Professional lighting solutions provider in Saudi Arabia, Riyadh, Jeddah, AL khobar with expertise in architectural, interior, and landscape lighting.',
     sameAs: [
@@ -162,50 +163,28 @@ export default function LangLayout({
   };
 
   return (
-    <>
-      {/* Providers: Uncomment and wrap as needed */}
-      {/* <LanguageProvider> */}
-        <html
-          lang={params.lang}
-          dir={isArabic ? 'rtl' : 'ltr'}
-          suppressHydrationWarning
-          className={isArabic ? noto_kufi.className : Bahnschrift.className}
-        >
-          <head>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-            <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-            <link rel="apple-touch-icon" href="/favicon.ico" />
-            <link rel="manifest" href="/manifest.json" />
-            <meta name="theme-color" content="#000000" />
-          </head>
-          <body>
-            {/* <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-            /> */}
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5067FWQBX"></script>
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', 'G-M5067FWQBX');
-                `,
-              }}
-            />
-            {/* Accessibility Widget - Managed by client component for persistence across navigation */}
-            <AccessibilityWidget />
-            {/* <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange> */}
-              <Navbar params={params} />
-              {children}
-              <Footer params={params} />
-            {/* </ThemeProvider> */}
-          
-          </body>
-        </html>
-      {/* </LanguageProvider> */}
-    </>
+    <html
+      lang={params.lang}
+      dir={isArabic ? 'rtl' : 'ltr'}
+      suppressHydrationWarning
+      className={isArabic ? noto_kufi.className : Bahnschrift.className}
+    >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="google-site-verification" content="SQ57qL58D4tfGp3rf_66j8lMCPVw1XcMi_CMiRxLnIM" />
+      </head>
+      <body>
+        <GoogleAnalytics gaId="G-M5067FWQBX" />
+         <AccessibilityWidget />
+        <Navbar params={params} />
+        {children}
+        <Footer params={params} />
+      </body>
+    </html>
   );
 }
