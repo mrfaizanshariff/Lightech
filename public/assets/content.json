@@ -18,6 +18,10 @@
         "label": "Projects"
       },
       {
+        "href": "/en/careers",
+        "label": "Careers"
+      },
+      {
         "href": "/en/contact",
         "label": "Contact"
       }
@@ -495,6 +499,199 @@
           "value": "Projects"
         }
       ]
+    },
+    "careersPage": {
+      "header": {
+        "title": "Careers at Lightech",
+        "description": "Join our team of lighting experts and help illuminate the future of Saudi Arabia"
+      },
+      "hero": {
+        "title": "Build Your Career",
+        "subtitle": "With Lightech",
+        "description": "Join a team of passionate professionals dedicated to transforming spaces through innovative lighting solutions. At Lightech, we believe in nurturing talent and creating opportunities for growth.",
+        "cta": {
+          "label": "View Open Positions",
+          "href": "#jobs"
+        }
+      },
+      "culture": {
+        "title": "Why Join Lightech",
+        "subtitle": "Our Culture & Benefits",
+        "description": "We're committed to creating an environment where innovation thrives and careers flourish.",
+        "benefits": [
+          {
+            "icon": "innovation_18.svg",
+            "title": "Innovation & Growth",
+            "description": "Work on cutting-edge lighting projects across Saudi Arabia and contribute to Vision 2030 initiatives."
+          },
+          {
+            "icon": "cooperation_20.svg",
+            "title": "Collaborative Environment",
+            "description": "Join a diverse team of experts who value teamwork, knowledge sharing, and mutual support."
+          },
+          {
+            "icon": "global_book_05.svg",
+            "title": "Learning & Development",
+            "description": "Access continuous training programs, certifications, and opportunities to enhance your skills."
+          },
+          {
+            "icon": "institution_09.svg",
+            "title": "Competitive Benefits",
+            "description": "Enjoy competitive salaries, health insurance, annual bonuses, and performance incentives."
+          },
+          {
+            "icon": "target_02.svg",
+            "title": "Career Advancement",
+            "description": "Clear career paths with opportunities for promotion and leadership roles within the company."
+          },
+          {
+            "icon": "verified_01.svg",
+            "title": "Work-Life Balance",
+            "description": "Flexible working arrangements and a supportive culture that values your well-being."
+          }
+        ]
+      },
+      "jobs": {
+        "title": "Open Positions",
+        "subtitle": "Find Your Perfect Role",
+        "description": "Explore current opportunities across our offices in Riyadh, Jeddah, and Dammam.",
+        "filters": {
+          "all": "All Positions",
+          "departments": [
+            { "label": "Engineering", "value": "engineering" },
+            { "label": "Design", "value": "design" },
+            { "label": "Sales", "value": "sales" },
+            { "label": "Project Management", "value": "project-management" },
+            { "label": "Operations", "value": "operations" }
+          ],
+          "locations": [
+            { "label": "All Locations", "value": "all" },
+            { "label": "Riyadh", "value": "riyadh" },
+            { "label": "Jeddah", "value": "jeddah" },
+            { "label": "Dammam", "value": "dammam" },
+            { "label": "Remote", "value": "remote" }
+          ],
+          "types": [
+            { "label": "All Types", "value": "all" },
+            { "label": "Full-time", "value": "full-time" },
+            { "label": "Part-time", "value": "part-time" },
+            { "label": "Contract", "value": "contract" }
+          ]
+        },
+        "positions": [
+          {
+            "id": "lighting-engineer-senior",
+            "title": "Senior Lighting Engineer",
+            "department": "engineering",
+            "location": "Riyadh",
+            "type": "full-time",
+            "description": "Lead complex lighting design projects for commercial and governmental buildings across Saudi Arabia.",
+            "requirements": [
+              "Bachelor's degree in Electrical Engineering or related field",
+              "5+ years of experience in lighting design",
+              "Proficiency in DIALux, Relux, or similar software",
+              "Strong knowledge of LED technology and control systems"
+            ]
+          },
+          {
+            "id": "lighting-designer",
+            "title": "Lighting Designer",
+            "department": "design",
+            "location": "Jeddah",
+            "type": "full-time",
+            "description": "Create innovative lighting concepts for architectural and interior projects in the Western region.",
+            "requirements": [
+              "Degree in Architecture, Interior Design, or Lighting Design",
+              "3+ years of lighting design experience",
+              "Portfolio demonstrating creative lighting solutions",
+              "Excellent communication and presentation skills"
+            ]
+          },
+          {
+            "id": "project-manager",
+            "title": "Project Manager - Lighting Solutions",
+            "department": "project-management",
+            "location": "Riyadh",
+            "type": "full-time",
+            "description": "Oversee end-to-end delivery of large-scale lighting projects ensuring quality, timeline, and budget compliance.",
+            "requirements": [
+              "PMP certification preferred",
+              "5+ years in project management",
+              "Experience in construction or lighting industry",
+              "Strong leadership and organizational skills"
+            ]
+          },
+          {
+            "id": "sales-executive",
+            "title": "Sales Executive - Lighting Products",
+            "department": "sales",
+            "location": "Dammam",
+            "type": "full-time",
+            "description": "Drive sales growth in the Eastern Province by building relationships with contractors, architects, and developers.",
+            "requirements": [
+              "Bachelor's degree in Business or related field",
+              "3+ years in B2B sales, preferably in lighting or construction",
+              "Proven track record of meeting sales targets",
+              "Excellent negotiation and relationship-building skills"
+            ]
+          },
+          {
+            "id": "technical-support",
+            "title": "Technical Support Specialist",
+            "department": "operations",
+            "location": "Riyadh",
+            "type": "full-time",
+            "description": "Provide technical assistance to clients and internal teams on lighting products and control systems.",
+            "requirements": [
+              "Diploma or degree in Electrical Engineering",
+              "2+ years in technical support or field service",
+              "Knowledge of lighting fixtures and control systems",
+              "Strong problem-solving abilities"
+            ]
+          },
+          {
+            "id": "cad-technician",
+            "title": "CAD Technician - Lighting",
+            "department": "design",
+            "location": "Jeddah",
+            "type": "contract",
+            "description": "Prepare detailed technical drawings and documentation for lighting installation projects.",
+            "requirements": [
+              "Proficiency in AutoCAD and Revit",
+              "Understanding of electrical and lighting plans",
+              "Attention to detail and accuracy",
+              "Ability to work under tight deadlines"
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Apply Now",
+          "href": "#apply"
+        }
+      },
+      "contact": {
+        "title": "Apply for a Position",
+        "subtitle": "Start Your Journey with Lightech",
+        "description": "Submit your application and our HR team will review your profile. We're always looking for talented individuals to join our team.",
+        "info": {
+          "title": "HR Department",
+          "email": "careers@lightech.com.sa",
+          "phone": "+966 11 466 4696",
+          "address": "Riyadh, Saudi Arabia"
+        },
+        "form": {
+          "fields":{
+            "name":"Full Name",
+            "email":"Email Address",
+            "phone":"Phone Number",
+            "position": "Possition Applied For",
+            "coverLetter": "Cover Letter",
+            "coverLetterPlaceholder": "Add your message here"
+          },
+          "submit": "Apply Now",
+          "submitting": "Applying..."
+        }
+      }
     }
   },
   "ar": {
@@ -514,6 +711,10 @@
       {
         "href": "/ar/projects",
         "label": "مشاريعنا"
+      },
+      {
+        "href": "/ar/careers",
+        "label": "الوظائف"
       },
       {
         "href": "/ar/contact",
@@ -993,6 +1194,199 @@
           "value": "Projects"
         }
       ]
+    },
+    "careersPage": {
+      "header": {
+        "title": "الوظائف في لايتك",
+        "description": "انضم إلى فريق خبراء الإضاءة لدينا وساعد في إضاءة مستقبل المملكة العربية السعودية"
+      },
+      "hero": {
+        "title": "ابنِ مسيرتك المهنية",
+        "subtitle": "مع لايتك",
+        "description": "انضم إلى فريق من المحترفين المتحمسين المكرسين لتحويل المساحات من خلال حلول الإضاءة المبتكرة. في لايتك، نؤمن برعاية المواهب وخلق فرص للنمو.",
+        "cta": {
+          "label": "عرض الوظائف المتاحة",
+          "href": "#jobs"
+        }
+      },
+      "culture": {
+        "title": "لماذا تنضم إلى لايتك",
+        "subtitle": "ثقافتنا ومزايانا",
+        "description": "نحن ملتزمون بخلق بيئة يزدهر فيها الابتكار وتزدهر المسيرات المهنية.",
+        "benefits": [
+          {
+            "icon": "innovation_18.svg",
+            "title": "الابتكار والنمو",
+            "description": "اعمل على مشاريع إضاءة متطورة في جميع أنحاء المملكة وساهم في مبادرات رؤية 2030."
+          },
+          {
+            "icon": "cooperation_20.svg",
+            "title": "بيئة تعاونية",
+            "description": "انضم إلى فريق متنوع من الخبراء الذين يقدرون العمل الجماعي وتبادل المعرفة والدعم المتبادل."
+          },
+          {
+            "icon": "global_book_05.svg",
+            "title": "التعلم والتطوير",
+            "description": "احصل على برامج تدريبية مستمرة وشهادات وفرص لتعزيز مهاراتك."
+          },
+          {
+            "icon": "institution_09.svg",
+            "title": "مزايا تنافسية",
+            "description": "استمتع برواتب تنافسية وتأمين صحي ومكافآت سنوية وحوافز أداء."
+          },
+          {
+            "icon": "target_02.svg",
+            "title": "التقدم الوظيفي",
+            "description": "مسارات وظيفية واضحة مع فرص للترقية وأدوار قيادية داخل الشركة."
+          },
+          {
+            "icon": "verified_01.svg",
+            "title": "التوازن بين العمل والحياة",
+            "description": "ترتيبات عمل مرنة وثقافة داعمة تقدر رفاهيتك."
+          }
+        ]
+      },
+      "jobs": {
+        "title": "الوظائف المتاحة",
+        "subtitle": "اعثر على دورك المثالي",
+        "description": "استكشف الفرص الحالية في مكاتبنا في الرياض وجدة والدمام.",
+        "filters": {
+          "all": "جميع الوظائف",
+          "departments": [
+            { "label": "الهندسة", "value": "engineering" },
+            { "label": "التصميم", "value": "design" },
+            { "label": "المبيعات", "value": "sales" },
+            { "label": "إدارة المشاريع", "value": "project-management" },
+            { "label": "العمليات", "value": "operations" }
+          ],
+          "locations": [
+            { "label": "جميع المواقع", "value": "all" },
+            { "label": "الرياض", "value": "riyadh" },
+            { "label": "جدة", "value": "jeddah" },
+            { "label": "الدمام", "value": "dammam" },
+            { "label": "عن بعد", "value": "remote" }
+          ],
+          "types": [
+            { "label": "جميع الأنواع", "value": "all" },
+            { "label": "دوام كامل", "value": "full-time" },
+            { "label": "دوام جزئي", "value": "part-time" },
+            { "label": "عقد", "value": "contract" }
+          ]
+        },
+        "positions": [
+          {
+            "id": "lighting-engineer-senior",
+            "title": "مهندس إضاءة أول",
+            "department": "engineering",
+            "location": "الرياض",
+            "type": "full-time",
+            "description": "قيادة مشاريع تصميم الإضاءة المعقدة للمباني التجارية والحكومية في جميع أنحاء المملكة.",
+            "requirements": [
+              "درجة البكالوريوس في الهندسة الكهربائية أو مجال ذي صلة",
+              "خبرة 5+ سنوات في تصميم الإضاءة",
+              "إتقان برامج DIALux أو Relux أو ما شابه",
+              "معرفة قوية بتقنية LED وأنظمة التحكم"
+            ]
+          },
+          {
+            "id": "lighting-designer",
+            "title": "مصمم إضاءة",
+            "department": "design",
+            "location": "جدة",
+            "type": "full-time",
+            "description": "إنشاء مفاهيم إضاءة مبتكرة للمشاريع المعمارية والداخلية في المنطقة الغربية.",
+            "requirements": [
+              "درجة في الهندسة المعمارية أو التصميم الداخلي أو تصميم الإضاءة",
+              "خبرة 3+ سنوات في تصميم الإضاءة",
+              "محفظة توضح حلول إضاءة إبداعية",
+              "مهارات تواصل وعرض ممتازة"
+            ]
+          },
+          {
+            "id": "project-manager",
+            "title": "مدير مشروع - حلول الإضاءة",
+            "department": "project-management",
+            "location": "الرياض",
+            "type": "full-time",
+            "description": "الإشراف على التسليم الشامل لمشاريع الإضاءة واسعة النطاق مع ضمان الجودة والجدول الزمني والميزانية.",
+            "requirements": [
+              "شهادة PMP مفضلة",
+              "خبرة 5+ سنوات في إدارة المشاريع",
+              "خبرة في صناعة البناء أو الإضاءة",
+              "مهارات قيادية وتنظيمية قوية"
+            ]
+          },
+          {
+            "id": "sales-executive",
+            "title": "تنفيذي مبيعات - منتجات الإضاءة",
+            "department": "sales",
+            "location": "الدمام",
+            "type": "full-time",
+            "description": "دفع نمو المبيعات في المنطقة الشرقية من خلال بناء علاقات مع المقاولين والمهندسين المعماريين والمطورين.",
+            "requirements": [
+              "درجة البكالوريوس في إدارة الأعمال أو مجال ذي صلة",
+              "خبرة 3+ سنوات في مبيعات B2B، ويفضل في الإضاءة أو البناء",
+              "سجل حافل في تحقيق أهداف المبيعات",
+              "مهارات تفاوض وبناء علاقات ممتازة"
+            ]
+          },
+          {
+            "id": "technical-support",
+            "title": "أخصائي دعم فني",
+            "department": "operations",
+            "location": "الرياض",
+            "type": "full-time",
+            "description": "تقديم المساعدة الفنية للعملاء والفرق الداخلية بشأن منتجات الإضاءة وأنظمة التحكم.",
+            "requirements": [
+              "دبلوم أو درجة في الهندسة الكهربائية",
+              "خبرة 2+ سنوات في الدعم الفني أو الخدمة الميدانية",
+              "معرفة بتركيبات الإضاءة وأنظمة التحكم",
+              "قدرات قوية على حل المشكلات"
+            ]
+          },
+          {
+            "id": "cad-technician",
+            "title": "فني CAD - الإضاءة",
+            "department": "design",
+            "location": "جدة",
+            "type": "contract",
+            "description": "إعداد رسومات فنية مفصلة ووثائق لمشاريع تركيب الإضاءة.",
+            "requirements": [
+              "إتقان AutoCAD و Revit",
+              "فهم الخطط الكهربائية وخطط الإضاءة",
+              "الاهتمام بالتفاصيل والدقة",
+              "القدرة على العمل تحت مواعيد نهائية ضيقة"
+            ]
+          }
+        ],
+        "cta": {
+          "label": "قدم الآن",
+          "href": "#apply"
+        }
+      },
+      "contact": {
+        "title": "التقدم لوظيفة",
+        "subtitle": "ابدأ رحلتك مع لايتك",
+        "description": "قدم طلبك وسيقوم فريق الموارد البشرية لدينا بمراجعة ملفك الشخصي. نحن نبحث دائمًا عن أفراد موهوبين للانضمام إلى فريقنا.",
+        "info": {
+          "title": "قسم الموارد البشرية",
+          "email": "careers@lightech.com.sa",
+          "phone": "+966 11 466 4696",
+          "address": "الرياض، المملكة العربية السعودية"
+        },
+        "form": {
+          "fields":{
+            "name":"Full Name",
+            "email":"Email Address",
+            "phone":"Phone Number",
+            "position": "Possition Applied For",
+            "coverLetter": "Cover Letter",
+            "coverLetterPlaceholder": "Add your message here"
+          },
+          "submit": "Apply Now",
+          "submitting": "Applying..."
+        }
+      }
     }
   }
 }
