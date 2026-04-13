@@ -109,17 +109,17 @@ const rawProjects: Omit<Project, 'slug'>[] = [
       featured:true
 
     },
-    {
-      "category": "Governmental Projects",
-      "id": "G006",
-      "image": G006.src,
-      "title": "Alinma Stadium King Abdullah Sports City",
-      "client": "ARAMCO",
-      "service": "Supply of Façade and Sports Lighting Fittings",
-      "location": "Jeddah",
-      featured:true
+    // {
+    //   "category": "Governmental Projects",
+    //   "id": "G006",
+    //   "image": G006.src,
+    //   "title": "Alinma Stadium King Abdullah Sports City",
+    //   "client": "ARAMCO",
+    //   "service": "Supply of Façade and Sports Lighting Fittings",
+    //   "location": "Jeddah",
+    //   featured:true
 
-    },
+    // },
     {
       "category": "Governmental Projects",
       "id": "G007",
@@ -174,17 +174,17 @@ const rawProjects: Omit<Project, 'slug'>[] = [
       // featured:true
 
     },
-    {
-      "category": "Governmental Projects",
-      "id": "G011",
-      "image": G016.src,
-      "title": "King Abdullah Petroleum Studies and Research Center Residential Community - KAPSARC RC",
-      "client": "ARAMCO",
-      "service": "Design and Supply of Internal and External Lighting Fittings First Platinum LEED Certified Project in MENA",
-      "location": "Riyadh",
-      // featured:true
+    // {
+    //   "category": "Governmental Projects",
+    //   "id": "G011",
+    //   "image": G016.src,
+    //   "title": "King Abdullah Petroleum Studies and Research Center Residential Community - KAPSARC RC",
+    //   "client": "ARAMCO",
+    //   "service": "Design and Supply of Internal and External Lighting Fittings First Platinum LEED Certified Project in MENA",
+    //   "location": "Riyadh",
+    //   // featured:true
 
-    },
+    // },
     
     {
       "category": "Educational Projects",
@@ -214,15 +214,15 @@ const rawProjects: Omit<Project, 'slug'>[] = [
       "service": "Supply of Internal and External Lighting Fittings",
       "location": ""
     },
-    {
-      "category": "Educational Projects",
-      "id": "E004",
-      "image": E004.src,
-      "title": "King Abdulaziz Center for World Culture",
-      "client": "ARAMCO",
-      "service": "Supply of Internal Lighting Fittings",
-      "location": "Dhahran"
-    },
+    // {
+    //   "category": "Educational Projects",
+    //   "id": "E004",
+    //   "image": E004.src,
+    //   "title": "King Abdulaziz Center for World Culture",
+    //   "client": "ARAMCO",
+    //   "service": "Supply of Internal Lighting Fittings",
+    //   "location": "Dhahran"
+    // },
     {
       "category": "Towers Projects",
       "id": "T001",
@@ -479,15 +479,15 @@ const rawProjects: Omit<Project, 'slug'>[] = [
       "location": "Riyadh",
       featured:true
     },
-    {
-      "category": "Projects",
-      "id": "P008",
-      "image": P008.src,
-      "title": "Yunbu Export Refinery",
-      "client": "ARAMCO",
-      "service": "Supply of Industrial Lighting",
-      "location": "Yunbu"
-    },
+    // {
+    //   "category": "Projects",
+    //   "id": "P008",
+    //   "image": P008.src,
+    //   "title": "Yunbu Export Refinery",
+    //   "client": "ARAMCO",
+    //   "service": "Supply of Industrial Lighting",
+    //   "location": "Yunbu"
+    // },
     {
       "category": "Restaurants",
       "id": "R001",

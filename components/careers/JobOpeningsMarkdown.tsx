@@ -83,12 +83,12 @@ export default function JobOpeningsMarkdown({
 
   return (
     <section id="jobs" className="py-20 bg-white dark:bg-black" aria-labelledby="jobs-heading">
-      <div>
+      {/* <div>
         <h2 id="jobs-heading" className="text-4xl px-8 pt-8 text-primary font-bold tracking-wider mb-2">
           {content.title}
         </h2>
         <hr className="mb-4 ml-8" />
-      </div>
+      </div> */}
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h3 className="text-3xl md:text-4xl font-bold mb-4">{content.subtitle}</h3>

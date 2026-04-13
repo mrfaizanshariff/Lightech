@@ -160,8 +160,8 @@ export default function CareersPage({
     { 
         jobs.length === 0 ? (
             <main>
-        <h1>Careers</h1>
-        <p>No positions available at this time.</p>
+        {/* <h1>Careers</h1>
+        <p>No positions available at this time.</p> */}
       </main>
         ):(
             <JobOpeningsMarkdown 
