@@ -12,9 +12,14 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const Bahnschrift = localFont({
   src: '../../public/fonts/Bahnschrift.ttf',
   display: 'swap',
+  variable: '--font-bahnschrift',
 });
 
-const noto_kufi = Noto_Kufi_Arabic({ subsets: ['arabic'] });
+const noto_kufi = Noto_Kufi_Arabic({
+  subsets: ['arabic'],
+  display: 'swap',
+  variable: '--font-noto-kufi',
+});
 
 export async function generateMetadata({
   params,
@@ -167,7 +172,7 @@ export default function LangLayout({
       lang={params.lang}
       dir={isArabic ? 'rtl' : 'ltr'}
       suppressHydrationWarning
-      className={isArabic ? noto_kufi.className : Bahnschrift.className}
+      className={`${isArabic ? noto_kufi.variable : Bahnschrift.variable}`}
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -178,7 +183,7 @@ export default function LangLayout({
         <meta name="theme-color" content="#000000" />
         <meta name="google-site-verification" content="SQ57qL58D4tfGp3rf_66j8lMCPVw1XcMi_CMiRxLnIM" />
       </head>
-      <body>
+      <body className={isArabic ? noto_kufi.className : Bahnschrift.className}>
         <GoogleAnalytics gaId="G-M5067FWQBX" />
          <AccessibilityWidget />
         <Navbar params={params} />
