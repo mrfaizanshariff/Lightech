@@ -30,29 +30,29 @@ export async function generateMetadata({
 
     keywords: isArabic
       ? [
-          "وظائف لايتك",
-          "وظائف شركة إضاءة",
-          "وظائف الرياض",
-          "وظائف جدة",
-          "وظائف الدمام",
-          "مهندس إضاءة",
-          "مصمم إضاءة",
-          "وظائف هندسة",
-          "فرص عمل السعودية",
-          "شركات الإضاءة",
-        ]
+        "وظائف لايتك",
+        "وظائف شركة إضاءة",
+        "وظائف الرياض",
+        "وظائف جدة",
+        "وظائف الدمام",
+        "مهندس إضاءة",
+        "مصمم إضاءة",
+        "وظائف هندسة",
+        "فرص عمل السعودية",
+        "شركات الإضاءة",
+      ]
       : [
-          "Lightech careers",
-          "lighting company jobs",
-          "jobs in Riyadh",
-          "jobs in Jeddah",
-          "jobs in Dammam",
-          "lighting engineer jobs",
-          "lighting designer jobs",
-          "engineering jobs Saudi Arabia",
-          "career opportunities KSA",
-          "lighting industry careers",
-        ],
+        "Lightech careers",
+        "lighting company jobs",
+        "jobs in Riyadh",
+        "jobs in Jeddah",
+        "jobs in Dammam",
+        "lighting engineer jobs",
+        "lighting designer jobs",
+        "engineering jobs Saudi Arabia",
+        "career opportunities KSA",
+        "lighting industry careers",
+      ],
 
     openGraph: {
       title: isArabic
@@ -156,31 +156,31 @@ export default function CareersPage({
       <CareerInfo content={careersContent.culture} />
 
       {/* <JobOpenings content={careersContent.jobs} /> */}
-     
-    { 
+
+      {
         jobs.length === 0 ? (
-            <main>
-        {/* <h1>Careers</h1>
+          <main>
+            {/* <h1>Careers</h1>
         <p>No positions available at this time.</p> */}
-      </main>
-        ):(
-            <JobOpeningsMarkdown 
-        jobs={jobs}
-        content={{
-          title: "Current Openings",
-          subtitle: "Join Our Team",
-          description: "Explore exciting career opportunities",
-          filters: { all: "All" },
-          cta: { label: "Apply Now", href: "/careers/apply" }
-        }}
-      />
+          </main>
+        ) : (
+          <JobOpeningsMarkdown
+            jobs={jobs}
+            content={{
+              title: "Current Openings",
+              subtitle: "Join Our Team",
+              description: "Explore exciting career opportunities",
+              filters: { all: "All" },
+              cta: { label: "Apply Now", href: "/careers/apply" }
+            }}
+          />
         )
 
-    }
-    
-     
+      }
 
-     {/* <CareerContactWithEmailJS content={careersContent.contact} language="en" /> */}
+
+
+      {/* <CareerContactWithEmailJS content={careersContent.contact} language="en" /> */}
 
       <CareerContact content={careersContent.contact} />
     </main>
